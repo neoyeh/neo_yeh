@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .rwd-table{
+      width: 100%;
+      border: 1px solid #a38823;
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .rwd-table th,
+    .rwd-table td {
+      display: table-cell;
+      padding: 10px 0;
+    }
+    .rwd-table tr:first-child{
+      background: #a38823;
+      color: #fff;
+    }
+    .rwd-table tr td:first-child{
+      color: #a38823;
+    }
+    .rwd-table td:before {
+      display: none;
+    }
+
+    @media(max-width: 991px) {
+        .rwd-table{
+          text-align: left;
+        }
+        .rwd-table tr{
+          border-bottom: 20px solid #fff;
+        }
+        .rwd-table td {
+          display: block;
+          color: #000 !important;
+          border-bottom: 1px solid #a38823;
+        }
+        .rwd-table th {
+          display: none;
+        }
+        .rwd-table td{
+          padding: 0;
+          border-bottom: 1px solid #a38823;
+          border-top: none;
+          border-left: 0;
+          border-right: 0;
+        }
+        .rwd-table tr td:first-child{
+          border-top: 1px solid #a38823;
+        }
+        .rwd-table td:before {
+          content: attr(data-th) ": ";
+          box-sizing: border-box;
+          font-weight: bold;
+          display: inline-block;
+          width: 50%;
+          padding: 10px 15px;
+          color: #a38823;
+          border-right: 1px solid #a38823;
+          margin-right: 15px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <table class="rwd-table" rules="all">
+        <tr>
+            <th width="20%">月份</th>
+            <th width="20%">2011</th>
+            <th width="20%">2012</th>
+            <th width="20%">年不增(減)金額</th>
+            <th width="20%">年不增(減)比率</th>
+        </tr>
+        <tr>
+            <td data-th="月份">1</td>
+            <td data-th="2011">12312312312</td>
+            <td data-th="2010">3123</td>
+            <td data-th="年不增(減)金額">115,000,000</td>
+            <td data-th="年不增(減)比率">12%</td>
+        </tr>
+        <tr>
+            <td data-th="月份">2</td>
+            <td data-th="2011">12312312312</td>
+            <td data-th="2010">3123</td>
+            <td data-th="年不增(減)金額">115,000,000</td>
+            <td data-th="年不增(減)比率">12%</td>
+        </tr>
+        <tr>
+            <td data-th="月份">3</td>
+            <td data-th="2011">12312312312</td>
+            <td data-th="2010">3123</td>
+            <td data-th="年不增(減)金額">115,000,000</td>
+            <td data-th="年不增(減)比率">12%</td>
+        </tr>
+        <tr>
+            <td data-th="月份">4</td>
+            <td data-th="2011">12312312312</td>
+            <td data-th="2010">3123</td>
+            <td data-th="年不增(減)金額">115,000,000</td>
+            <td data-th="年不增(減)比率">12%</td>
+        </tr>
+        <tr>
+            <td data-th="月份">累計</td>
+            <td data-th="2011">12312312312</td>
+            <td data-th="2010">3123</td>
+            <td data-th="年不增(減)金額">115,000,000</td>
+            <td data-th="年不增(減)比率">12%</td>
+        </tr>
+    </table>
+</body>
+
+</html>

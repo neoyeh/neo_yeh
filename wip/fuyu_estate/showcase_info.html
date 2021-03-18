@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+	<title>富宇地產</title>
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/main.css">
+</head>
+<body class="body-bg">
+
+	<header id="header" class="bg-gold float-left"></header>
+	
+	<section class="header-logo">
+		<div class="container d-flex justify-content-center align-items-center flex-wrap">
+			<div class="text-center">
+				<img src="images/title_pattern.png" alt="">
+				<div class="big">建設實績</div>
+				<div class="small text-gold">SHOWCASE</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-section">
+		<div class="top-ball"></div>
+		<div class="center-line"></div>
+
+
+		<section class="pb-l">
+			<div class="bg-title-banner">
+				<div class="bg-image-banner" style="background-image: url(images/img/banner-investor.jpg)">
+				</div>
+			</div>
+		</section>
+		<section class="pb-l">
+			<div class="section-title bg-gold text-white">
+				<span>建案資訊</span>
+			</div>
+			<div class="container border-gold bg-white pos-relative">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="row d-block">
+							<div class="bg-image pt-60p" style="background-image: url(images/img/presales-list4.jpg);">
+							</div>
+						</div>
+					</div>	
+					<div class="content col-12 col-lg-6 d-flex align-items-center justify-content-center normal-card mb-0">
+						<div class="text p-15-30">
+							<h3 class="text-gold row2">中國經濟 中國經濟 中國經濟 中國經濟 中國經濟 </h3>
+							<ul>
+								<li>產品類型:電梯大樓</li>
+								<li>基地位置:新竹竹北</li>
+								<li>接待會館:竹北市華興街361號</li>
+								<li>服務專線:(03)553-0688</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="last">
+			<div class="container border-gold bg-white pos-relative">
+				<div class="row">
+					<div class="album-image">
+                <div class="album-full">
+                    <img src="images/img/showcase-album.jpg">
+                </div>
+                <div class="p-xs">
+	                <div class="album-img-thumb">
+	                	<a href="javascript:;" class="stagePadding-slider-btn left bg-gold showNext showNextWhite"></a>
+	                    <ul class="owl-carousel owl-theme">
+	                    	<li class="active">
+	                            <a href="javascript:">
+	                                <img src="images/img/showcase-list1.jpg" />
+	                            </a>
+	                        </li>
+	                    	<li>
+	                            <a href="javascript:">
+	                                <img src="images/img/showcase-list2.jpg" />
+	                            </a>
+	                        </li>
+	                    	<li>
+	                            <a href="javascript:">
+	                                <img src="images/img/showcase-list3.jpg" />
+	                            </a>
+	                        </li>
+	                    	<li>
+	                            <a href="javascript:">
+	                                <img src="images/img/showcase-list4.jpg" />
+	                            </a>
+	                        </li>
+	                    	<li>
+	                            <a href="javascript:">
+	                                <img src="images/img/showcase-list5.jpg" />
+	                            </a>
+	                        </li>
+	                    	<li>
+	                            <a href="javascript:">
+	                                <img src="images/img/showcase-list6.jpg" />
+	                            </a>
+	                        </li>
+	                    </ul>
+	                    <a href="javascript:;" class="stagePadding-slider-btn right bg-gold showNext showNextWhite"></a>
+	                </div>
+                </div>
+            </div>
+				</div>
+			</div>
+		</section>
+	
+		<div class="bottom-logo text-gold">
+			<div class="big">
+				FU YU
+			</div>	
+			<div class="small">
+				PROPERTY	
+			</div>	
+		</div>
+	</section>
+
+	<footer id="footer"></footer>
+
+<script type="text/javascript" src="asset/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="asset/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="asset/jquery-ellipsis-master/dist/jquery.ellipsis.min.js"></script>
+<script type="text/javascript" src="asset/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="asset/main.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#header').load('header.html');
+		$('#footer').load('footer.html');
+
+
+		$('.album-img-thumb ul').each(function(){
+			var  $owl = $(this) ;
+			$owl.owlCarousel({
+				// mouseDrag: false,
+		        loop: true,
+		        margin: 10,
+		        dots: false,
+		        responsive: {
+		            0: {
+		                items: 2
+		            },
+		            400: {
+		                items: 3
+		            },
+		            992: {
+		                items: 5
+		            }
+		        }
+		    });
+			var $left = $owl.siblings('.stagePadding-slider-btn.left');
+			var $right = $owl.siblings('.stagePadding-slider-btn.right');
+			$right.click(function() {
+			    $owl.trigger('next.owl.carousel');
+			})
+			$left.click(function() {
+			    $owl.trigger('prev.owl.carousel', [300]);
+			})
+		})
+		
+
+
+	   	$('.album-img-thumb ul li').click(function(e){
+	   		e.preventDefault();
+	   		if(!$(this).hasClass('active')){
+	   			var img = $(this).find('img').attr('src');
+	   			$(this).parent().siblings('div').find('li.active').removeClass('active');
+	   			$(this).addClass('active');
+	   			$(this).closest('.album-image').find('.album-full img').attr('src', img);
+	   		};
+	   	})
+	})
+</script>
+</body>
+</html>

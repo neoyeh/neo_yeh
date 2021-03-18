@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+	<title>富宇地產</title>
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/main.css">
+</head>
+<body class="body-bg">
+
+	<header id="header" class="bg-gold float-left"></header>
+	
+	<section class="header-logo">
+		<div class="container d-flex justify-content-center align-items-center flex-wrap">
+			<div class="text-center">
+				<img src="images/title_pattern.png" alt="">
+				<div class="big">富宇動態</div>
+				<div class="small text-gold">FUYU NEWS</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-section">
+		<div class="top-ball"></div>
+		<div class="center-line"></div>
+
+
+		<section class="pb-s">
+			<div class="black-bg-banner-slider owl-carousel owl-theme gold-dots dots-center">
+				<div class="black-bg-banner item">
+					<div class="bg-image" style="background-image: url(images/img/banner-04.png)">
+						
+					</div>
+					<div class="container container-small image">
+						<div class="d-block">	
+							<img src="images/img/banner-04.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="black-bg-banner item">
+					<div class="bg-image" style="background-image: url(images/img/banner-04.png)">
+						
+					</div>
+					<div class="container container-small image">
+						<div class="d-block">	
+							<img src="images/img/banner-04.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		<section class="mt-l pt-title">
+			<div class="section-title bg-gold text-white">
+				<span>董事會</span>
+				<div class="center-line2"></div>
+			</div>
+			<div class="container border-gold bg-white pos-relative button-container">
+				<div class="row d-block">
+					<img src="images/img/banner-showcase.jpg" alt="">
+					<div class="html-code">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus accusamus accusantium qui quas placeat perspiciatis suscipit eius. Eveniet minima, numquam! Atque maxime veritatis nisi. Maxime inventore iusto vero voluptate doloremque quidem repudiandae ab ducimus quod labore asperiores modi laborum ipsa sunt voluptatum quo, ipsam nemo obcaecati aliquid doloribus consequuntur vitae accusantium eius repellendus. Corrupti accusantium praesentium sunt, veniam nostrum quaerat molestias, possimus id adipisci, facilis vero placeat velit eos beatae eaque optio aut. Laudantium omnis quae consequuntur tempore repellat sit, eveniet et iste facere, error quasi! Voluptates esse autem cupiditate illum necessitatibus, reiciendis, doloremque rem cum expedita eaque deserunt quam.
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="last">
+			<div class="container">
+				<a href="#" class="text-white bg-gold center-button text-center btn-l">回上一層</a>	
+			</div>
+		</section>
+
+		<div class="bottom-logo text-gold">
+			<div class="big">
+				FU YU
+			</div>	
+			<div class="small">
+				PROPERTY	
+			</div>	
+		</div>
+	</section>
+
+	<footer id="footer"></footer>
+
+<script type="text/javascript" src="asset/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="asset/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="asset/jquery-ellipsis-master/dist/jquery.ellipsis.min.js"></script>
+<script type="text/javascript" src="asset/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="asset/jquery.bootpag.min.js"></script>
+<script type="text/javascript" src="asset/main.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#header').load('header.html');
+		$('#footer').load('footer.html');
+
+		$('.page').bootpag({ 
+			total: 50,
+		    maxVisible: 5,
+			leaps: false,
+		    firstLastUse: true,
+		    next: '<i class="fa fa-angle-right"></i>',
+		    prev: '<i class="fa fa-angle-left"></i>',
+		    first: '<i class="fa fa-angle-double-left"></i>',
+    		last: '<i class="fa fa-angle-double-right"></i>',
+		});
+
+	})
+</script>
+</body>
+</html>
