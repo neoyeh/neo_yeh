@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76af8e8f-6357-4617-a44a-a32bd6d13084" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/default-prototype.htm" beforeDir="false" afterPath="$PROJECT_DIR$/default-prototype.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default-spec-prototype.htm" beforeDir="false" afterPath="$PROJECT_DIR$/default-spec-prototype.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default-spec.htm" beforeDir="false" afterPath="$PROJECT_DIR$/default-spec.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/default.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filer_public/fed-assets/hubble/js-src/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/media/filer_public/fed-assets/hubble/js-src/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/filer_public/fed-assets/hubble/js/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/media/filer_public/fed-assets/hubble/js/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/default-cn-prototype.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/default-cn-prototype.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/default-cn.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/default-cn.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/default-prototype.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/default-prototype.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/default.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/css/critical.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/css/critical.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/js-src/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/js-src/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/js/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/js/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/scss-src/default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/scss-src/default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/scss-src/lib/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/media/filer_public/fed-assets/revamp-20/scss-src/lib/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vive-revamp-homepage/templates/default.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../vive-revamp-homepage/templates/default.htm" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1z2GTXjE4NZcsxYysMoB85Kd3mF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76af8e8f-6357-4617-a44a-a32bd6d13084" name="Default Changelist" comment="" />
+      <created>1633338780052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633338780052</updated>
+      <workItem from="1633338781882" duration="37000" />
+      <workItem from="1633339084388" duration="529000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
