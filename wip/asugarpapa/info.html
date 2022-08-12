@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>asugarpapa</title>
+	<!-- 思源黑體 -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<link rel="stylesheet" href="./asset/plugin/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./asset/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./asset/plugin/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./asset/css/animate.css">
+	<link rel="stylesheet" href="./asset/css/main.css">
+
+</head>
+<body class="info">
+	<header id="header"></header>
+	<section class="info-slider-section">
+		<div class="bg-block">
+			<img src="./asset/image/banner.png" alt="">
+		</div>
+		<div class="container">
+			<div class="owl-info owl-carousel owl-theme">
+				<!-- 這邊圖片上傳建議限制他比例1:1或是有剪裁 -->
+				<a data-fancybox="gallery" href="http://fakeimg.pl/600x600/111/" class="item">
+					<img src="http://fakeimg.pl/600x600/111/" alt="">
+				</a>
+				<a data-fancybox="gallery" href="http://fakeimg.pl/1600x600/222/" class="item">
+					<img src="http://fakeimg.pl/1600x600/222/" alt="">
+				</a>
+				<a data-fancybox="gallery" href="http://fakeimg.pl/600x1600/333/" class="item">
+					<img src="http://fakeimg.pl/600x1600/333/" alt="">
+				</a>
+				<a data-fancybox="gallery" href="http://fakeimg.pl/600x600/444/" class="item">
+					<img src="http://fakeimg.pl/600x600/444/" alt="">
+				</a>
+				<a data-fancybox="gallery" href="http://fakeimg.pl/600x600/555/" class="item">
+					<img src="http://fakeimg.pl/600x600/555/" alt="">
+				</a>
+				<a data-fancybox="gallery" href="http://fakeimg.pl/600x600/666/" class="item">
+					<img src="http://fakeimg.pl/600x600/666/" alt="">
+				</a>
+				<a data-fancybox="gallery" href="http://fakeimg.pl/600x600/777/" class="item">
+					<img src="http://fakeimg.pl/600x600/777/" alt="">
+				</a>
+			</div>
+			<div class="w-100 d-flex justify-content-around d-lg-none"> 
+				<a href="#" class="custom-auto-btn img-front mb-4"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+				<a href="#" class="custom-auto-btn img-front mb-4 bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+				<!-- <a href="#" class="custom-auto-btn disabled img-front mb-4"><img src="./asset/image/sayHiG.png" alt="user">跟他打招呼</a>
+				<a href="#" class="custom-auto-btn disabled disabled-color-2 img-front mb-4 bg-black"><img src="./asset/image/sendMessageG.png" alt="user">寫訊息給他</a> -->
+			</div>
+		</div>
+		<div class="info-top-card-section">
+			<div class="container">
+				<div class="info-top-card">
+					<div class="card-name">
+						<span>PAPA name </span>
+						<div class="isOnline"></div>
+						<!-- <div class="isOnline offline"></div> -->
+						<div class="vip-tag"><img src="./asset/image/Logo03_SymbolOnly.png" alt="">VIP</div>
+						<!-- <div class="user-account-type bg-red">您已封鎖此會員-<a href="#">解除封鎖</a></div> -->
+					</div>
+					<div class="card-location">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						台北, 台灣
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="w-100">
+		<div class="container">
+			<div class="info-main-section">
+				<div class="info-main-right">
+					<div class="info-rignt-content">
+						<div class="d-none d-lg-flex w-100 flex-wrap justify-content-center">
+							<a href="#" class="custom-auto-btn img-front mb-3 btn-message"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+							<a href="message.html" class="custom-auto-btn img-front mb-4 bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+							<!-- <a href="#" class="custom-auto-btn disabled img-front mb-3"><img src="./asset/image/sayHiG.png" alt="user">跟他打招呼</a>
+							<a href="#" class="custom-auto-btn disabled disabled-color-2 img-front mb-4 bg-black"><img src="./asset/image/sendMessageG.png" alt="user">寫訊息給他</a> -->
+						</div>
+						<div class="custom-switch-input mb-0 mb-lg-4">
+                            <!-- <input type="checkbox" id="album" disabled> -->
+							<input type="checkbox" id="album">
+							<label for="album">
+								<span class="t1">開放私人相簿</span>
+								<span class="t1 checked">已開放私人相簿</span>
+								<span class="t2">無法開放相簿</span>
+							</label>
+						</div>
+						<div class="info-rignt-content-bottom">
+							<a href="#">檢舉</a>｜
+							<a href="#">封鎖</a>
+							<!-- <a href="#" class="unlock">解除封鎖</a> -->
+						</div>
+					</div>
+				</div>
+				<div class="info-main-left">
+					<div class="info-col">
+						<div class="info-col-title">我的資料</div>
+						<div class="info-col-content">
+							<div class="info-list">
+								<div class="item">
+									<div class="t1">年齡</div>
+									<div class="t2">25</div>
+								</div>
+								<div class="item">
+									<div class="t1">身高</div>
+									<div class="t2">170cm</div>
+								</div>
+								<div class="item">
+									<div class="t1">年收入</div>
+									<div class="t2">美金$100,001 - $125,000</div>
+								</div>
+								<div class="item">
+									<div class="t1">抽菸習慣</div>
+									<div class="t2">常抽</div>
+								</div>
+								<div class="item">
+									<div class="t1">職業</div>
+									<div class="t2">服務業</div>
+								</div>
+							</div>
+							<div class="info-list">
+								<div class="item">
+									<div class="t1">星座</div>
+									<div class="t2">水瓶座</div>
+								</div>
+								<div class="item">
+									<div class="t1">體型</div>
+									<div class="t2">偏瘦</div>
+								</div>
+								<div class="item">
+									<div class="t1">身價</div>
+									<div class="t2">美金$750,001 - 1百萬</div>
+								</div>
+								<div class="item">
+									<div class="t1">飲酒習慣</div>
+									<div class="t2">不喝</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info-col">
+						<div class="info-col-title">關於我</div>
+						<div class="info-col-content flex-wrap">
+							<div class="info-div">
+								HI! 很高興與你相遇,有興趣+微信PAPAname123
+							</div>
+						</div>
+					</div>
+					<div class="info-col">
+						<div class="info-col-title">理想的約會模式</div>
+						<div class="info-col-content flex-wrap">
+							<div class="info-div">
+								約會模式: 不拘
+							</div>
+							<div class="info-div">
+								順眼乖巧可愛配合度高 各取所需不打擾私生活
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer"></footer>
+
+
+	<script src="./asset/js/jquery-3.4.1.min.js"></script>
+	<script src="./asset/plugin/lazyload.js"></script>
+	<script src="./asset/js/popper.min.js"></script>
+	<script src="./asset/plugin/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<script src="./asset/js/jquery.ellipsis.min.js"></script>
+	<script src="./asset/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="./asset/plugin/fancybox/dist/jquery.fancybox.js"></script>
+	<script src="./asset/plugin/vagus.js"></script>
+	<script src="./asset/js/main.js"></script>
+	<script>
+		$(function(){
+			$('#header').load('header.html');
+			$('#footer').load('footer.html');
+
+			// 輪播
+			$('.owl-info').owlCarousel({
+			    margin:10,
+			    nav:true,
+			    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        768:{
+			            items:3
+			        },
+			        992:{
+			            items:5
+			        }
+			    }
+			});
+
+
+			//相簿
+			$('[data-fancybox]').fancybox({
+				toolbar  : false,
+			})
+
+
+		})
+	</script>
+</body>
+</html>

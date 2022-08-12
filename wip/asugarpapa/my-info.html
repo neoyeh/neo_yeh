@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>asugarpapa</title>
+    <!-- 思源黑體 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/plugin/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./asset/css/animate.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+</head>
+
+<body class="my-info">
+    <header id="header"></header>
+    <section class="full-intro-banner" style="background-image: url(./asset/image/TitleBG.png)">
+        <div>
+            <div class="t1">個人資料</div>
+            <div class="t2">形象管理 > 個人資料</div>
+        </div>
+    </section>
+    <section class="default-html-section pb-5">
+        <div class="container d-flex flex-wrap flex-lg-nowrap">
+            <div class="col-12 col-lg-6">
+            	<div class="my-info-title">
+            		<div class="t1">
+            			你好，<span>BabyName</span>
+            		</div>
+            		<div class="t2">
+                		<div class="my-info-review">
+                			審核狀態：
+                			<div>
+								<i class="fa fa-check font-green" aria-hidden="true"></i>
+                				<span>審核通過</span>
+                			</div>
+                		</div>
+            		</div>
+            	</div>	
+                <form>
+                    <div class="signup-content-info min-label">
+                        <div class="form-group custom-form-group">
+                            <label for="country">＊國家</label>
+                            <select class="custom-select" id="country">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">美國</option>
+                                <option value="2">中國</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="city">＊城市</label>
+                            <select class="custom-select" id="city">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">東京</option>
+                                <option value="2">京都</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="income">＊年收入</label>
+                            <select class="custom-select" id="income">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">500000-600000</option>
+                                <option value="2">600000-700000</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="value">＊身價</label>
+                            <select class="custom-select" id="value">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">100</option>
+                                <option value="2">200</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="height">＊身高</label>
+                            <select class="custom-select" id="height">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">160-170</option>
+                                <option value="2">170-180</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="weight">＊體型</label>
+                            <select class="custom-select" id="weight">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">高瘦</option>
+                                <option value="2">高壯</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="signup-content-info min-label">
+                        <div class="form-group custom-form-group">
+                            <label for="feeling">＊感情狀態</label>
+                            <select class="custom-select" id="feeling">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">單身</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="smokes">＊抽菸習慣</label>
+                            <select class="custom-select" id="smokes">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">無抽菸</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="career">＊職業</label>
+                            <select class="custom-select" id="career">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">醫生</option>
+                                <option value="1">工程師</option>
+                            </select>
+                        </div>
+                        <div class="form-group custom-form-group">
+                            <label for="drink">＊飲酒習慣</label>
+                            <select class="custom-select" id="drink">
+                                <option value="" selected>請選擇</option>
+                                <option value="1">無</option>
+                                <option value="1">每周2次</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w-100 pt-4">
+                        <div class="custom-textarea">
+                            <div class="title">您會怎麼形容自己？</div>
+                            <textarea class="w-100" cols="50" rows="5" placeholder="說明自己的興趣、個性、喜歡的活動等等，可以讓其他會員更了解您(最少10字)"></textarea>
+                        </div>
+                        <div class="custom-textarea">
+                            <div class="title">選擇您在尋找的理想關係</div>
+                            <select class="custom-select w-100" id="weight">
+                                <option value="" selected="">選擇您在尋找的理想關係</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="custom-textarea">
+                            <div class="title">請形容您的理想對象與約會方式</div>
+                            <textarea class="w-100" cols="50" rows="5" placeholder="請描述您心目中的理想對象與想要一起從事的活動(最少10字)"></textarea>
+                        </div>
+
+	                    <div class="d-flex flex-nowrap align-items-center justify-content-center w-100 modal-text-content mb-5">
+	                        <a href="#" class="custom-btn bg-pink custom-btn-width-160">
+	                            儲存
+	                        </a>
+	                    </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+            	<div class="bg-pink modal-title-on-main">
+			        <h5 class="font-light">打招呼訊息</h5>
+			    </div>
+        		<div class="form-main-content plr-m-15 bg-light pt-3 pb-3">
+                	<div class="modal-text-content-2 font-gary2 mb-4"> 
+                		<p class="mb-1">當您與其他會員打招呼或使用快速配對功能時，系統將會自動傳送以下訊息。</p>
+                		<p class="font-red mb-3">注意: 男性會員需加入VIP才可留下聯絡資訊。</p>
+                		<div class="my-info-review">
+                			審核狀態：
+                			<div>
+								<i class="fa fa-check font-green" aria-hidden="true"></i>
+                				<span class="font-bold">審核通過</span>
+                			</div>
+                		</div>
+                	</div>
+
+
+                	
+	                <div class="modal-text-content mb-4">
+		                <div class="message-select-name2">＊打招呼訊息</div>
+		                <div class="custom-select-group">
+							<button class="btn btn-select dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    請選擇範例
+							</button>
+			                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<h6 class="dropdown-header">請選擇範例</h6>
+								<a class="dropdown-item" href="#">哈囉! 我對你很感興趣，如果你對我也有興趣我們可以聊聊喔!</a>
+								<a class="dropdown-item" href="#">新增範例2</a>
+								<a class="dropdown-item" href="#">新增範例3</a>
+								<hr>
+								<h6 class="dropdown-header">預設範例</h6>
+								<a class="dropdown-item" href="#">哈囉! 我對你很感興趣，如果你對我也有興趣我們可以聊聊喔!</a>
+								<a class="dropdown-item" href="#">嗨你好，你看起來很不錯噢！希望我們可以認識彼此！</a>
+								<a class="dropdown-item" href="#">我很希望可以認識你，請看看我的檔案噢！</a>
+								<a class="dropdown-item" href="#">易安你好! PAPA/BABY的文案如有差別可以請小顧撰寫！易安你好! PAPA/BABY的文案如有差別可以請小顧撰寫！</a>
+							</div>
+						</div>
+		                <div class="custom-textarea mt-2 mb-0">
+		                  <textarea class="w-100" cols="50" rows="5" placeholder="" maxlength="500"></textarea>
+		                  <div class="w-100 d-flex flex-wrap flex-lg-nowrap justify-content-start justify-content-lg-between">
+			                  <div class="textarea-length">還可輸入<span>500</span>字</div>
+			                  <div class="input-group d-flex justify-content-end w-auto mt-3 mt-lg-0">
+				                <label class="custom-input-checkbox mb-0 font-gary2">儲存本次打招呼到我的範例中
+				                  <input type="checkbox" checked="checked">
+				                  <div class="control__indicator border-c"></div>
+				                </label>
+				              </div>
+			              </div>
+		                </div>
+					</div>
+
+
+                    <div class="d-flex flex-nowrap align-items-center justify-content-center w-100 modal-text-content mb-0">
+                        <a href="#" class="custom-btn bg-pink custom-btn-width-160">
+                            儲存
+                        </a>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="./asset/js/jquery-3.4.1.min.js"></script>
+    <script src="./asset/plugin/lazyload.js"></script>
+    <script src="./asset/js/popper.min.js"></script>
+    <script src="./asset/plugin/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./asset/js/jquery.ellipsis.min.js"></script>
+    <script src="./asset/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./asset/plugin/vagus.js"></script>
+    <script src="./asset/js/main.js"></script>
+    <script>
+    $(function() {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+
+        // 選折訊息
+        $(document).on('click', '.custom-select-group .dropdown-item',function(e){
+            e.preventDefault();
+            var text = $(this).text();
+            var $ele = $(this).closest('.custom-select-group');
+            $ele.find('.btn-select').text(text);
+        });
+
+        // 500字
+        $(document).on('input', '.modal-text-content .custom-textarea textarea', function() {
+            var text = $(this).val().length;
+            $(this).closest('.custom-textarea').find('.textarea-length span').text(500-text);
+        });
+    })
+    </script>
+</body>
+
+</html>

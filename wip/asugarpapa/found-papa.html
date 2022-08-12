@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>asugarpapa</title>
+	<!-- 思源黑體 -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<link rel="stylesheet" href="./asset/plugin/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./asset/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./asset/css/animate.css">
+	<link rel="stylesheet" href="./asset/css/main.css">
+
+</head>
+<body class="found-papa table-form-body">
+	<header id="header"></header>
+	<section class="header-search-section">
+		<div class="container">
+			<input class="custom-curcle-input" type="text" placeholder="條件篩選">
+			<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+		</div>
+	</section>
+
+	<section class="full-intro-banner" style="background-image: url(./asset/image/TitleBG.png)">
+		<div>
+			<div class="t1">遇見PAPA</div>
+			<div class="t2">首頁 > 遇見PAPA</div>
+		</div>
+	</section>
+	<!-- normal-user 是否開啟blur -->
+	<!-- <section class="found-padad-main-section normal-user"> -->
+	<section class="found-padad-main-section">
+		<div class="container">
+			<div class="col-12 col-lg-3 left-content">
+				
+				<form class="table-form">
+				    <div class="table-form-header">
+				    	<div class="title">對象條件篩選</div>
+				    	<div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+				    </div>
+					<div class="table-form-container">
+						<h2 class="mobile-none">條件篩選</h2>
+						<div class="form-group custom-form-group">
+						    <label for="country">國家</label>
+							<select class="custom-select" id="country">
+							  <option value="1">台灣</option>
+							  <option value="2">台灣</option>
+							</select>
+						</div>
+						<div class="form-group custom-form-group">
+						    <label>城市</label>
+						    <div class="custom-tags">
+						    	<div class="content">
+						    		<div class="c-tag">
+						    			台北<div class="btn-close btn-tag"><i class="fa fa-times" aria-hidden="true"></i></div>
+						    		</div>
+						    		<div class="c-tag">
+						    			新北<div class="btn-close btn-tag"><i class="fa fa-times" aria-hidden="true"></i></div>
+						    		</div>
+						    	</div>
+						    	<div class="more"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+						    </div>
+						</div>
+						<div class="form-group custom-form-group">
+						    <label for="years">年齡</label>
+						    <input class="custom-input custom-input--s" type="number" placeholder="最小" min="18" max="99"> <span>歲 ~</span>
+						    <input class="custom-input custom-input--s" type="number" placeholder="最大" min="18" max="99"> <span>歲</span> 
+						</div>
+						<div class="form-group-toggle component-toggle">	
+							<a href="#" class="form-group-toggle-btn component-toggle-btn">
+								更多選項 <i class="fa fa-caret-up" aria-hidden="true"></i>
+							</a>
+							<div class="form-group-toggle-content component-toggle-content">
+								<div class="form-group custom-form-group">
+								    <label for="height">身高</label>
+								    <input class="custom-input custom-input--s" type="number" placeholder="最小" min="0" max="100"> <span>cm ~</span>
+								    <input class="custom-input custom-input--s" type="number" placeholder="最大" min="0" max="240"> <span>cm</span> 
+								</div>
+								<div class="form-group custom-form-group custom-form-group-for-checkbox align-items-start">
+							    	<label>體型</label>
+							    	<div class="d-flex flex-column">
+						                <div class="input-group">
+						                	<label class="custom-input-checkbox">偏瘦
+						                  		<input type="checkbox" checked="checked"/>
+						                  		<div class="control__indicator border-c"></div>
+					                		</label>
+						              	</div>
+						                <div class="input-group">
+						                	<label class="custom-input-checkbox">普通
+						                  		<input type="checkbox" checked="checked"/>
+						                  		<div class="control__indicator border-c"></div>
+					                		</label>
+						              	</div>
+						                <div class="input-group">
+						                	<label class="custom-input-checkbox">微胖
+						                  		<input type="checkbox"/>
+						                  		<div class="control__indicator border-c"></div>
+					                		</label>
+						              	</div>
+						                <div class="input-group">
+						                	<label class="custom-input-checkbox">豐盈
+						                  		<input type="checkbox"/>
+						                  		<div class="control__indicator border-c"></div>
+					                		</label>
+						              	</div>
+						                <div class="input-group">
+						                	<label class="custom-input-checkbox">肌肉
+						                  		<input type="checkbox"/>
+						                  		<div class="control__indicator border-c"></div>
+					                		</label>
+						              	</div>
+							    	</div>
+								</div>
+							    <div class="form-group custom-form-group w-100 justify-content-center mb-5 pl-4 pr-4">
+					                <div class="input-group">
+					                	<label class="custom-input-checkbox">在線中
+					                  		<input type="checkbox"/>
+					                  		<div class="control__indicator border-c"></div>
+				                		</label>
+					              	</div>
+					                <div class="input-group">
+					                	<label class="custom-input-checkbox">僅限VIP
+					                  		<input type="checkbox" checked="checked"/>
+					                  		<div class="control__indicator border-c"></div>
+				                		</label>
+					              	</div>
+							    </div>
+							</div>
+						</div>
+				    </div>
+				    <div class="table-form-footer">
+				    	<a href="#" class="custom-auto-btn">搜尋</a>
+				    </div>
+				</form>
+			</div>	
+			<div class="col-12 col-lg-9  right-content">
+				<div class="section-top-content">
+					<select class="custom-select">
+					  <option value="1">排序依-推薦</option>
+					  <option value="2">排序-新到舊</option>
+					  <option value="3">排序依-舊到新</option>
+					</select>
+				</div>	
+				<div class="found-padad-main-section-content">
+					<div class="found-card red-line">
+						<a href="info.html" class="found-card-image">
+							<img src="https://fakeimg.pl/300x300/ffaaaa" alt="">
+							<div class="vip"><img src="./asset/image/Logo03_SymbolOnly.png" alt="">VIP</div>
+						</a>
+						<div class="found-card-content">
+							<div class="card-left">
+								<div class="name">PAPA name <div class="isOnline"></div></div>
+								<div class="city">台北, 台灣</div>
+								<div class="year">39, 天枰座</div>
+								<div class="size">180cm, 普通</div>
+							</div>
+							<div class="card-right">
+								<a href="#" class="custom-auto-btn img-front btn-message"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+								<a href="message.html" class="custom-auto-btn img-front bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+							</div>
+						</div>
+					</div>
+					<div class="found-card">
+						<a href="info.html" class="found-card-image">
+							<img src="https://fakeimg.pl/300x300/ffaaaa" alt="">
+							<div class="vip"><img src="./asset/image/Logo03_SymbolOnly.png" alt="">VIP</div>
+						</a>
+						<div class="found-card-content">
+							<div class="card-left">
+								<div class="name">PAPA name <div class="isOnline"></div></div>
+								<div class="city">台北, 台灣</div>
+								<div class="year">39, 天枰座</div>
+								<div class="size">180cm, 普通</div>
+							</div>
+							<div class="card-right">
+								<a href="#" class="custom-auto-btn img-front btn-message"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+								<a href="message.html" class="custom-auto-btn img-front bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+							</div>
+						</div>
+					</div>
+					<div class="found-card">
+						<a href="info.html" class="found-card-image">
+							<img src="https://fakeimg.pl/300x300/ffaaaa" alt="">
+							<div class="vip"><img src="./asset/image/Logo03_SymbolOnly.png" alt="">VIP</div>
+						</a>
+						<div class="found-card-content">
+							<div class="card-left">
+								<div class="name">PAPA name <div class="isOnline offline"></div></div>
+								<div class="city">台北, 台灣</div>
+								<div class="year">39, 天枰座</div>
+								<div class="size">180cm, 普通</div>
+							</div>
+							<div class="card-right">
+								<a href="#" class="custom-auto-btn img-front btn-message"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+								<a href="message.html" class="custom-auto-btn img-front bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+							</div>
+						</div>
+					</div>
+					<div class="found-card">
+						<a href="info.html" class="found-card-image">
+							<img src="https://fakeimg.pl/300x300/ffaaaa" alt="">
+						</a>
+						<div class="found-card-content">
+							<div class="card-left">
+								<div class="name">PAPA name <div class="isOnline"></div></div>
+								<div class="city">台北, 台灣</div>
+								<div class="year">39, 天枰座</div>
+								<div class="size">180cm, 普通</div>
+							</div>
+							<div class="card-right">
+								<a href="#" class="custom-auto-btn img-front btn-message"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+								<a href="message.html" class="custom-auto-btn img-front bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+							</div>
+						</div>
+					</div>
+					<div class="found-card">
+						<a href="info.html" class="found-card-image">
+							<img src="https://fakeimg.pl/300x300/ffaaaa" alt="">
+						</a>
+						<div class="found-card-content">
+							<div class="card-left">
+								<div class="name">PAPA name <div class="isOnline offline"></div></div>
+								<div class="city">台北, 台灣</div>
+								<div class="year">39, 天枰座</div>
+								<div class="size">180cm, 普通</div>
+							</div>
+							<div class="card-right">
+								<a href="#" class="custom-auto-btn img-front btn-message"><img src="./asset/image/sayHi.png" alt="user">跟他打招呼</a>
+								<a href="message.html" class="custom-auto-btn img-front bg-black"><img src="./asset/image/sendMessage.png" alt="user">寫訊息給他</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer id="footer"></footer>
+
+	<!-- Modal -->
+	<div class="modal fade form-modal form-modal--city" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">城市</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-main-content">
+						<div class="active-tag-content">
+				    		<div class="c-tag">
+				    			東京<div class="btn-close btn-tag"><i class="fa fa-times" aria-hidden="true"></i></div>
+				    		</div>
+				    		<div class="c-tag">
+				    			大阪<div class="btn-close btn-tag"><i class="fa fa-times" aria-hidden="true"></i></div>
+				    		</div>
+						</div>
+						<div class="c-tag-container component-toggle">
+							<div class="c-tag-toggle component-toggle-btn">
+								台灣地區 <div class="c-tag-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="c-tag-content component-toggle-content">
+					    		<div class="c-tag bg-black">
+					    			台北<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+					    		<div class="c-tag bg-black">
+					    			桃園<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+							</div>
+						</div>
+						<div class="c-tag-container component-toggle">
+							<div class="c-tag-toggle component-toggle-btn">
+								日本地區 <div class="c-tag-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="c-tag-content component-toggle-content">
+					    		<div class="c-tag bg-black">
+					    			東京<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+					    		<div class="c-tag bg-black">
+					    			大阪<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+							</div>
+						</div>
+						<div class="c-tag-container component-toggle">
+							<div class="c-tag-toggle component-toggle-btn">
+								越南地區 <div class="c-tag-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="c-tag-content component-toggle-content">
+					    		<div class="c-tag bg-black">
+					    			胡志明市<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+							</div>
+						</div>
+						<div class="c-tag-container component-toggle">
+							<div class="c-tag-toggle component-toggle-btn">
+								其他地區 <div class="c-tag-btn"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="c-tag-content component-toggle-content">
+					    		<div class="c-tag bg-black">
+					    			上海<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+					    		<div class="c-tag bg-black">
+					    			香港<div class="btn-close btn-tag"><i class="fa fa-plus" aria-hidden="true"></i></div>
+					    		</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="custom-auto-btn">確認</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./asset/js/jquery-3.4.1.min.js"></script>
+	<script src="./asset/plugin/lazyload.js"></script>
+	<script src="./asset/js/popper.min.js"></script>
+	<script src="./asset/plugin/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<script src="./asset/js/jquery.ellipsis.min.js"></script>
+	<script src="./asset/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="./asset/plugin/vagus.js"></script>
+	<script src="./asset/js/main.js"></script>
+	<script>
+		$(function(){
+			$('#header').load('header.html');
+			$('#footer').load('footer.html');
+
+
+			// table-form
+			$(document).on('click','.header-search-section',function(){
+				$('.table-form').addClass('active');
+				$('body').addClass('fix_scroll');
+			})
+			$(document).on('click','.table-form-header .close-btn',function(){
+				// 搜尋完要跑下面這個兩個
+				$('.table-form').removeClass('active');
+				$('body').removeClass('fix_scroll');
+			})
+
+
+
+			//============== form tag modal staer ================
+			$(document).on('click','.custom-tags .more',function(){
+				$('.form-modal--city').modal('show');
+				// $('.form-modal--city').modal('hide');
+			});
+			//============== form tag modal end ================
+
+			// 動態模糊
+			var $blurEle = $('.found-padad-main-section.normal-user');
+			var vague = $blurEle.Vague({
+				intensity: 5
+			});
+			if($blurEle.length>0){
+				vague.blur();
+			}
+			$('.found-padad-main-section.normal-user').css({
+				'opacity': '1',
+				'visibility': 'visible'
+			});
+		})
+	</script>
+</body>
+</html>

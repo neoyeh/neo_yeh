@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>asugarpapa</title>
+	<!-- 思源黑體 -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<link rel="stylesheet" href="./asset/plugin/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./asset/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./asset/css/animate.css">
+	<link rel="stylesheet" href="./asset/css/main.css">
+
+</head>
+<body class="certification">
+	<header id="header"></header>
+	<section class="full-intro-banner" style="background-image: url(./asset/image/TitleBG.png)">
+		<div>
+			<div class="t1">E-mail認證</div>
+			<div class="t2">首頁 > E-mail認證</div>
+		</div>
+	</section>
+	<section class="default-html-section p-tb-m">
+		<div class="container small-contaner">
+
+			<div class="form-main-content">
+	          <div class="toggle-menu-top tablet-container">
+	            <div class="form-title">
+	            	<div class="form-title-block">
+	            		寄送認證信到
+	            	</div>
+	            	<div class="form-title-input-change">
+	            		<div class="form-title-input-change-content">
+							<span>BabyName@gmail.com</span>
+							<div class="input-col flex-wrap flex-lg-nowrap mb-0 d-none">
+			                	<div class="flex-1">
+					                <div class="custom-input-group group-border-c-full align-items-center">
+					                 	<input id="email" type="email" placeholder="">
+					                </div>
+					                <div class="input-bottom">
+					                  <div class="attr ml-0">＊輸入錯誤</div>  
+					                </div>
+				                </div>
+				            </div>
+						</div>
+	            		<a class="form-title-btn btn-change mt-0 mt-lg-1" href="#"><i class="fa fa-pencil" aria-hidden="true"></i>-變更</a>
+	            		<a class="form-title-btn btn-approve d-none mt-1" href="#"><i class="fa fa-check" aria-hidden="true"></i>-確認</a>
+	            	</div>
+	            </div>	
+	            <div class="input-col d-flex flex-wrap flex-lg-nowrap">
+	                <label for="email" class="input-text mb-lg-0 mr-3 mt-2 ml-0 ml-lg-2 col-12 col-lg-3 p-0 text-lg-right">輸入認證碼</label>
+	                <div class="flex-1 col-12 col-lg-9 p-0 d-flex flex-nowrap">
+	                	<!-- 裡面放認證碼 -->
+	                	<div class="real-person">
+	                		<div class="real-person-code">1a423</div>
+	                		<a class="real-person-change" href="#"><i class="fa fa-undo" aria-hidden="true"></i></a>
+	                	</div>
+	                	<div class="flex-1">
+			                <div class="custom-input-group group-border-c-full align-items-center">
+			                 	<input id="code" type="text" placeholder="">
+			                </div>
+			                <div class="input-bottom">
+			                  <div class="attr ml-0">＊輸入錯誤</div>  
+			                </div>
+		                </div>
+		              </div>
+	            </div>
+	            <div class="d-flex flex-nowrap align-items-center justify-content-between">
+	              <div class="d-flex flex-nowrap justify-content-center align-items-center w-100">
+	                <a href="#" class="custom-btn bg-pink custom-btn-width-160 disabled">
+	                  發送認證信(15)
+	                </a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        </div>
+			
+		</div>
+	</section>
+	<footer id="footer"></footer>
+
+
+	<script src="./asset/js/jquery-3.4.1.min.js"></script>
+	<script src="./asset/plugin/lazyload.js"></script>
+	<script src="./asset/js/popper.min.js"></script>
+	<script src="./asset/plugin/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+	<script src="./asset/js/jquery.ellipsis.min.js"></script>
+	<script src="./asset/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="./asset/plugin/vagus.js"></script>
+	<script src="./asset/js/main.js"></script>
+	<script>
+		$(function(){
+			$('#header').load('header.html');
+			$('#footer').load('footer.html');
+
+			$(document).on('click','.form-title-input-change .btn-change',function(){
+				var $content = $(this).siblings('.form-title-input-change-content');
+				$content.find('.input-col').addClass('d-flex');
+				$content.find('span').hide();
+				$(this).hide();
+				$('.form-title-input-change .btn-approve').removeClass('d-none');
+			})
+			$(document).on('click','.form-title-input-change .btn-approve',function(){
+				var $content = $(this).siblings('.form-title-input-change-content');
+				var email = $content.find('input').val().trim();
+				// 如果驗證沒過
+				if(email){
+					var $content = $(this).siblings('.form-title-input-change-content');
+					$content.find('span').text(email);
+					$content.find('input').val('');
+
+					$content.find('.input-col').removeClass('d-flex');
+					$content.find('span').show();
+					$(this).addClass('d-none');
+					$('.form-title-input-change .btn-change').show();
+				}
+			})
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>asugarpapa</title>
+    <!-- 思源黑體 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/plugin/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./asset/plugin/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./asset/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./asset/css/animate.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+</head>
+
+<body class="overview">
+    <header id="header"></header>
+    <section class="full-intro-banner" style="background-image: url(./asset/image/TitleBG.png)">
+        <div>
+            <div class="t1">帳號總覽</div>
+            <div class="t2">會員中心 > 帳號總覽</div>
+        </div>
+    </section>
+    <section class="overview-main-section">
+        <div class="container">
+            <div class="overview-left">
+                <div class="overview-id">
+                    <div class="t1">我的帳號：</div>
+                    <div class="t2">BabyName@gmail.com</div>
+                    <a class="btn-signout" href="#">登出</a>
+                </div>
+                <div class="overview-info">
+                    <div class="overview-info-left">
+                        <div class="top">
+                            <div class="pic">
+                                <img src="http://fakeimg.pl/165x165/666/" alt="">
+                                <div class="review">審核中</div>
+                            </div>
+                        </div>
+                        <a class="bottom" href="album-manage.html">
+                            更換代表照片
+                        </a>
+                    </div>
+                    <div class="overview-info-right">
+                        <div class="top">
+                            <div class="top-item">
+                                <div class="t1">帳號類型：</div>
+                                <div class="t2">SugarBABY</div>
+                            </div>
+                            <div class="top-item">
+                                <div class="t1">PA幣：</div>
+                                <div class="t2">
+                                    <a href="javascript:;" class="font-red">
+                                        <span class="d-none d-lg-inline">您有30枚PA幣</span>
+                                        <span class="d-inline d-lg-none">30</span>
+                                    </a>
+                                    (獲得<span class="d-none d-lg-inline">免費</span><a href="#" class="font-pink">PA幣</a>or <a href="#" class="font-pink">儲值</a>)
+                                    <a href="#" class="user-account-type bg-pink btn-pa">PA幣點點換</a>
+                                </div>
+                            </div>
+                            <div class="top-item">
+                                <div class="t1">傳送訊息數量：</div>
+                                <div class="t2">8</div>
+                            </div>
+                            <div class="top-item">
+                                <div class="t1">個人檔案狀態：</div>
+                                <div class="t2"><img src="./asset/image/404.png" alt="404">審核中</div>
+                            </div>
+                            <div class="top-item">
+                                <div class="t1">打招呼狀態：</div>
+                                <div class="t2"><i class="fa fa-check font-green" aria-hidden="true"></i>審核通過</div>
+                            </div>
+                            <div class="top-item">
+                                <div class="t1">公開照片：</div>
+                                <div class="t2">7 審核通過 (1 審核中)</div>
+                            </div>
+                            <div class="top-item">
+                                <div class="t1">私人照片：</div>
+                                <div class="t2">8 審核通過 (0 審核中)</div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <a href="#" class="btn-change">修改密碼</a>
+                            <a href="#" class="btn-alert">通知設定</a>
+                            <a href="#" class="btn-message">快速配對</a>
+                            <a href="#" class="btn-hide">隱藏帳號</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-level">
+                    <div class="overview-level-title">
+                        <div class="t1">會員等級</div>
+                        <div class="user-account-type">普通會員</div>
+                    </div>
+                    <div class="overview-level-recommend">
+                        <div class="left">
+                            <div>我的推薦代碼：<span id="code">0000000000</span></div>
+                            <a href="#" class="custom-auto-btn bg-pink btn-copy">複製代碼</a>
+                        </div>
+                        <div class="right">
+                            <div class="form-group custom-form-group">
+                                <label for="code">輸入推薦人代碼</label>
+                                <input class="custom-input" type="text" placeholder="推薦人可領取獎勵">
+                            </div>
+                            <a href="#" id="btn-recommend" class="custom-auto-btn bg-pink disabled">確定</a>
+                        </div>
+                        <!-- 已有推薦人 -->
+                        <!-- <div class="left">
+							<div>我的推薦代人碼：<span>0000000000</span></div>
+							<div class="user-account-type">獎勵已配送</div>
+						</div> -->
+                    </div>
+                    <a class="overview-bottom" href="#">
+                        <div class="w-100">
+                            <img src="./asset/image/AD.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div></div>
+            </div>
+            <div class="overview-right">
+                <div class="info-col-title line-light">關於我</div>
+                <div class="overview-right-content">
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                    <a class="overview-item col-2" href="info.html">
+                        <div>
+                            <img src="http://fakeimg.pl/100x100/666/" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <!-- Modal 修改密碼 -->
+    <div class="modal fade form-modal form-modal--change" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-600 modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">修改密碼</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mt-3 mb-3">
+                    <div class="form-main-content">
+                        <div class="logout-menu">
+                            <div class="toggle-menu-top tablet-container">
+                                <div class="input-col d-flex flex-wrap flex-lg-nowrap mb-3">
+                                    <label for="password1" class="input-text mb-lg-0 mr-3 mt-2 ml-0 col-12 col-lg-3 p-0 text-lg-right font-gary2">輸入新密碼</label>
+                                    <div class="flex-1 col-12 col-lg-7 p-0">
+                                        <div class="custom-input-group group-border-c">
+                                            <div class="icon">
+                                                <i class="fa fa-lock font-gary" aria-hidden="true"></i>
+                                            </div>
+                                            <input id="password1" type="password" placeholder="請輸入8位數中英文密碼">
+                                        </div>
+                                        <div class="input-bottom">
+                                            <div class="attr ml-0 font-green">＊密碼強度：普通</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-col d-flex flex-wrap flex-lg-nowrap">
+                                    <label for="password2" class="input-text mb-lg-0 mr-3 mt-2 ml-0 col-12 col-lg-3 p-0 text-lg-right font-gary2">確認新密碼</label>
+                                    <div class="flex-1 col-12 col-lg-7 p-0">
+                                        <div class="custom-input-group group-border-c">
+                                            <div class="icon">
+                                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                            </div>
+                                            <input id="password2" type="password" placeholder="請輸入8位數中英文密碼">
+                                        </div>
+                                        <div class="input-bottom">
+                                            <div class="attr ml-0 font-red">＊請檢查密碼是否輸入錯誤</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-nowrap align-items-center justify-content-between w-100">
+                                    <div class="d-flex flex-nowrap align-items-center justify-content-center w-100">
+                                        <a href="#" class="custom-btn bg-pink custom-btn-width-160">
+                                            確定
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 通知設定 -->
+    <div class="modal fade form-modal form-modal--alert" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-600 modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">通知設定</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mt-3 mb-3">
+                    <div class="form-main-content">
+                        <div class="logout-menu">
+                            <div class="toggle-menu-top tablet-container">
+                                <div class="input-col d-flex flex-wrap flex-lg-nowrap mb-3">
+                                    <label for="email" class="input-text mb-lg-0 mr-3 mt-2 ml-0 col-12 col-lg-3 p-0 text-lg-right font-gary2">變更聯絡信箱</label>
+                                    <!-- 綁定後 -->
+                                    <!-- <label for="email" class="input-text mb-lg-0 mr-3 mt-2 ml-0 col-12 col-lg-3 p-0 text-lg-right font-gary2">聯絡信箱</label> -->
+                                    <div class="flex-1 col-12 col-lg-6 p-0">
+                                        <div class="custom-input-group group-border-c">
+                                            <!-- 綁定後 -->
+                                            <!-- <div class="custom-input-group group-border-c disabled"> -->
+                                            <div class="icon">
+                                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            </div>
+                                            <input id="email" type="email" placeholder="請輸入電子郵件信箱">
+                                            <!-- 綁定後 -->
+                                            <!-- <input id="email" type="email" placeholder="請輸入電子郵件信箱" value="Babyname@gmail.com" disabled> -->
+                                        </div>
+                                        <div class="input-bottom">
+                                            <div class="attr ml-0 font-red">＊變更聯絡信箱需重新認證電子郵件信箱</div>
+                                            <!-- 綁定後 -->
+                                            <!-- <div class="attr ml-0 font-red">＊註冊用信箱已綁定</div>   -->
+                                        </div>
+                                    </div>
+                                    <!-- 綁定後 -->
+                                    <!-- <div>
+										<div class="user-account-type bg-green">已認證</div>
+									</div> -->
+                                </div>
+                                <div class="w-100 d-flex justify-content-center">
+                                    <div class="d-flex flex-column flex-wrap">
+                                        <div class="custom-switch-input mb-3">
+                                            <input type="checkbox" id="notie-message">
+                                            <label for="notie-message">
+                                                <span class="font-gary2">當我收到新訊息時通知我</span>
+                                            </label>
+                                        </div>
+                                        <div class="custom-switch-input mb-5">
+                                            <input type="checkbox" id="notice-watch">
+                                            <label for="notice-watch">
+                                                <span class="font-gary2">當有人觀看我的檔案時通知我</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-nowrap align-items-center justify-content-between w-100">
+                                    <div class="d-flex flex-nowrap align-items-center justify-content-center w-100">
+                                        <a href="#" class="custom-btn bg-pink custom-btn-width-160">
+                                            儲存
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 隱藏帳號 -->
+    <div class="modal fade form-modal form-modal--hide" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-600 modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">隱藏帳號</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mt-3 mb-3">
+                    <div class="form-main-content">
+                    	<div class="modal-text-content font-gary2"> 
+                    		您可以暫時將您的會員帳號隱藏直到您下次登入，帳號隱藏時，您將會從整個網站消失，包括所有搜尋、對話、許願池等都將無法找到您，您的檔案也無法被瀏覽。
+                    	</div>
+                        <div class="d-flex flex-nowrap align-items-center justify-content-center w-100">
+                            <a href="#" class="custom-btn bg-pink custom-btn-width-160">
+                                隱藏帳號並登出
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal PA幣點點換 -->
+    <div class="modal fade form-modal form-modal--pa" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-600 modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">PA幣點點換</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mt-3 mb-3">
+                    <div class="form-main-content">
+                    	<div class="modal-card-content">
+                    		<a href="#" class="pa-coin-card active">
+                    			<div class="currency">《PA幣》</div>
+                    			<div class="money">100000</div>
+                    			<div class="center-line">兌換</div>
+                    			<div class="money">100</div>
+                    			<div class="currency">《美金》</div>
+                    		</a>	
+                    		<a href="#" class="pa-coin-card">
+                    			<div class="currency">《PA幣》</div>
+                    			<div class="money">50000</div>
+                    			<div class="center-line">兌換</div>
+                    			<div class="money">50</div>
+                    			<div class="currency">《美金》</div>
+                    		</a>	
+                    		<a href="#" class="pa-coin-card">
+                    			<div class="currency">《PA幣》</div>
+                    			<div class="money">10000</div>
+                    			<div class="center-line">兌換</div>
+                    			<div class="money">10</div>
+                    			<div class="currency">《美金》</div>
+                    		</a>	
+                    		<a href="#" class="pa-coin-card">
+                    			<div class="currency">《PA幣》</div>
+                    			<div class="money">5000</div>
+                    			<div class="center-line">兌換</div>
+                    			<div class="money">5</div>
+                    			<div class="currency">《美金》</div>
+                    		</a>	
+                    		<a href="#" class="pa-coin-card">
+                    			<div class="currency">《PA幣》</div>
+                    			<div class="money">100</div>
+                    			<div class="center-line">兌換</div>
+                    			<div class="money">1</div>
+                    			<div class="currency">《美金》</div>
+                    		</a>	
+                    	</div>	
+                        <div class="d-flex flex-nowrap align-items-center justify-content-center w-100">
+                            <a href="#" class="custom-auto-btn bg-pink custom-btn-width-160">
+                                確定申請
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+    <script src="./asset/js/jquery-3.4.1.min.js"></script>
+    <script src="./asset/plugin/lazyload.js"></script>
+    <script src="./asset/js/popper.min.js"></script>
+    <script src="./asset/plugin/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="./asset/js/jquery.ellipsis.min.js"></script>
+    <script src="./asset/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./asset/plugin/fancybox/dist/jquery.fancybox.js"></script>
+    <script src="./asset/plugin/vagus.js"></script>
+    <script src="./asset/js/main.js"></script>
+    <script>
+    $(function() {
+        $('#header').load('header.html');
+        $('#footer').load('footer.html');
+
+
+
+
+        //邀請碼
+        $(document).on('input', '.overview-level-recommend .custom-input', function() {
+            var value = $(this).val().trim();
+            if (value) {
+                $('#btn-recommend').removeClass('disabled')
+            } else {
+                $('#btn-recommend').addClass('disabled')
+            }
+        });
+
+        // 複製到剪貼簿
+        $(document).on('click', '.btn-copy', function() {
+            if (document.selection) {
+                var range = document.body.createTextRange();
+                range.moveToElementText(document.getElementById('code'));
+                range.select().createTextRange();
+                document.execCommand("copy");
+            } else if (window.getSelection) {
+                var range = document.createRange();
+                range.selectNode(document.getElementById('code'));
+                window.getSelection().addRange(range);
+                document.execCommand("copy");
+            }
+        });
+
+        // 修改密碼
+        $(document).on('click', '.btn-change', function(e) {
+            e.preventDefault();
+            $('.form-modal--change').modal('show');
+        });
+        // 通知設定
+        $(document).on('click', '.btn-alert', function(e) {
+            e.preventDefault();
+            $('.form-modal--alert').modal('show');
+        });
+        // 隱藏帳號
+        $(document).on('click', '.btn-hide', function(e) {
+            e.preventDefault();
+            $('.form-modal--hide').modal('show');
+        });
+        // PA幣點點換
+        $(document).on('click', '.btn-pa', function(e) {
+            e.preventDefault();
+            $('.modal-card-content .pa-coin-card:first-child').addClass('active').siblings('.active').removeClass('active');
+            $('.form-modal--pa').modal('show');
+        });
+
+        $(document).on('click','.modal-card-content .pa-coin-card',function(){
+        	$(this).addClass('active').siblings('.active').removeClass('active');
+        });
+
+
+        
+
+        // 選擇訊息
+        $(document).on('click', '.custom-select-group .dropdown-item',function(e){
+            e.preventDefault();
+            var text = $(this).text();
+            var $ele = $(this).closest('.custom-select-group');
+            $ele.find('.btn-select').text(text);
+        });
+
+        // 500字
+        $(document).on('input', '.modal-text-content .custom-textarea textarea', function() {
+            var text = $(this).val().length;
+            $(this).closest('.custom-textarea').find('.textarea-length span').text(500-text);
+        });
+
+    })
+    </script>
+</body>
+
+</html>
