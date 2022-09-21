@@ -1,0 +1,633 @@
+
+[
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "HTC U20 5G",
+    "country": "TW",
+    "phone_maker": "HTC",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Vivo X50 Pro 5G",
+    "country": "TW",
+    "phone_maker": "Vivo",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OPPO Reno4 Pro 5G",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Mi 10T",
+    "country": "TW",
+    "phone_maker": "Mi",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OnePlus Nord 5G",
+    "country": "TW",
+    "phone_maker": "OnePlus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OnePlus 8T 5G",
+    "country": "TW",
+    "phone_maker": "OnePlus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S20 FE",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy A42",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Asus ZenFone 7",
+    "country": "TW",
+    "phone_maker": "Asus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Sony Xperia 1 II",
+    "country": "TW",
+    "phone_maker": "Sony",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Sony Xperia 10 II",
+    "country": "TW",
+    "phone_maker": "Sony",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy A52 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Asus ZenFone 8",
+    "country": "TW",
+    "phone_maker": "Asus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "OPPO Reno6 5G",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Sony Xperia 10 III",
+    "country": "TW",
+    "phone_maker": "Sony",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "VIVO X50e",
+    "country": "TW",
+    "phone_maker": "VIVO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S21 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy A32 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Realme 8 5G",
+    "country": "TW",
+    "phone_maker": "Realme",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Realme 7 5G",
+    "country": "TW",
+    "phone_maker": "Realme",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Realme GT",
+    "country": "TW",
+    "phone_maker": "Realme",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "HTC U11",
+    "country": "TW",
+    "phone_maker": "HTC",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "HTC U11+",
+    "country": "TW",
+    "phone_maker": "HTC",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OPPO R17 Pro",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OPPO Reno Z",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Z Flip3",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "LG Velvet 5G",
+    "country": "TW",
+    "phone_maker": "LG",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Realme X50 Pro 5G",
+    "country": "TW",
+    "phone_maker": "Realme",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Realme X50 5G",
+    "country": "TW",
+    "phone_maker": "Realme",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Mi 10 Lite",
+    "country": "TW",
+    "phone_maker": "Mi",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Realme X7 Pro 5G",
+    "country": "TW",
+    "phone_maker": "Realme",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Mi Redmi Note 9T",
+    "country": "TW",
+    "phone_maker": "Mi",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "VIVO V21 5G",
+    "country": "TW",
+    "phone_maker": "VIVO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "VIVO X60",
+    "country": "TW",
+    "phone_maker": "VIVO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OPPO A73 5G",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Mi 11",
+    "country": "TW",
+    "phone_maker": "Mi",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Mi 9T",
+    "country": "TW",
+    "phone_maker": "Mi",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Sony Xperia 1 III",
+    "country": "TW",
+    "phone_maker": "Sony",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Z Fold3",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Huawei P40 Pro",
+    "country": "TW",
+    "phone_maker": "Huawei",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "OPPO Find X2 Pro",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy A52s 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "HTC U12+",
+    "country": "TW",
+    "phone_maker": "HTC",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S20 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Fold",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Note 10+",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S20+ 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S20 Ultra 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Z Flip",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Note 10",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S21 Ultra",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Asus ROG Phone",
+    "country": "TW",
+    "phone_maker": "Asus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Asus ROG Phone II",
+    "country": "TW",
+    "phone_maker": "Asus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Asus ROG Phone 5s",
+    "country": "TW",
+    "phone_maker": "Asus",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "OPPO Find X2",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OPPO Reno5 5G",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Vivo X60 Pro 5G",
+    "country": "TW",
+    "phone_maker": "Vivo",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Note 20",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "OPPO Find X3 Pro",
+    "country": "TW",
+    "phone_maker": "OPPO",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "false",
+    "Phone_model_name": "Honor 50 Pro",
+    "country": "TW",
+    "phone_maker": "Honor",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S10",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy S10+",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  },
+  {
+    "Miracast_source": "Android phone",
+    "VR_capability": "true",
+    "miracast_capability": "true",
+    "hdcp_capability": "true",
+    "Phone_model_name": "Samsung Galaxy Note 20 Ultra 5G",
+    "country": "TW",
+    "phone_maker": "Samsung",
+    "category": "phone_miracast"
+  }
+]
