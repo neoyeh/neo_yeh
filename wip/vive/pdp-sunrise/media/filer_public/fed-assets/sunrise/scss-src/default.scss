@@ -2081,6 +2081,14 @@ html{
   }
 
   // === section-scroll-image-play image ===
+  .bg-image-item {
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   @for $i from 0 through 60 {
     .bg-image-item--#{$i}{
       @if $i > 44{

@@ -243,9 +243,11 @@ const imagesPlaying = (function () {
       if(progress<=headestTime ){
         //<=25
         parentElement.find('.master-area').show(0);
-        bgImage.find(".bg-image-item").show(0);
-        bgImage.find(".bg-image-item").eq(imageNum).css({'opacity':1});
-        bgImage.find(".bg-image-item").not(`:eq(${imageNum})`).css({'opacity':0});
+        // bgImage.find(".bg-image-item").show(0);
+        bgImage.find(".bg-image-item.active").removeClass('active');
+        bgImage.find(".bg-image-item").eq(imageNum).addClass('active');
+        // bgImage.find(".bg-image-item").eq(imageNum).css({'opacity':1});
+        // bgImage.find(".bg-image-item").not(`:eq(${imageNum})`).css({'opacity':0});
 
         if(imageNum>=33 && imageNum<42){
           parentElement.find('.master-area .bg-mask').css({'opacity':`${(42-imageNum)/10}`});
