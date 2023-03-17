@@ -91,7 +91,7 @@ const fixWidows = {
         selector: detectString,
         minWords: 2
       });
-      console.log(typeMateInstance)
+      // console.log(typeMateInstance)
       typeMateInstance.apply();
     }
   },
@@ -201,7 +201,7 @@ const imagesPlaying = (function () {
       imagesPlaying.imageLoadLength[index]=0;
       imagesPlaying.preloadImages(imagesPlaying.imagelength, parentElement, index);
     },
-    preloadImages: function (totalImages, parentElement, index) {
+    preloadImages:  function (totalImages, parentElement, index) {
       var bgImage = parentElement.find(".master-area");
       for (let i = 0; i < totalImages; i++) {
         let div = document.createElement('div');
@@ -210,6 +210,62 @@ const imagesPlaying = (function () {
       }
       imagesPlaying.startAnimation(parentElement);
       imagesPlaying.setBgImage(0, bgImage, parentElement);
+
+
+      let lazyloadImages;
+      if ("IntersectionObserver" in window) {
+        // console.log('IntersectionObserver');
+        lazyloadImages = document.querySelectorAll(".lazy");
+        const options = {
+          // null means viewport, or use element
+          root: null,
+          rootMargin: '1000px',
+        };
+        var imageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              var image = entry.target;
+              image.classList.remove("lazy");
+              imageObserver.unobserve(image);
+            }
+          });
+        }, options);
+
+        lazyloadImages.forEach(function(image) {
+          imageObserver.observe(image);
+        });
+      } else {
+        var lazyloadThrottleTimeout;
+        lazyloadImages = document.querySelectorAll(".lazy");
+
+        function lazyload () {
+          if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }
+
+          lazyloadThrottleTimeout = setTimeout(function() {
+            var scrollTop = window.pageYOffset;
+
+            lazyloadImages.forEach(function(img) {
+              // console.log('scrollTop=',scrollTop);
+              if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+              }
+            });
+            if(lazyloadImages.length == 0) {
+              document.removeEventListener("scroll", lazyload);
+              window.removeEventListener("resize", lazyload);
+              window.removeEventListener("orientationChange", lazyload);
+            }
+          }, 20);
+        }
+
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+      }
+
     },
     startAnimation: function(parentElement){
       var bgImage = parentElement.find(".master-area");
@@ -1000,60 +1056,3 @@ $(function(){
   lazyLoadImg.init();
   handTracking.init();
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages;
-
-  if ("IntersectionObserver" in window) {
-    // console.log('IntersectionObserver');
-    lazyloadImages = document.querySelectorAll(".lazy");
-    const options = {
-      // null means viewport, or use element
-      root: null,
-      rootMargin: '1000px',
-    };
-    var imageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          var image = entry.target;
-          image.classList.remove("lazy");
-          imageObserver.unobserve(image);
-        }
-      });
-    }, options);
-
-    lazyloadImages.forEach(function(image) {
-      imageObserver.observe(image);
-    });
-  } else {
-    var lazyloadThrottleTimeout;
-    lazyloadImages = document.querySelectorAll(".lazy");
-
-    function lazyload () {
-      if(lazyloadThrottleTimeout) {
-        clearTimeout(lazyloadThrottleTimeout);
-      }
-
-      lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-
-        lazyloadImages.forEach(function(img) {
-          // console.log('scrollTop=',scrollTop);
-          if(img.offsetTop < (window.innerHeight + scrollTop)) {
-            img.src = img.dataset.src;
-            img.classList.remove('lazy');
-          }
-        });
-        if(lazyloadImages.length == 0) {
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-      }, 20);
-    }
-
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-  }
-})
