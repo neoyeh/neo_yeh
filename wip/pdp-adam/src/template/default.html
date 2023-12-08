@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en-us" class="www" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Chrome testing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <% json=require(`./${htmlWebpackPlugin.options.json.trim()}.json`)%> 
+    <!-- ========== PROJECT CONTENT @start ========== -->
+    <% for(var i=0; i < htmlWebpackPlugin.files.css.length; i++) {%>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.files.css[i] %>"
+    />
+    <% } %>
+    <!-- ========== PROJECT CONTENT @end ========== -->
+  </head>
+
+  <body class="<%= htmlWebpackPlugin.options.bodyClass %>">
+    <section class="section-kv">
+      <div class="wording-area">
+        <h1><%= json.sectionKVTitle %></h1>
+        <h2><%= json.sectionKVText %></h2>
+        <div><%= json.sectionKVDescribe %></div>
+      </div>
+      <div class="bg-block">
+        <picture>
+          <source srcset="/media/images/htc-vive-full-face-tracker-bottom-992.jpg" media="(min-width: 992px)" />
+          <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
+          <img alt="<%= json.sectionKVAlt %>" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="section-product-size-carousel">
+      <div class="product-size-content">
+        <div class="product-size-carousel owl-carousel">
+          <% for(var i=0; i < json.sectionAccessoriesitems.length; i++) {%>
+          <div class="product-size-item">
+            <div class="image-block">
+              <picture>
+                <source srcset="/media/images/htc-vive-full-face-tracker-bottom-992.jpg" media="(min-width: 992px)" />
+                <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
+                <img
+                  srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+          <% } %>
+        </div>
+        <div class="product-size-info">
+          <div>VIVE</div>
+          <div>VIVE Full Face Tracker</div>
+          <div>Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.1</div>
+          <div></div>
+          <div>buy</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section-video-wrapper">
+      <div class="image-block">
+        <video
+          playsinline
+          loop
+          preload="none"
+          title="<%= json.sectionTrackerProfileAlt %>"
+          poster
+          controls
+          >
+            <source class="mp4" src="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+
+      <section class="section-intro">
+        <div class="wording-area">
+          <div class="typography-intro text-fix-widow">
+            <%= json.sectionIntroText %>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tracker-profile">
+        <div class="image-block video-scroll-play">
+          <video
+              muted
+              playsinline
+              loop
+              preload="none"
+              title="<%= json.sectionTrackerProfileAlt %>"
+              poster
+              data-poster-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.jpg"
+              data-t-poster-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-360.jpg"
+              data-video-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.mp4"
+              data-t-video-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-360.mp4"
+              data-video-webm-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.webm"
+              data-t-video-webm-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-360.webm"
+          >
+              <source class="webm" type="video/webm" />
+              <source class="mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="section-image-row-content">
+        <div class="image-block video-scroll-play">
+          <video
+              muted
+              playsinline
+              loop
+              preload="none"
+              title="<%= json.sectionImageRowContent1Alt %>"
+              poster
+              data-poster-path="/media/images/auto-motor-ipd-1920.jpg"
+              data-t-poster-path="/media/images/auto-motor-ipd-360.jpg"
+              data-video-path="/media/images/auto-motor-ipd-1920.mp4"
+              data-t-video-path="/media/images/auto-motor-ipd-360.mp4"
+              data-video-webm-path="/media/images/auto-motor-ipd-1920.webm"
+              data-t-video-webm-path="/media/images/auto-motor-ipd-360.webm"
+          >
+              <source class="webm" type="video/webm" />
+              <source class="mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="wording-area">
+          <div class="typography-headline wording-title text-fix-widow">
+            <%= json.sectionImageRowContent1Title %>
+          </div>
+          <div class="typography-description text-fix-widow">
+            <%= json.sectionImageRowContent1Text %>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-image-row-content section-image-row-content--reverse">
+        <div class="image-block video-scroll-play">
+          <video
+              muted
+              playsinline
+              loop
+              preload="none"
+              title="<%= json.sectionImageRowContent2Alt %>"
+              poster
+              data-poster-path="/media/images/eye-tracking-avatar-1920.jpg"
+              data-t-poster-path="/media/images/eye-tracking-avatar-360.jpg"
+              data-video-path="/media/images/eye-tracking-avatar-1920.mp4"
+              data-t-video-path="/media/images/eye-tracking-avatar-360.mp4"
+              data-video-webm-path="/media/images/eye-tracking-avatar-1920.webm"
+              data-t-video-webm-path="/media/images/eye-tracking-avatar-360.webm"
+          >
+              <source class="webm" type="video/webm" />
+              <source class="mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="wording-area">
+          <div class="typography-headline wording-title text-fix-widow">
+            <%= json.sectionImageRowContent2Title %>
+          </div>
+          <div class="typography-description text-fix-widow">
+            <%= json.sectionImageRowContent2Text %>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-image-row-content">
+        <div class="image-block video-scroll-play">
+          <video
+              muted
+              playsinline
+              loop
+              preload="none"
+              title="<%= json.sectionImageRowContent3Alt %>"
+              poster
+              data-poster-path="/media/images/facial-tracking-avatar-1920.jpg"
+              data-t-poster-path="/media/images/facial-tracking-avatar-360.jpg"
+              data-video-path="/media/images/facial-tracking-avatar-1920.mp4"
+              data-t-video-path="/media/images/facial-tracking-avatar-360.mp4"
+              data-video-webm-path="/media/images/facial-tracking-avatar-1920.webm"
+              data-t-video-webm-path="/media/images/facial-tracking-avatar-360.webm"
+          >
+              <source class="webm" type="video/webm" />
+              <source class="mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="wording-area">
+          <div class="typography-headline wording-title text-fix-widow">
+            <%= json.sectionImageRowContent3Title %>
+          </div>
+          <div class="typography-description text-fix-widow">
+            <%= json.sectionImageRowContent3Text %>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-usecase">
+        <div class="wording-area">
+          <div class="typography-intro text-fix-widow">
+            <%= json.sectionUsecaseText %>
+          </div>
+        </div>
+        <div class="image-block video-scroll-play">
+          <video
+              muted
+              playsinline
+              loop
+              preload="none"
+              title="<%= json.sectionUsecaseAlt %>"
+              poster
+              data-poster-path="/media/images/mare-facial-and-eye-tracking-1920.jpg"
+              data-t-poster-path="/media/images/mare-facial-and-eye-tracking-360.jpg"
+              data-video-path="/media/images/mare-facial-and-eye-tracking-1920.mp4"
+              data-t-video-path="/media/images/mare-facial-and-eye-tracking-360.mp4"
+              data-video-webm-path="/media/images/mare-facial-and-eye-tracking-1920.webm"
+              data-t-video-webm-path="/media/images/mare-facial-and-eye-tracking-360.webm"
+          >
+              <source class="webm" type="video/webm" />
+              <source class="mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="section-product-spec click-toggle-active">
+        <div class="wording-area">
+          <div class="type20-main-section-head btn-toggle text-fix-widow" 
+            role="button" area-label="<%= json.sectionSpecTitle %>"
+          ><%= json.sectionSpecTitle %></div>
+          <div class="product-spec-content target-toggle-active active">
+            <div class="product-spec-list ">
+              <% for(var i=0; i < json.sectionSpecList1.length; i++) {%>
+              <div class="product-spec-list-item">
+                <div class="type20-promote-head text-fix-widow"><%= json.sectionSpecList1[i].sectionSpecTitle %></div>
+                <div class="type20-pdp-copy text-fix-widow"><%= json.sectionSpecList1[i].sectionSpecText %></div>
+              </div>
+              <% } %>
+            </div>
+            <div class="product-spec-list ">
+              <div class="product-spec-title type20-main-section-head text-fix-widow">
+                <%= json.sectionSpecList2Title %>
+              </div>
+              <% for(var i=0; i < json.sectionSpecList2.length; i++) {%>
+              <div class="product-spec-list-item">
+                <div class="type20-promote-head text-fix-widow"><%= json.sectionSpecList2[i].sectionSpecTitle %></div>
+                <div class="type20-pdp-copy text-fix-widow"><%= json.sectionSpecList2[i].sectionSpecText %></div>
+              </div>
+              <% } %>
+            </div>
+            <div class="product-spec-list ">
+              <div class="product-spec-title type20-main-section-head text-fix-widow">
+                <%= json.sectionSpecList3Title %>
+              </div>
+              <% for(var i=0; i < json.sectionSpecList3.length; i++) {%>
+              <div class="product-spec-list-item">
+                <div class="type20-promote-head text-fix-widow"><%= json.sectionSpecList3[i].sectionSpecTitle %></div>
+                <div class="type20-pdp-copy text-fix-widow"><%= json.sectionSpecList3[i].sectionSpecText %></div>
+              </div>
+              <% } %>
+            </div>
+            <div class="product-spec-list ">
+              <div class="product-spec-title type20-main-section-head text-fix-widow">
+                <%= json.sectionSpecList4Title %>
+              </div>
+              <% for(var i=0; i < json.sectionSpecList4.length; i++) {%>
+              <div class="product-spec-list-item">
+                <div class="type20-promote-head text-fix-widow"><%= json.sectionSpecList4[i].sectionSpecTitle %></div>
+                <div class="type20-pdp-copy text-fix-widow">
+                  <%= json.sectionSpecList4[i].sectionSpecText %>
+                </div>
+              </div>
+              <% } %>
+            </div>
+            <div class="product-spec-list ">
+              <div class="product-spec-title type20-main-section-head text-fix-widow">
+                <%= json.sectionSpecList5Title %>
+              </div>
+              <% for(var i=0; i < json.sectionSpecList5.length; i++) {%>
+              <div class="product-spec-list-item">
+                <div class="type20-promote-head text-fix-widow"><%= json.sectionSpecList5[i].sectionSpecTitle %></div>
+                <div class="type20-pdp-copy text-fix-widow">
+                  <%= json.sectionSpecList5[i].sectionSpecText %>
+                  </br></br>
+                  <a href="https://developer.vive.com/resources/hardware-guides/vive-full-face-tracker-guidelines/" 
+                    class="vive20-get-detail" 
+                    data-gtm="event-tracking" 
+                    data-event-category="accessory" 
+                    data-event-action="click-detail" 
+                    data-event-label="detail-developer-guide"
+                  >
+                    <%= json.sectionSpecCTA %>
+                  </a>
+                </div>
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-l-image-row-content dark-theme dark-theme--blue">
+        <div class="image-block">
+          <picture>
+            <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 1920px)" />
+            <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1366.jpg" media="(min-width: 1366px)" />
+            <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-992.jpg" media="(min-width: 992px)" />
+            <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
+            <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
+          </picture>
+        </div>
+        <div class="wording-area">
+          <div class="typography-headline wording-title text-fix-widow"><%= json.sectionPurchasingName %></div>
+          <div class="typography-title wording-p-t text-fix-widow"><%= json.sectionPurchasingTitle %></div>
+          <div class="typography-description wording-p-t text-fix-widow"><%= json.sectionPurchasingText %></div>
+          <div class="btn-area">
+            <div class="price-and-learn-more-block d-none">
+              <!-- build:empty -->
+              <!-- 這邊有兩塊price-and-learn-more-block 是因為版型關係 裡面的class name如果改到會出錯 -->
+              <!--如果是buy btn 必須要加js-slug-product__outline 在js-slug-product 才能有outline-->
+              <!-- endbuild --> 
+              <div
+                class="js-slug-product slug-completed"
+                data-btn-label=""
+                data-event-action="add-to-cart"
+                data-event-category="accessory"
+                data-event-label="lower-vive-full-face-tracker"
+                data-gtm="event-tracking"
+                data-slug="vive-full-face-tracker"
+                data-btn-class="vive20-btn-override--large"
+              >
+                <div class="typography-price price-block">
+                  <!-- build:empty -->
+                  <%= json.sectionKVPrice %>
+                  <!-- endbuild -->
+                </div>
+                <span class="js-slug-box">
+                  <!-- build:empty -->
+                  <span class="js-slug-box">
+                    <div class="h6 price-label price-label__empty">
+                      &nbsp;
+                    </div>
+                    <div class="box-select"><div><div class="quantity-block pickup-block selector-outline btn vive-select-btn-outline "><select class="quantity-selector" data-gtm="quantity-selector"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div><div class="box-select"><button class=" add-to-cart-button   slug-button vive20-btn vive20-btn-override--large" type="button" data-gtm="add-to-cart-button"><span class="text-block">Add to cart</span><span class="spinner-block spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="spinner-block sr-only">Loading...</span></button></div></div>
+                  </span>
+                  <!-- endbuild -->
+                </span>
+              </div>
+            </div>
+            <div class="price-and-learn-more-block">
+              <div class="typography-coming-soon wording-p-t">
+                <%= json.comingSoon %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-xr-elite-bundle dark-theme">
+        <div class="wording-area">
+          <div class="typography-headline wording-title text-fix-widow"><%= json.sectionBundleName %></div>
+          <div class="typography-title wording-p-t text-fix-widow"><%= json.sectionBundleTitle %></div>
+          <div class="typography-description wording-p-t text-fix-widow"><%= json.sectionBundleText %></div>
+          <div class="btn-area">
+            <div class="price-and-learn-more-block">
+              <!-- build:empty -->
+              <!-- 這邊有兩塊price-and-learn-more-block 是因為版型關係 裡面的class name如果改到會出錯 -->
+              <!--如果是buy btn 必須要加js-slug-product__outline 在js-slug-product 才能有outline-->
+              <!-- endbuild --> 
+              <div
+                class="js-slug-product slug-completed"
+                data-btn-label=""
+                data-event-label="discover-vive-xr-elite"
+                data-btn-class=""
+                data-gtm="event-tracking"
+                data-event-category="accessory"
+                data-event-action="click-detail"
+                data-slug="vive-xr-elite"
+              >
+                <div class="typography-price price-block">
+                  <!-- build:empty -->
+                  <%= json.sectionKVPrice %>
+                  <!-- endbuild -->
+                </div>
+                <span class="js-slug-box d-none">
+                  <!-- build:empty -->
+                  <span class="js-slug-box"><div class="box-select"><div></div><div class="box-select"><button class=" add-to-cart-button   slug-button vive20-btn" type="button" data-gtm="add-to-cart-button"><span class="text-block">Add to cart</span><span class="spinner-block spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="spinner-block sr-only">Loading...</span></button></div></div></span>
+                  <!-- endbuild -->
+                </span>
+                <a 
+                  href="/us/product/vive-xr-elite/overview/"
+                  class="vive20-get-detail"
+                  data-gtm="event-tracking"
+                  data-event-category="pdp"
+                  data-event-action="click-add-to-cart"
+                  data-event-label="addtocart-controller-for-vive-flow-center"
+                >
+                  <%= json.sectionBundleLearnMore %>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-block">
+          <picture>
+            <source data-srcset="/media/images/htc-vive-xr-elite-1920.jpg" media="(min-width: 1920px)" />
+            <source data-srcset="/media/images/htc-vive-xr-elite-1366.jpg" media="(min-width: 1366px)" />
+            <source data-srcset="/media/images/htc-vive-xr-elite-992.jpg" media="(min-width: 992px)" />
+            <source data-srcset="/media/images/htc-vive-xr-elite-360.jpg" />
+            <img class="lazy-img" alt="<%= json.sectionBundleAlt %>" />
+          </picture>
+        </div>
+      </section>
+
+      <section class="section-accessories-owl dark-theme">
+        <div class="wording-area">
+          <div class="typography-headline wording-title text-fix-widow"><%= json.sectionAccessoriesTitle %></div>
+          <div class="typography-description wording-p-t text-fix-widow"><%= json.sectionAccessoriesText %></div>
+        </div>
+        <div class="accessories-owl-content owl-carousel">
+          <% for(var i=0; i < json.sectionAccessoriesitems.length; i++) {%>
+          <div class="accessories-item">
+            <div class="image-block">
+              <picture>
+                <source class="owl-lazy"
+                data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-1920.webp"
+                media="(min-width: 1920px)" type="image/webp" >
+                <source class="owl-lazy"
+                data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-1920.png"
+                media="(min-width: 1920px)">
+                <source class="owl-lazy"
+                data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-1366.webp"
+                media="(min-width: 1366px)" type="image/webp" >
+                <source
+                  class="owl-lazy"
+                  data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-1366.png"
+                  media="(min-width: 1366px)"
+                />
+                <source class="owl-lazy"
+                data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-992.webp"
+                media="(min-width: 992px)" type="image/webp" >
+                <source
+                  class="owl-lazy"
+                  data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-992.png"
+                  media="(min-width: 992px)"
+                />
+                <source class="owl-lazy"
+                data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-360.webp"
+                media="(min-width: 360px)" type="image/webp" >
+                <source
+                  class="owl-lazy"
+                  data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-360.png"
+                />
+                <img
+                  data-srcset="/media/images/accessories/<%= json.sectionAccessoriesitems[i].image %>-360.png"
+                  class="owl-lazy"
+                  alt="<%= json.sectionAccessoriesitems[i].alt %>"
+                />
+              </picture>
+            </div>
+            <div class="text-block">
+              <div class="typography-title--accessory-card product-title text-fix-widow">
+                <%= json.sectionAccessoriesitems[i].title %>
+              </div>
+              <div class="typography-description--accessory-card product-text text-fix-widow">
+                <%= json.sectionAccessoriesitems[i].text %>
+              </div>
+              <% if (json.sectionAccessoriesitems[i].link !=="") { %>
+              <div class="price-and-learn-more-block">
+                <!-- build:empty -->
+                <!-- 這邊有兩塊price-and-learn-more-block 是因為版型關係 裡面的class name如果改到會出錯 -->
+                <!--如果是buy btn 必須要加js-slug-product__outline 在js-slug-product 才能有outline-->
+                <!-- endbuild --> 
+                <% if (json.sectionAccessoriesitems[i].slug !== "vive-full-face-tracker") { %>
+                <div
+                  class="js-slug-product slug-completed"
+                  data-gtm="event-tracking"
+                  data-event-category="accessory"
+                  data-event-action="add-to-cart"
+                  data-event-label="<%= json.sectionAccessoriesitems[i].gaBtnLabel %>"
+                  data-slug="<%= json.sectionAccessoriesitems[i].slug %>"
+                >
+                  <div class="typography-price price-block">
+                    <!-- build:empty -->
+                    $25
+                    <!-- endbuild -->
+                  </div>
+                  <span class="js-slug-box
+                  <% if (json.sectionAccessoriesitems[i].slug === "vive-ultimate-tracker") { %>
+                      d-none
+                    <% } %>
+                  ">
+                    <!-- build:empty -->
+                    <span class="js-slug-box">
+                      <div class="h6 price-label price-label__empty">
+                        &nbsp;
+                      </div>
+                      <div class="box-select"><div><div class="quantity-block pickup-block selector-outline btn vive-select-btn-outline "><select class="quantity-selector" data-gtm="quantity-selector"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div><div class="box-select"><button class=" add-to-cart-button   slug-button vive20-btn" type="button" data-gtm="add-to-cart-button"><span class="text-block">Add to cart</span><span class="spinner-block spinner-border spinner-border-sm" role="status" aria-hidden="true"></span><span class="spinner-block sr-only">Loading...</span></button></div></div>
+                    </span>
+                    <!-- endbuild -->
+                  </span>
+                </div>
+                <% } else { %>
+                <div class="typography-coming-soon wording-p-t">
+                  <%= json.comingSoon %>
+                </div>
+                <% } %>
+                <a href="<%= json.sectionAccessoriesitems[i].link %>" 
+                  class="vive20-get-detail" 
+                  data-gtm="event-tracking"
+                  data-event-category="accessory" 
+                  data-event-action="click-detail" 
+                  data-event-label="<%= json.sectionAccessoriesitems[i].gaLinkLabel %>" 
+                >
+                  <%= json.TellMeMore %>
+                </a>
+              </div>
+              <% } else { %>
+              <div class="price-and-learn-more-block">
+                <div class="typography-coming-soon wording-p-t">
+                  <%= json.comingSoon %>
+                </div>
+              </div>
+              <% } %>
+            </div>
+          </div>
+          <% } %>
+        </div>
+        <div class="carousel-slide">
+          <input
+            id="carousel-slide"
+            type="range"
+            min="1"
+            max="10"
+            value="1"
+            class="topics-slider slider"
+          />
+        </div>
+      </section>
+
+
+
+
+      <section class="section-footnote">
+        <div
+          class="text-block txt-color-disclaimer-grey type20-main-section-disclaimer"
+        >
+          <% for(var i=0; i < json.sectionFootnote.length; i++) {%>
+            <%= json.sectionFootnote[i].sectionFootnoteText %><%= json.sectionFootnote[i].sectionFootnoteSpace %>
+          <% } %>
+        </div>
+      </section>
+
+      <section class="section-modal-video">
+        <div class="modal-overlap-container">
+          <div class="modal-overlap-bg"></div>
+          <div class="container">
+            <div class="btn-close show">
+              <svg viewbox="0 0 40 40">
+                <path
+                  class="close-x"
+                  d="M 10,10 L 30,30 M 30,10 L 10,30"
+                ></path>
+              </svg>
+            </div>
+            <div class="align-center">
+              <!-- Required player-->
+              <div id="player"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ========== PROJECT CONTENT @start ========== -->
+
+    <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
+    <script type="text/javascript" defer src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
+    <% } %>
+    <!-- ========== PROJECT CONTENT @end ========== -->
+  </body>
+</html>

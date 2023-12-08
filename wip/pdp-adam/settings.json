@@ -1,0 +1,24 @@
+
+
+{
+    "__Comment_settings": "------------------No--------------------",   
+    "isRtl": true,
+    "useRtlCss": true, 
+    "__Comment_projectName": "------------------No--------------------",
+    "bodyClass": "main-wrapper",
+
+    "__Comment_htmlList": "---------------------No --------------------",
+    "__Comment_useDefaultTepmlate": "if true, only use htmlList first template that useDefaultTepmlate is true",
+    "htmlList" : [
+        {
+            "name": "default",
+            "useDefaultTepmlate": true
+        }
+    ],
+    "backUp" : [
+        {
+            "name": "default-tw",
+            "useDefaultTepmlate": false
+        }
+    ]
+}

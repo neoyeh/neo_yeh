@@ -1,0 +1,67 @@
+.replaceBodyClass {
+    .typography-headline,
+    .typography-title,
+    .typography-intro,
+    .typography-description,
+    .typography-disclaimer,
+    .typography-price {
+      overflow-wrap: break-word;
+    }
+  
+    .typography-headline {
+      @include setup-typography-headline();
+    }
+  
+    .typography-title {
+      @include setup-typography-title();
+    }
+  
+    .typography-intro {
+      @include setup-typography-intro();
+    }
+  
+    .typography-description {
+      @include setup-typography-description();
+    }
+  
+    .typography-disclaimer {
+      @include setup-typography-disclaimer();
+    }
+  
+    .typography-price {
+      @include setup-typography-price();
+    }
+  
+    .typography-highlight--initial {
+      @include setup-typography-highlight--initial();
+    }
+  
+    .typography-highlight--digit {
+      @include setup-typography-highlight--digit();
+    }
+  
+    .typography-highlight--unit {
+      @include setup-typography-highlight--unit();
+    }
+  
+    .typography-highlight--description {
+      @include setup-typography-highlight--description();
+    }
+  
+    .typography-title--accessory-card {
+      @include setup-typography-title--accessory-card();
+    }
+  
+    .typography-description--accessory-card {
+      @include setup-typography-description--accessory-card();
+    }
+  
+    .gradient-headline {
+      @include setup-gradient-headline();
+    }
+
+    .typography-coming-soon{
+      @include setup-typography-cta();
+    }
+  }
+  

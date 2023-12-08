@@ -1,0 +1,213 @@
+
+@mixin setup-default-page-typography {
+  
+  // ────────────────────────────────────────────────────────────────
+  //   :::::: Font color
+  // ────────────────────────────────────────────────────────────────
+  .txt-color-white {
+    color: $col-color-white;
+  }
+  .txt-color-black {
+    color: $col-color-black;
+  }
+  .txt-color-disclaimer-grey {
+    color: $col-disclaimer-text;
+  }
+  .txt-color-vive-blue {
+    color: $col-default-blue;
+  }
+  .txt-color-gary {
+    color: $col-disclaimer-gary;
+  }
+  .txt-color-halloween-orange {
+    color: $col-halloween-orange;
+  }
+
+  .txt-m-color-black{
+    @media screen and (max-width: ($tablet-max-width)) {
+      color: $col-color-black;
+    }
+  }
+  .txt-m-color-white{
+    @media screen and (max-width: ($tablet-max-width)) {
+      color: $col-color-white;
+    }
+  }
+}
+
+@mixin reset-original-js-slug-product($txt-type:"large") {
+  .js-slug-product {
+    @include reset-btn-group();
+
+    .price-block {
+      // color: #fff;
+      margin-right: 21px;
+      @media screen and (max-width: ($desktop-max-width)) {
+        margin-right: 25px;
+      }
+      @media screen and (max-width: ($laptop-max-width)) {
+        margin-right: 11px
+      }
+      @media screen and (max-width: ($tablet-max-width)) {
+        width: 100%;
+        margin-right: 10px;
+        margin-bottom: 6px;
+      }
+    }
+    .js-slug-box {
+      margin-right: 11px;
+    }
+  }
+}
+
+@mixin  reset-js-slug-product-include-desc(){
+  $ld-wording-width: 538;
+  $d-wording-width: 382;
+  $l-wording-width: 397;
+  &.price-and-learn-more-block__insert-desc{
+    width: return-large-desktop-size-by-vw($ld-wording-width);
+    margin: 0 auto;
+    @media screen and (max-width: ($desktop-max-width)) {
+      width: return-desktop-size-by-vw($d-wording-width);
+    }
+    @media screen and (max-width: ($laptop-max-width)) {
+      width: return-laptop-size-by-vw($l-wording-width);
+    }
+    @media screen and (max-width: ($tablet-max-width)) {
+      width: 100%;
+    }
+    .js-slug-product {
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .price-desc-block {
+      margin-top: return-large-desktop-size-by-vw(65);
+      margin-bottom: return-large-desktop-size-by-vw(44);
+      padding-top: return-large-desktop-size-by-vw(15);
+      padding-bottom: return-large-desktop-size-by-vw(17);
+      border-top: solid 1px $col-link-gary;
+      border-bottom: solid 1px $col-link-gary;
+      text-align: left;
+      flex: 1 0 100%;
+
+      @media screen and (max-width: ($laptop-max-width)) {
+        margin-top: return-laptop-size-by-vw(40);
+        margin-bottom: return-laptop-size-by-vw(27);
+        padding-top: return-laptop-size-by-vw(9);
+        padding-bottom: return-laptop-size-by-vw(9);
+      }
+
+      @media screen and (max-width: ($tablet-max-width)) {
+        margin-top: return-tablet-size-by-vw(40);
+        margin-bottom: return-tablet-size-by-vw(27);
+        padding-top: return-tablet-size-by-vw(10);
+        padding-bottom: return-tablet-size-by-vw(19);
+      }
+
+      .price-block {
+        @media screen and (max-width: ($tablet-max-width)) {
+          margin-bottom: return-tablet-size-by-vw(6);
+        }
+      }
+
+      .price-title {
+        margin-top: return-large-desktop-size-by-vw(5);
+      }
+
+      .price-content {
+        margin-top: return-large-desktop-size-by-vw(8);
+        @media screen and (max-width: ($tablet-max-width)) {
+          margin-top: return-tablet-size-by-vw(3);
+        }
+      }
+    }
+
+    .js-slug-box {
+      flex: 0 0 auto;
+
+      .btn-buy-directly {
+        @media screen and (max-width: ($tablet-max-width)) {
+          margin-left: 0 !important;
+          margin-right: return-tablet-size-by-vw(7) !important;;
+        }
+      }
+    }
+
+  }
+}
+
+@mixin reset-picture-expand {
+  picture {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@mixin reset-btn-group() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  @media screen and (max-width: ($tablet-max-width)) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+
+// Remove units from a number.
+@function strip-units($number) {
+  @if type-of($number)=='number'and not unitless($number) {
+    @return math.div($number, ($number * 0 + 1));
+  }
+
+  @return $number;
+}
+
+@function return-large-desktop-size-by-vw($initial-size) {
+  $value: math.div($initial-size, $d-width-xl-content)*100vw;
+  @return #{$value};
+}
+
+@function return-desktop-size-by-vw($initial-size) {
+  $value: math.div($initial-size, $d-width-lg-content)*100vw;
+  @return #{$value};
+}
+
+@function return-laptop-size-by-vw($initial-size) {
+  $value: math.div($initial-size, $d-width-md__bootstrap)*100vw;
+  @return #{$value};
+}
+
+@function return-tablet-size-by-vw($initial-size) {
+  $value: math.div($initial-size, $m-width-content__min)*100vw;
+  @return #{$value};
+}
+
+@function return-tablet-full-wide(){
+  $gutter: return-tablet-size-by-vw($t-each-side-gutter*2);
+  $value: calc(100% - #{$gutter});
+  @return #{$value};
+}
+
+@mixin setup-h1-tag() {
+  h1 {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}

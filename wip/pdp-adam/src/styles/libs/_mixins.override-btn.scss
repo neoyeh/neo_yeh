@@ -1,0 +1,126 @@
+@mixin override-vive20-btn {
+  text-align: center;
+  border-radius: 55px;
+  padding: 14px 29px 11px;
+  @media screen and (min-width: $breakpoint-mlg) {
+    border-radius: 75px;
+    padding: 12px 28px 11px;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    border-radius: 88px;
+    padding: 12px 33px 11px;
+  }
+  @media screen and (min-width: $breakpoint-3xl) {
+    padding: 14px 47px 16px;
+  }
+}
+
+@mixin override-vive20-btn--large {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  background-image: linear-gradient(-90deg, #00b3e3 0, #0bdca4 100%);
+  border: none;
+  border-radius: 55px;
+  padding: 9px 45px 11px;
+  @media screen and (min-width: $breakpoint-mlg) {
+    border-radius: 75px;
+    padding: 10px 51px 10px;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    border-radius: 88px;
+    padding: 10px 61px 10px;
+  }
+  @media screen and (min-width: $breakpoint-3xl) {
+    padding: 14px 69px 16px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: translate3d(0, 0, 0) scale(0.95);
+    transition: opacity 0.3s;
+    opacity: 0;
+    border-radius: inherit;
+    background-image: inherit;
+    filter: blur(20px);
+  }
+
+  &:active {
+    color: $color-base;
+    box-shadow: none;
+    &::before,
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &.disabled {
+    background-image: none !important;
+    background-color: #99999a;
+    border: 1px solid #99999a;
+  }
+}
+
+@mixin override-vive-select-btn-outline {
+  // border-width: 1.28px; // FIXME:
+  border-radius: 72px;
+  border-color: inherit;
+  color: inherit;
+  margin: 4px 0;
+  @media screen and (min-width: $breakpoint-mlg) {
+    margin: 0;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    margin: 3px 0;
+  }
+  @media screen and (min-width: $breakpoint-3xl) {
+    margin: 11px 0;
+  }
+
+  &:before {
+    top: 0;
+    right: 1.1em;
+    font-size: 0.9em;
+  }
+
+  select {
+    padding: 4px 41px 2px 21px;
+  }
+}
+
+@mixin override-vive20-get-detail {
+  // background: transparent; // FIXME:
+  padding: 2px calc(1em + 4px) 2px 9px;
+  @media screen and (min-width: $breakpoint-mlg) {
+    padding-left: 0;
+    margin-left: -9px;
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    padding: 3px calc(1em + 4px) 3px 11px;
+    margin-left: -11px;
+  }
+  @media screen and (min-width: $breakpoint-3xl) {
+    padding: 3px calc(1em + 4px) 3px 12px;
+    margin-left: -12px;
+  }
+
+  &::before {
+    @media screen and (min-width: $breakpoint-mlg) {
+      top: 53%;
+      right: 0.5em;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      top: 47%;
+    }
+    @media screen and (min-width: $breakpoint-3xl) {
+      top: 53%;
+    }
+  }
+}
