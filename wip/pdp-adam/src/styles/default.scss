@@ -12,25 +12,20 @@ html {
 }
 
 .replaceBodyClass {
-  // critical srart
-  @include setup-default-page-typography;
+  .btn-link {
+    @include btn-default();
+    @include typography-btn();
+    &.btn--outline {
+      @include btn--outline();
+    }
+  }
   color: $color-base;
   sup {
     top: -1.2em;
     font-size: 40%;
   }
-  .dark-theme {
-    background-color: #171717;
-    color: $col-color-white;
-    &--blue {
-      background-color: $col-dark-blue;
-    }
-  }
   .lazy-img:not(.loading).lazy-img:not(.loaded) {
     visibility: hidden;
-  }
-  .nowrap {
-    white-space: nowrap;
   }
 
   section {
@@ -40,6 +35,13 @@ html {
     @media screen and (max-width: ($tablet-max-width)) {
       padding: return-tablet-size-by-vw($t-section-gutter) 0;
     }
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
   }
   .wording-area {
     width: return-desktop-size-by-vw(992);
@@ -73,24 +75,14 @@ html {
       object-fit: cover;
     }
   }
-  .btn-toggle-active {
-    cursor: pointer;
-    user-select: none;
-  }
-  .target-toggle-active {
-    display: none !important;
-    &.active {
-      display: flex !important;
-    }
-  }
 
+  
   .section-kv {
-    height: return-desktop-size-by-vw(768);
+    height: 700px;
     padding: 0;
     .wording-area {
       position: relative;
       z-index: 2;
-      color: $col-color-white;
       width: return-desktop-size-by-vw(1152);
       padding-top: return-desktop-size-by-vw(200);
       @media screen and (max-width: ($tablet-max-width)) {
@@ -98,6 +90,10 @@ html {
         width: return-tablet-full-wide();
         text-align: center;
         order: 1;
+      }
+      .btn-area {
+        display: flex;
+        justify-content: center;
       }
     }
     .bg-block {
@@ -166,7 +162,6 @@ html {
 
 
 
-  // critical end
   .section-intro {
     @media screen and (max-width: ($laptop-max-width)) {
       padding: return-laptop-size-by-vw(75) 0;

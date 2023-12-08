@@ -1,4 +1,22 @@
 .replaceBodyClass {
+  @include typography-p();
+  font-family: "Noto Sans TC", "PingFangTC-Regular", "Microsoft JhengHei";
+  .en {
+    font-family: "Poppins", "Roboto", "sans-serif";
+  }
+  h1, .h1 {
+    @include typography-h1();
+  }
+  h2, .h2 {
+    @include typography-h3();
+  }
+  h3, .h3 {
+    @include typography-h3();
+  }
+  p, .p {
+    @include typography-p();
+  }
+
     .typography-headline,
     .typography-title,
     .typography-intro,

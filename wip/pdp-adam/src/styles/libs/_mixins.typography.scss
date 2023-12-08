@@ -1,3 +1,48 @@
+@mixin typography-h1 {
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 700;
+  &.en {
+    line-height: 700;
+  }
+}
+
+@mixin typography-h2 {
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 700;
+  &.en {
+    line-height: 700;
+  }
+}
+
+@mixin typography-h3 {
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 700;
+  &.en {
+    line-height: 700;
+  }
+}
+
+@mixin typography-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  &.en {
+    line-height: 150%;
+  }
+}
+
+@mixin typography-btn {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+
+
+
 @mixin setup-typography-headline {
   font-family: "Oscine-Bold", sans-serif;
   font-size: 48px;
