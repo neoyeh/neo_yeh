@@ -3,7 +3,6 @@
  * Setting: Reserlution;
  *
  */
-$d-width-sl: 2560;
 $d-width-xl-content: 1920;
 $d-width-content__max: $d-width-xl-content - 0.02;
 $d-width-xl: $d-width-xl-content - 0.02;
@@ -21,7 +20,6 @@ $m-width-content__min: 360;
 //   :::::: L A R G E D E S K T O P  1920px ~ 2560px
 // ────────────────────────────────────────────────────────────────
 //
-$desktop-super-large: $d-width-sl*1px;
 $desktop-content-max: $d-width-content__max*1px;
 $desktop-extra-large: $d-width-xl*1px;
 $desktop-large: $d-width-lg__bootstrap*1px;
@@ -33,26 +31,20 @@ $desktop-content-min__bootstrap: $desktop-small;
 // ────────────────────────────────────────────────────────────────
 //
 $desktop-max-width: $d-width-xl*1px;
-// $desktop-min-width: $d-width-md__bootstrap*1px;
 // ────────────────────────────────────────────────────── I ──────────
 //   :::::: L A P T O P  992px ~ 1365px
 // ────────────────────────────────────────────────────────────────
 //
 $laptop-max-width: $d-width-lg*1px;
-// $laptop-min-width: $d-width-md__bootstrap*1px;
 // ────────────────────────────────────────────────────── I ──────────
 //   :::::: T A B L E T  768px ~ 991.999px
 // ────────────────────────────────────────────────────────────────
 //
 $tablet-max-width: ($d-width-md__bootstrap - 0.02)*1px;
-// $tablet-min-width: $d-width-sm__bootstrap*1px;
 // ────────────────────────────────────────────────────── I ──────────
 //   :::::: M O B I L E  360px ~ 767.999px
 // ────────────────────────────────────────────────────────────────
 //
-// $mobile-max-width__bootstrap: ($d-width-sm__bootstrap - 0.02)*1px;
-// $mobile-max-width: $m-width-content__max*1px;
-// $mobile-min-width: $m-width-content__min*1px;
 
 
 /*

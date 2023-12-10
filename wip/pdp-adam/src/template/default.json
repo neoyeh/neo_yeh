@@ -1,9 +1,72 @@
 {
+  "buyNow": "線上購買",
+  "experience": "門市體驗",
+
+
+
   "__Comment_KV": "---------------------No translation--------------------",
-  "sectionKVTitle":"VIVE Full Face Tracker",
   "sectionKVText":"Expressive, insightful VR.",
+  "sectionKVTitle":"VIVE Full Face Tracker",
   "sectionKVDescribe":"Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
   "sectionKVAlt": "kv alt",
+
+  "__Comment_Spec": "---------------------No translation--------------------",
+  "sectionSpecListTitle" : "Spec",
+  "sectionSpecList": [
+    {
+      "sectionSpecTitle": "In-box items",
+      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+    },
+    {
+      "sectionSpecTitle": "In-box items",
+      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+    },
+    {
+      "sectionSpecTitle": "In-box items",
+      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+    },
+    {
+      "sectionSpecTitle": "In-box items",
+      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+    },
+    {
+      "sectionSpecTitle": "In-box items",
+      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+    }
+  ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,13 +93,6 @@
   "sectionImageRowContent3Text": "The tracker captures expressions through 38 blend shapes across your lips, teeth, tongue, cheeks, and chin at a 60 Hz tracking rate, enabling near-zero latency between lifelike facial movements and voice audio.</br></br>Communicate and interact with non-verbal cues just as you would in the physical world.",
   "sectionUsecaseText": "Realism with expressive, insightful interactions. VIVE Full Face Tracker unlocks incredible immersive experiences.",
   "sectionUsecaseAlt": "Eye and facial tracking in Mare. ",
-  "sectionSpecTitle": "Specs",
-  "sectionSpecList1": [
-    {
-      "sectionSpecTitle": "In-box items",
-      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
-    }
-  ],
   "sectionSpecList2Title": "Headset specs",
   "sectionSpecList2": [
     {

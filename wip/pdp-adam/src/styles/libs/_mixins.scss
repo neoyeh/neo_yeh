@@ -186,16 +186,6 @@
   }
 }
 
-
-// Remove units from a number.
-@function strip-units($number) {
-  @if type-of($number)=='number'and not unitless($number) {
-    @return math.div($number, ($number * 0 + 1));
-  }
-
-  @return $number;
-}
-
 @function return-large-desktop-size-by-vw($initial-size) {
   $value: math.div($initial-size, $d-width-xl-content)*100vw;
   @return #{$value};

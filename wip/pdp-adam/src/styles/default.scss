@@ -3,7 +3,6 @@
 @import './libs/variables';
 @import './libs/mixins';
 @import './libs/mixins.typography';
-@import './libs/mixins.override-btn';
 @import './libs/typography';
 
 
@@ -19,11 +18,19 @@ html {
       @include btn--outline();
     }
   }
-  color: $color-base;
-  sup {
-    top: -1.2em;
-    font-size: 40%;
+  .pt-s {
+    padding-top: 10px;
+    @media screen and (max-width: ($laptop-max-width)) {
+      padding-top: return-desktop-size-by-vw(10);
+    }
   }
+  .pt-m {
+    padding-top: 30px;
+    @media screen and (max-width: ($laptop-max-width)) {
+      padding-top: return-desktop-size-by-vw(30);
+    }
+  }
+  color: $color-base;
   .lazy-img:not(.loading).lazy-img:not(.loaded) {
     visibility: hidden;
   }
@@ -31,9 +38,9 @@ html {
   section {
     width: 100%;
     position: relative;
-    padding: return-desktop-size-by-vw($ld-section-gutter) 0;
+    // padding: return-desktop-size-by-vw($ld-section-gutter) 0;
     @media screen and (max-width: ($tablet-max-width)) {
-      padding: return-tablet-size-by-vw($t-section-gutter) 0;
+      // padding: return-tablet-size-by-vw($t-section-gutter) 0;
     }
   }
   .container {
@@ -44,18 +51,15 @@ html {
     margin: 0 auto;
   }
   .wording-area {
-    width: return-desktop-size-by-vw(992);
+    width: 702px;
     margin: 0 auto;
     text-align: center;
+    @media screen and (max-width: ($laptop-max-width)) {
+      width: return-desktop-size-by-vw(702);
+    }
     @media screen and (max-width: ($tablet-max-width)) {
       width: return-tablet-full-wide();
       text-align: left;
-    }
-    .wording-p-t {
-      padding-top: return-desktop-size-by-vw($ld-wording-gutter);
-      @media screen and (max-width: ($tablet-max-width)) {
-        padding-top: return-tablet-size-by-vw($t-wording-gutter);
-      }
     }
   }
   picture {
@@ -80,11 +84,14 @@ html {
   .section-kv {
     height: 700px;
     padding: 0;
+    overflow: hidden;
     .wording-area {
       position: relative;
       z-index: 2;
-      width: return-desktop-size-by-vw(1152);
-      padding-top: return-desktop-size-by-vw(200);
+      padding-top: 394px;
+      @media screen and (max-width: ($laptop-max-width)) {
+        padding-top: return-desktop-size-by-vw(394);
+      }
       @media screen and (max-width: ($tablet-max-width)) {
         margin-top: return-tablet-size-by-vw(45);
         width: return-tablet-full-wide();
@@ -94,14 +101,22 @@ html {
       .btn-area {
         display: flex;
         justify-content: center;
+        gap: 20px;
+        @media screen and (max-width: ($laptop-max-width)) {
+          gap: return-desktop-size-by-vw(20);
+        }
       }
     }
     .bg-block {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
       height: 100%;
+      img {
+        width: auto;
+      }
     }
   }
 
@@ -150,14 +165,154 @@ html {
       }
     }
   }
-
-  .section-video-wrapper {
-    height: return-desktop-size-by-vw(768);
+  
+  .section-video-and-yt {
+    overflow: hidden;
     .image-block {
+      position: relative;
+      margin: 0 auto;
       width: 100%;
-      height: 100%;
+      height: 810px;
+      overflow: hidden;
+      @media screen and (max-width: ($laptop-max-width)) {
+        height: return-desktop-size-by-vw(810);
+      }
+      @media screen and (max-width: ($tablet-max-width)) {
+        width: return-tablet-size-by-vw(324);
+        height: return-tablet-size-by-vw(201);
+      }
+      video {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+
+      }
+      .box-video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        .wrap-txt-cent {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+    
+          .play-modal-video-btn{
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            padding: 0;
+            padding-top: 50px;
+    
+            &::before {
+              cursor: pointer;
+              color: #ffffff;
+              content: "\f04b";
+              font-family: FontAwesome;
+              position: absolute;
+              width: 65px;
+              height: 65px;
+              font-size: 26px;
+              top: 0;
+              font-weight: 900;
+              border: 3px solid rgba(255, 255, 255, 1.00);
+              background: rgba(255, 255, 255, .4);
+              border-radius: 50%;
+              text-align: center;
+              transform: translateX(-50%);
+              line-height: 59px; // 65 - 3*3
+    
+              @media screen and (max-width: ($laptop-max-width)) {
+                width: 60px;
+                height: 60px;
+                font-size: 1.625em;
+                line-height: 54px;
+              }
+              @media screen and (max-width: ($tablet-max-width)) {
+                width: 45px;
+                height: 45px;
+                font-size: 1em; 
+                line-height: 39px;
+              }
+            }
+    
+            &__dark {
+                &::before {
+                color: #111820;
+                border-color: #111820;
+              }
+            }
+    
+          }
+        }
+      }
     }
   }
+
+  .section-spec {
+    padding: 87px 0 118px;
+    @media screen and (max-width: ($laptop-max-width)) {
+      padding: return-desktop-size-by-vw(87) 0 return-desktop-size-by-vw(118);
+    }
+    .spec-title {
+      text-align: center;
+    }
+    .spec-list {
+      width: 1200px;
+      padding-top: 120px;
+      margin: 0 auto;
+      gap: 120px;
+      display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width: ($laptop-max-width)) {
+        width: return-desktop-size-by-vw(1200);
+        padding-top: return-desktop-size-by-vw(120);
+        gap: return-desktop-size-by-vw(120);
+      }
+      .spec-item {
+        width: 320px;
+        @media screen and (max-width: ($laptop-max-width)) {
+          width: return-desktop-size-by-vw(320);
+        }
+        .spec-name {
+          &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            margin: 30px 0;
+            @media screen and (max-width: ($laptop-max-width)) {
+              margin: return-desktop-size-by-vw(30) 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -601,20 +756,6 @@ html {
           padding-top: return-tablet-size-by-vw(38);
         }
       }
-      .vive20-get-detail {
-        @include setup-typography-cta();
-        @include override-vive20-get-detail();
-        margin-top: return-large-desktop-size-by-vw(20);
-        @media screen and (max-width: ($desktop-max-width)) {
-          margin-top: return-desktop-size-by-vw(14);
-        }
-        @media screen and (max-width: ($laptop-max-width)) {
-          margin-top: return-laptop-size-by-vw(12);
-        }
-        @media screen and (max-width: ($tablet-max-width)) {
-          margin-top: return-tablet-size-by-vw(17);
-        }
-      }
     }
     .image-block {
       width: return-large-desktop-size-by-vw(1053);
@@ -817,10 +958,6 @@ html {
         height: return-tablet-size-by-vw(520);
       }
     }
-    .vive20-get-detail {
-      @include setup-typography-cta();
-      @include override-vive20-get-detail();
-    }
   }
 
   .section-accessories-owl {
@@ -1021,20 +1158,6 @@ html {
           @include owl-text-content();
           .product-text {
             @include owl-text-content();
-          }
-        }
-        .price-and-learn-more-block {
-          @include owl-slug();
-          .price-block {
-            @include owl-price();
-          }
-          .quantity-block {
-            display: none;
-          } 
-          .vive20-get-detail {
-            @include setup-typography-cta();
-            @include override-vive20-get-detail();
-            @include owl-detail();
           }
         }
       }
