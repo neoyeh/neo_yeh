@@ -634,7 +634,7 @@ $(() => {
   fixWidows.init();
   lazyLoadImg.init();
   productSizeOwl.init();
-  // modalVideo.init();
+  modalVideo.init();
   playIntroVideo.init();
   clickToggleActive.init();
   appOwl.init();
