@@ -28,6 +28,12 @@
     }
   ],  
 
+  "__Comment_VideoAndYt": "---------------------No translation--------------------",
+  "sectionVideoAndYtTitle": "VIVE Full Face Tracker",
+  "sectionVideoAndYtPoster": "htc-vive-full-face-tracker-attached-to-vive-xr-elite",
+  "sectionVideoAndYtUrl": "htc-vive-full-face-tracker-attached-to-vive-xr-elite",
+
+
   "__Comment_Spec": "---------------------No translation--------------------",
   "sectionSpecListTitle" : "Spec",
   "sectionSpecList": [
@@ -101,6 +107,8 @@
       "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>"
     }
   ],
+  "sectionProductFeatureName": "VIVE Full Face Tracker",
+  "sectionProductFeatureText": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
 
 
 

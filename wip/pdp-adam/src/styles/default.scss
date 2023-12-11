@@ -26,6 +26,12 @@ html {
     }
   }
   .pt-m {
+    padding-top: 20px;
+    @media screen and (max-width: ($laptop-max-width)) {
+      padding-top: return-desktop-size-by-vw(20);
+    }
+  }
+  .pt-l {
     padding-top: 30px;
     @media screen and (max-width: ($laptop-max-width)) {
       padding-top: return-desktop-size-by-vw(30);
@@ -487,12 +493,12 @@ html {
         }
         .wording-area {
           width: 452px;
-          padding-top: 87px;
+          padding-top: 45px;
           text-align: left;
           margin: 0;
           @media screen and (max-width: ($laptop-max-width)) {
             width: return-desktop-size-by-vw(452);
-            padding-top: return-desktop-size-by-vw(87);
+            padding-top: return-desktop-size-by-vw(45);
           }
           .product-info-list {
             line-height: 150%;
@@ -501,6 +507,15 @@ html {
             margin-top: 20px;
             @media screen and (max-width: ($laptop-max-width)) {
               margin-top: return-desktop-size-by-vw(20);
+            }
+          }
+          .btn-area {
+            display: flex;
+            gap: 17px;
+            margin-top: 82px;
+            @media screen and (max-width: ($laptop-max-width)) {
+              margin-top: return-desktop-size-by-vw(82);
+              gap: return-desktop-size-by-vw(17);
             }
           }
         }

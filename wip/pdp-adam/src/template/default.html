@@ -28,8 +28,8 @@
           <div class="wording-area">
             <p><%= json.sectionKVText %></p>
             <h1 class="h1 pt-s"><%= json.sectionKVTitle %></h1>
-            <p class="pt-m"><%= json.sectionKVDescribe %></p>
-            <div class="btn-area pt-m">
+            <p class="pt-l"><%= json.sectionKVDescribe %></p>
+            <div class="btn-area pt-l">
               <a href="#" class="btn-link btn--outline"><%= json.experience %></a>
               <a href="#" class="btn-link"><%= json.buyNow %></a>
             </div>
@@ -93,16 +93,13 @@
             playsinline
             loop
             preload="none"
-            title="<%= json.sectionTrackerProfileAlt %>"
+            title="<%= json.sectionVideoAndYtTitle %>"
             poster
-            data-poster-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.jpg"
-            data-t-poster-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-360.jpg"
-            data-video-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.mp4"
-            data-t-video-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-360.mp4"
-            data-video-webm-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-1920.webm"
-            data-t-video-webm-path="/media/images/htc-vive-full-face-tracker-attached-to-vive-xr-elite-360.webm"
+            data-poster-path="/media/images/<%= json.sectionVideoAndYtPoster %>-1920.jpg"
+            data-t-poster-path="/media/images/<%= json.sectionVideoAndYtPoster %>-360.jpg"
+            data-video-path="/media/images/<%= json.sectionVideoAndYtUrl %>-1920.mp4"
+            data-t-video-path="/media/images/<%= json.sectionVideoAndYtUrl %>-360.mp4"
         >
-            <source class="webm" type="video/webm" />
             <source class="mp4" type="video/mp4" />
         </video>
       </div>
@@ -171,7 +168,7 @@
                     <img class="lazy-img" alt="<%= json.sectionProductFeatureList[i].alt %>" />
                   </picture>
                 </div>
-                <div class="h2 card-text"><%= json.sectionProductFeatureList[i].title %></div>
+                <div class="h3 card-text"><%= json.sectionProductFeatureList[i].title %></div>
                 <p class="pt-s"><%= json.sectionProductFeatureList[i].text %></p>
               </div>
             <% } %>
@@ -185,14 +182,12 @@
               </picture>
             </div>
             <div class="wording-area">
-              <h3 class="product-title h2"><%= json.sectionBottomKVTitle %></h3>
-              <ul class="product-info-list">
-                <% for(var i=0; i < json.sectionBottomKVList.length; i++) {%>
-                  <li class="product-info-item">
-                    <%= json.sectionBottomKVList[i].name %>
-                  </li>
-                <% } %>
-                </ul>
+              <h3 class="product-title h2"><%= json.sectionProductFeatureName %></h3>
+              <p class="pt-s"><%= json.sectionProductFeatureText %></p>
+              <div class="btn-area">
+                <a href="#" class="btn-link btn--outline"><%= json.experience %></a>
+                <a href="#" class="btn-link"><%= json.buyNow %></a>
+              </div>
             </div>
           </div>
         </div>
