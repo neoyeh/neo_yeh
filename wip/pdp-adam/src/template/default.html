@@ -56,7 +56,7 @@
                 <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
                 <img
                   srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
-                  alt=""
+                  alt="<%= json.sectionProductSizeAlt %>"
                 />
               </picture>
             </div>
@@ -64,11 +64,16 @@
           <% } %>
         </div>
         <div class="product-size-info">
-          <div>VIVE</div>
-          <div>VIVE Full Face Tracker</div>
-          <div>Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.1</div>
-          <div></div>
-          <div>buy</div>
+          <h2 class="h2"><%= json.sectionProductSizeTitle %></h2>
+          <div class="pt-l"><%= json.sectionProductSizeText %></div>
+          <div class="pt-m product-color">
+            <div class="color-item">aaaaaa</div>
+            <div class="color-item">aaaaaa</div>
+            <div class="color-item">aaaaaa</div>
+          </div>
+          <div class="btn-area">
+            <a href="#" class="btn-link"><%= json.buyNow %></a>
+          </div>
         </div>
       </div>
     </section>

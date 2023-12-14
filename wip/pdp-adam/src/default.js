@@ -300,32 +300,20 @@ const productSizeOwl = (function () {
       const owlSection = $('.product-size-carousel');
       if (owlSection.length > 0) {
         $.each(owlSection, (index, el) => {
-          const isMobileSet = !commonSetting.isMobile();
           const currentSection = $(el);
-          productSizeOwlCB.setupCaruosel(currentSection, isMobileSet);
+          productSizeOwlCB.setupCaruosel(currentSection);
         });
       }
     },
-    setupCaruosel(parentElement, isMobileSet) {
-      let mobileSet = isMobileSet;
-      function changeView() {
-        if (commonSetting.isMobile()) {
-          if (!mobileSet) {
-            // console.log('changeView to mobile')
-            mobileSet = true;
-            slide.attr('max', count);
-            slide.val(1);
-            parentElement.trigger('to.owl.carousel', 0);
-          }
-        } else if (mobileSet) {
-          // console.log('changeView to desktop')
-          mobileSet = false;
-          // console.log(count)
-          slide.attr('max', count);
+    setupCaruosel(parentElement) {
+      function setNavWidth(dots, nav) {
+        if (dots && nav) {
+          const newNav = nav;
+          newNav.style.width = `${dots.offsetWidth + 80}px`;
         }
       }
       parentElement.owlCarousel({
-        loop: true,
+        loop: false,
         nav: true,
         dots: true,
         responsive: {
@@ -337,7 +325,15 @@ const productSizeOwl = (function () {
             items: 1,
           },
         },
-        onInitialized(event) {
+        onInitialized(e) {
+          const dots = e.currentTarget.querySelector('.owl-dots');
+          const nav = e.currentTarget.querySelector('.owl-nav');
+          setNavWidth(dots, nav);
+        },
+        onResized(e) {
+          const dots = e.currentTarget.querySelector('.owl-dots');
+          const nav = e.currentTarget.querySelector('.owl-nav');
+          setNavWidth(dots, nav);
         },
       });
     },
