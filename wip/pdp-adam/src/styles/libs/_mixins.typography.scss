@@ -2,8 +2,8 @@
   font-size: 48px;
   line-height: 100%;
   font-weight: 700;
-  &.en {
-    line-height: 700;
+  @media screen and (max-width: ($tablet-max-width)) {
+    font-size: 28px;
   }
 }
 
@@ -11,8 +11,8 @@
   font-size: 32px;
   line-height: 100%;
   font-weight: 700;
-  &.en {
-    line-height: 700;
+  @media screen and (max-width: ($tablet-max-width)) {
+    font-size: 20px;
   }
 }
 
@@ -20,8 +20,8 @@
   font-size: 24px;
   line-height: 100%;
   font-weight: 700;
-  &.en {
-    line-height: 700;
+  @media screen and (max-width: ($tablet-max-width)) {
+    font-size: 18px;
   }
 }
 
@@ -29,343 +29,13 @@
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  &.en {
-    line-height: 150%;
-  }
 }
 
 @mixin typography-btn {
   font-size: 18px;
   font-weight: 700;
   line-height: 150%;
-}
-
-
-
-
-@mixin setup-typography-headline {
-  font-family: "Oscine-Bold", sans-serif;
-  font-size: 48px;
-  line-height: 51.74px;
-  letter-spacing: -1.02px;
-  margin: -6px 0 -10px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 46px;
-    line-height: 50px;
-    letter-spacing: -1.38px;
-    margin: -7px 0 -9px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 54px;
-    line-height: 59px;
-    letter-spacing: -1.62px;
-    margin: -8px 0 -11px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 76px;
-    line-height: 83.6px;
-    letter-spacing: -1.62px;
-    margin: -12px 0 -16px; // fix leading line-height
-  }
-}
-
-@mixin setup-typography-title {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 27px;
-  margin: -3px 0 -5px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 23px;
-    line-height: 25px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 27px;
-    line-height: 30px;
-    margin: -4px 0 -6px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 38px;
-    line-height: 42px;
-    margin: -6px 0 -8px; // fix leading line-height
-  }
-}
-
-@mixin setup-typography-description {
-  font-size: 17px;
-  line-height: 25px;
-  letter-spacing: 0.1px;
-  margin: -5px 0 -7px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-weight: 300;
+  @media screen and (max-width: ($tablet-max-width)) {
     font-size: 18px;
-    line-height: 20px;
-    letter-spacing: normal;
-    margin: -2px 0 -4px; // fix leading line-height
   }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 21px;
-    line-height: 23px;
-    margin-bottom: -5px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 29px;
-    line-height: 35px;
-    letter-spacing: -0.5px;
-    margin: -5px 0 -8px; // fix leading line-height
-  }
-}
-
-// @mixin setup-typography-intro {
-//   font-family: "Oscine-Bold", sans-serif;
-//   font-size: 30px;
-//   line-height: 36px;
-//   letter-spacing: -1.12px;
-//   margin: -6px 0 -8px; // fix leading line-height
-//   @media screen and (min-width: $breakpoint-mlg) {
-//     font-size: 49px;
-//     line-height: 53.9px;
-//     letter-spacing: -1.62px;
-//     margin: -9px 0 -10px; // fix leading line-height
-//   }
-//   @media screen and (min-width: $breakpoint-xl) {
-//     font-size: 61px;
-//     line-height: 67px;
-//     margin: -11px 0 -12px; // fix leading line-height
-//   }
-// }
-
-@mixin setup-typography-intro {
-  font-family: "Oscine-Bold", sans-serif;
-  font-size: 38px;
-  line-height: 42px;
-  margin: -6px 0 -8px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 64px;
-    line-height: 70px;
-    letter-spacing: -1.62px;
-    margin: -10px 0 -13px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 67px;
-    line-height: 74px;
-    margin: -14px 0 -15px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 76px;
-    line-height: 84px;
-  }
-}
-
-@mixin setup-typography-disclaimer {
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 14px;
-  letter-spacing: 0.31px;
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 12px;
-    line-height: 13px;
-    letter-spacing: 0.43px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 13px;
-    line-height: 14px;
-    letter-spacing: 0.5px;
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: normal;
-    margin: -1px 0 -3px; // fix leading line-height
-  }
-}
-
-@mixin setup-typography-price {
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 20.57px;
-  letter-spacing: 0.16px;
-  margin: -1px 0 -3px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 25px;
-    line-height: 28px;
-    letter-spacing: 0.21px;
-    margin: -3px 0 -6px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 29px;
-    line-height: 32px;
-    letter-spacing: 0.25px;
-    margin-top: -4px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 41px;
-    line-height: 45px;
-    margin: -5px 0 -9px; // fix leading line-height
-  }
-}
-
-@mixin setup-typography-quantity {
-  font-size: 23px;
-}
-
-@mixin setup-typography-cta-button--large {
-  font-family: "Oscine-Bold", sans-serif;
-  font-size: 28px;
-  line-height: 31px;
-  letter-spacing: 0.63px;
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 32px;
-    line-height: 35px;
-    letter-spacing: 0.85px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 38px;
-    line-height: 42px;
-    letter-spacing: 1px;
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 43px;
-    line-height: 47px;
-    letter-spacing: 2px;
-  }
-}
-
-@mixin setup-typography-cta-button {
-  // font-weight: 700; // FIXME:
-  font-weight: 500; // FIXME:
-  font-size: 19px;
-  line-height: 13.96px;
-  letter-spacing: 0.63px;
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 19px;
-    line-height: 19px;
-    letter-spacing: 0.85px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 21px;
-    line-height: 23px;
-    letter-spacing: 1px;
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    // font-weight: 500; // FIXME:
-    font-size: 28px;
-    line-height: 31px;
-    letter-spacing: normal;
-  }
-}
-
-@mixin setup-typography-cta {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 13.96px;
-  letter-spacing: 0.16px;
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 18px;
-    line-height: 19px;
-    letter-spacing: 0.21px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 21px;
-    line-height: 23px;
-    letter-spacing: 0.25px;
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 28px;
-    line-height: 31px;
-    letter-spacing: normal;
-  }
-}
-
-@mixin setup-typography-highlight--initial {
-  font-weight: 700;
-  font-size: 23px;
-}
-
-@mixin setup-typography-highlight--digit {
-  font-family: "Oscine-Bold", sans-serif;
-  font-size: 47px;
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 54px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 69px;
-  }
-}
-
-@mixin setup-typography-highlight--unit {
-  font-family: "Oscine-Bold", sans-serif;
-  font-size: 29px;
-  letter-spacing: -0.62px;
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 36px;
-    letter-spacing: -1.62px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 52px;
-  }
-}
-
-@mixin setup-typography-highlight--description {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-}
-
-@mixin setup-typography-video-tab {
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 42px;
-  margin: -6px 0 -8px;
-}
-
-@mixin setup-typography-title--accessory-card {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 27px;
-  margin: -3px 0 -5px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-size: 23px;
-    line-height: 25px;
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-size: 34px;
-    line-height: 37px;
-    margin: -5px 0 -7px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 46px;
-    line-height: 50px;
-    margin: -7px 0 -9px; // fix leading line-height
-  }
-}
-
-@mixin setup-typography-description--accessory-card {
-  font-size: 17px;
-  line-height: 25px;
-  letter-spacing: 0.1px;
-  margin: -5px 0 -7px; // fix leading line-height
-  @media screen and (min-width: $breakpoint-mlg) {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: normal;
-    margin: -2px 0 -4px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-xl) {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 21px;
-    margin: -3px 0 -5px; // fix leading line-height
-  }
-  @media screen and (min-width: $breakpoint-3xl) {
-    font-size: 19px;
-    line-height: 21px;
-    margin-bottom: -4px; // fix leading line-height
-  }
-}
-
-@mixin setup-gradient-headline {
-  background: linear-gradient(270deg, #00B4E1 0%, #0ADAA7 100%);
-  background-clip: text;
-  color: transparent;
 }

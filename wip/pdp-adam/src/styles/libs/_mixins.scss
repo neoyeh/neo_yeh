@@ -7,13 +7,14 @@
   width: 160px;
   height: 40px;
   border-radius: 25px;
-  border: 1px solid #333;
-  background-color: #333;
+  border: 1px solid #EB1D23;
+  background-color: #EB1D23;
   color: #fff;
 }
 @mixin btn--outline {
   background-color: transparent;
   color: #333;
+  border-color: #333;
 }
 
 

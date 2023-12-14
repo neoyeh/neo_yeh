@@ -26,11 +26,11 @@
       <div class="container">
         <div class="content-block">
           <div class="wording-area">
-            <p><%= json.sectionKVText %></p>
-            <h1 class="h1 pt-s"><%= json.sectionKVTitle %></h1>
-            <p class="pt-l"><%= json.sectionKVDescribe %></p>
-            <div class="btn-area pt-l">
-              <a href="#" class="btn-link btn--outline"><%= json.experience %></a>
+            <p class="h3"><%= json.sectionKVText %></p>
+            <h1 class="h1 mt-s"><%= json.sectionKVTitle %></h1>
+            <!-- <p class="mt-l"><%= json.sectionKVDescribe %></p> -->
+            <div class="btn-area mt-l">
+              <a href="#" class="btn-link btn--outline light"><%= json.experience %></a>
               <a href="#" class="btn-link"><%= json.buyNow %></a>
             </div>
           </div>
@@ -65,8 +65,8 @@
         </div>
         <div class="product-size-info">
           <h2 class="h2"><%= json.sectionProductSizeTitle %></h2>
-          <div class="pt-l"><%= json.sectionProductSizeText %></div>
-          <div class="pt-m product-color">
+          <div class="mt-l"><%= json.sectionProductSizeText %></div>
+          <div class="mt-m product-color">
             <div class="color-item">aaaaaa</div>
             <div class="color-item">aaaaaa</div>
             <div class="color-item">aaaaaa</div>
@@ -121,13 +121,17 @@
       </div>
     </section>
 
+    <section class="section-feature-list">
+      
+    </section>
+
     <section class="section-spec">
       <div class="container">
         <h2 class="h1 spec-title"><%= json.sectionSpecListTitle %></h2>
         <div class="spec-list">
           <% for(var i=0; i < json.sectionSpecList.length; i++) {%>
             <div class="spec-item">
-              <div class="h2 spec-name"><%= json.sectionSpecList[i].sectionSpecTitle %></div>
+              <div class="h3 spec-name"><%= json.sectionSpecList[i].sectionSpecTitle %></div>
               <p class=""><%= json.sectionSpecList[i].sectionSpecText %></p>
             </div>
           <% } %>
@@ -174,21 +178,23 @@
                   </picture>
                 </div>
                 <div class="h3 card-text"><%= json.sectionProductFeatureList[i].title %></div>
-                <p class="pt-s"><%= json.sectionProductFeatureList[i].text %></p>
+                <p class="mt-s"><%= json.sectionProductFeatureList[i].text %></p>
               </div>
             <% } %>
           </div>
           <div class="product-card">
-            <div class="image-block">
+            <div class="wording-area">
+              <h3 class="product-title h2"><%= json.sectionProductFeatureName %></h3>
+              <p class="h3 mt-m"><%= json.sectionProductFeatureText %></p>
+            </div>
+            <div class="image-block mt-m">
               <picture>
                 <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
                 <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
                 <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
               </picture>
             </div>
-            <div class="wording-area">
-              <h3 class="product-title h2"><%= json.sectionProductFeatureName %></h3>
-              <p class="pt-s"><%= json.sectionProductFeatureText %></p>
+            <div class="wording-area mt-l">
               <div class="btn-area">
                 <a href="#" class="btn-link btn--outline"><%= json.experience %></a>
                 <a href="#" class="btn-link"><%= json.buyNow %></a>

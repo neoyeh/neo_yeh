@@ -6,10 +6,10 @@
 
 
   "__Comment_KV": "---------------------No translation--------------------",
-  "sectionKVText":"Expressive, insightful VR.",
-  "sectionKVTitle":"VIVE Full Face Tracker",
+  "sectionKVText":"Mag 3",
+  "sectionKVTitle":"三合一折疊磁吸無線充電座",
   "sectionKVDescribe":"Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
-  "sectionKVAlt": "kv alt",
+  "sectionKVAlt": "三合一折疊磁吸無線充電座",
 
   "__Comment_ProductSizeCarousel": "---------------------No translation--------------------",
   "sectionProductSizeTitle":"VIVE Full Face Tracker",
@@ -42,27 +42,27 @@
 
 
   "__Comment_Spec": "---------------------No translation--------------------",
-  "sectionSpecListTitle" : "Spec",
+  "sectionSpecListTitle" : "產品規格",
   "sectionSpecList": [
     {
-      "sectionSpecTitle": "In-box items",
-      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+      "sectionSpecTitle": "產品型號",
+      "sectionSpecText": "Mag 3"
     },
     {
-      "sectionSpecTitle": "In-box items",
-      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+      "sectionSpecTitle": "輸入介面",
+      "sectionSpecText": "USB-C"
     },
     {
-      "sectionSpecTitle": "In-box items",
-      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+      "sectionSpecTitle": "輸出介面",
+      "sectionSpecText": "磁吸無線充電( 最高 15W )</br>耳機充電區(最高5W )</br>手錶充電支架(最高 3W )"
     },
     {
-      "sectionSpecTitle": "In-box items",
-      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+      "sectionSpecTitle": "產品相容性",
+      "sectionSpecText": "支援iPhone無線充電以及具有MagSafe充電功能的裝置</br>充電功能可能因裝置而有所不同。"
     },
     {
-      "sectionSpecTitle": "In-box items",
-      "sectionSpecText": "VIVE Full Face Tracker</br></br>VR Face Gasket</br></br>Gasket Spacer x 2</br></br>Quick start guide</br></br>Safety guide</br></br>Warranty card"
+      "sectionSpecTitle": "充電速度",
+      "sectionSpecText": "輸入:</br>5V===3A, 9V===2.22A,12V=3A</br></br>輸出:</br></br>磁吸充電:</br>5V===1A,9V===1.66A,最高15W</br>(iPhone 最高 7.5 W)</br></br>耳機無線充電區 :</br>5V-1A,最高5W</br></br>手錶充電座:</br>5V-1A,最高3W"
     }
   ],
 
@@ -114,8 +114,9 @@
       "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>"
     }
   ],
-  "sectionProductFeatureName": "VIVE Full Face Tracker",
-  "sectionProductFeatureText": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
+
+  "sectionProductFeatureName": "Mag 3",
+  "sectionProductFeatureText": "三合一折疊磁吸無線充電座",
 
 
 
