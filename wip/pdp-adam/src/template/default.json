@@ -15,8 +15,128 @@
   "sectionProductSizeTitle":"VIVE Full Face Tracker",
   "sectionProductSizeText":"Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
   "sectionProductSizeAlt": "VIVE Full Face Tracker",
-
-
+  "sectionProductSizeList": [
+    {
+      "name": "CS5 - 5000mAh",
+      "sectionProductColorList": [
+        {
+          "color": [
+            {
+              "name": "red",
+              "color": "#ff0000",
+              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
+              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+            },
+            {
+              "name": "green",
+              "color": "#00ff00",
+              "urlD": "/media/images/1440x700.jpg",
+              "urlM": "/media/images/1440x700.jpg"
+            },
+            {
+              "name": "blue",
+              "color": "#0000ff",
+              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
+              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "red",
+              "color": "#ff0000",
+              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
+              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+            },
+            {
+              "name": "green",
+              "color": "#00ff00",
+              "urlD": "/media/images/1440x700.jpg",
+              "urlM": "/media/images/1440x700.jpg"
+            },
+            {
+              "name": "blue",
+              "color": "#0000ff",
+              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
+              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CS5 - 10000mAh",
+      "sectionProductColorList": [
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "#00ff00",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-green-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-green-1"
+            },
+            {
+              "name": "blue",
+              "color": "#0000ff",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-blue-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-blue-1"
+            },
+            {
+              "name": "blue",
+              "color": "#ff0000",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-red-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-red-1"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "#00ff00",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-green-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-green-2"
+            },
+            {
+              "name": "blue",
+              "color": "#0000ff",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-blue-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-blue-2"
+            },
+            {
+              "name": "blue",
+              "color": "#ff0000",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-red-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-red-2"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "#00ff00",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-green-3",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-green-3"
+            },
+            {
+              "name": "blue",
+              "color": "#0000ff",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-blue-3",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-blue-3"
+            },
+            {
+              "name": "blue",
+              "color": "#ff0000",
+              "urlD": "https://fakeimg.pl/350x200/?text=1920-red-3",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-red-3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
 
   "__Comment_SubHeader": "---------------------No translation--------------------",
   "sectionSubHeaderName": "VIVE Full Face Tracker",

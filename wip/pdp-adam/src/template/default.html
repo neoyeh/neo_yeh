@@ -7,7 +7,7 @@
     <title>Chrome testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
     <% json=require(`./${htmlWebpackPlugin.options.json.trim()}.json`)%> 
     <!-- ========== PROJECT CONTENT @start ========== -->
@@ -23,6 +23,13 @@
 
   <body class="<%= htmlWebpackPlugin.options.bodyClass %>">
     <section class="section-kv">
+      <div class="bg-block">
+        <picture>
+          <source srcset="/media/images/1440x700.jpg" media="(min-width: 992px)" />
+          <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
+          <img alt="<%= json.sectionKVAlt %>" />
+        </picture>
+      </div>
       <div class="container">
         <div class="content-block">
           <div class="wording-area">
@@ -34,13 +41,6 @@
               <a href="#" class="btn-link"><%= json.buyNow %></a>
             </div>
           </div>
-          <div class="bg-block">
-            <picture>
-              <source srcset="/media/images/1440x700.jpg" media="(min-width: 992px)" />
-              <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-              <img alt="<%= json.sectionKVAlt %>" />
-            </picture>
-          </div>
         </div>
       </div>
     </section>
@@ -48,30 +48,61 @@
     <section class="section-product-size-carousel">
       <div class="product-size-content">
         <div class="product-size-carousel owl-carousel">
-          <% for(var i=0; i < json.sectionAccessoriesitems.length; i++) {%>
-          <div class="product-size-item">
-            <div class="image-block">
-              <picture>
-                <source srcset="/media/images/htc-vive-full-face-tracker-bottom-992.jpg" media="(min-width: 992px)" />
-                <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-                <img
-                  srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
-                  alt="<%= json.sectionProductSizeAlt %>"
-                />
-              </picture>
-            </div>
+          <div class="carousel-item">
+            <div class="image-block"></div>
+          </div>
+        </div>
+        <div class="carousel-list">
+          <% for(var d=0; d < json.sectionProductSizeList.length; d++) {%>
+          <div class="carousel-item">
+            <% for(var i=0; i < json.sectionProductSizeList[d].sectionProductColorList.length; i++) {%>
+              <div class="product-size-item">
+                <div class="image-block">
+                  <div class="color-url-list">
+                    <% for(var o=0; o < json.sectionProductSizeList[d].sectionProductColorList[i].color.length; o++) {%>
+                    <div 
+                      data-d-url="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[o].urlD %>"
+                      data-m-url="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[o].urlM %>"
+                    ></div>
+                    <% } %>
+                  </div>
+                  <picture>
+                    <source 
+                      srcset="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].urlD %>" media="(min-width: 992px)" />
+                    <source 
+                      srcset="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].urlM %>" />
+                    <img alt="<%= json.sectionProductSizeAlt %>" />
+                  </picture>
+                </div>
+              </div>
+            <% } %>
           </div>
           <% } %>
         </div>
         <div class="product-size-info">
           <h2 class="h2"><%= json.sectionProductSizeTitle %></h2>
           <div class="mt-l"><%= json.sectionProductSizeText %></div>
-          <div class="mt-m product-color">
-            <div class="color-item">aaaaaa</div>
-            <div class="color-item">aaaaaa</div>
-            <div class="color-item">aaaaaa</div>
+          <div class="select-content mt-l">
+            <div class="select-list">
+              <p class="select-name">產品類型</p> 
+              <div class="product-size">
+                <% for(var i=0; i < json.sectionProductSizeList.length; i++) {%>
+                <div class="size-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionProductSizeList[i].name %></div>
+                <% } %>
+              </div>
+            </div>
+            <div class="select-list mt-m">
+              <p class="select-name">顏色</p> 
+              <div class="product-color">
+                <% for(var i=0; i < json.sectionProductSizeList[0].sectionProductColorList[0].color.length; i++) {%>
+                <div class="color-item <%= (i === 0) ? 'active' : '' %>" style="background-color: <%= json.sectionProductSizeList[0].sectionProductColorList[0].color[i].color %>;">
+                  <%= json.sectionProductSizeList[0].sectionProductColorList[0].color[i].name %>
+                </div>
+                <% } %>
+              </div>
+            </div>
           </div>
-          <div class="btn-area">
+          <div class="btn-area mt-l">
             <a href="#" class="btn-link"><%= json.buyNow %></a>
           </div>
         </div>

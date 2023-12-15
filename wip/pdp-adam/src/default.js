@@ -297,7 +297,7 @@ const playIntroVideo = (() => {
 const productSizeOwl = (function () {
   const productSizeOwlCB = {
     init() {
-      const owlSection = $('.product-size-carousel');
+      const owlSection = $('.product-size-content');
       if (owlSection.length > 0) {
         $.each(owlSection, (index, el) => {
           const currentSection = $(el);
@@ -306,13 +306,17 @@ const productSizeOwl = (function () {
       }
     },
     setupCaruosel(parentElement) {
+      const owl = parentElement.find('.owl-carousel');
+      const sizeList = parentElement.find('.carousel-list .carousel-item');
+      const innerHTMLArray = sizeList.map((i, e) => $(e).html()).get();
+      owl.html(innerHTMLArray[0]);
       function setNavWidth(dots, nav) {
         if (dots && nav) {
           const newNav = nav;
           newNav.style.width = `${dots.offsetWidth + 80}px`;
         }
       }
-      parentElement.owlCarousel({
+      owl.owlCarousel({
         loop: false,
         nav: true,
         dots: true,
@@ -336,6 +340,7 @@ const productSizeOwl = (function () {
           setNavWidth(dots, nav);
         },
       });
+      owl.trigger('replace.owl.carousel', innerHTMLArray[1]).trigger('refresh.owl.carousel');
     },
   };
   return productSizeOwlCB;
@@ -634,4 +639,7 @@ $(() => {
   playIntroVideo.init();
   clickToggleActive.init();
   appOwl.init();
+  document.fonts.ready.then(function () {
+    document.body.classList.add('font-loaded');
+  });
 });
