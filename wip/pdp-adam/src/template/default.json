@@ -8,7 +8,7 @@
   "__Comment_KV": "---------------------No translation--------------------",
   "sectionKVText":"Mag 3",
   "sectionKVTitle":"三合一折疊磁吸無線充電座",
-  "sectionKVDescribe":"Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
+  "sectionKVDescribe":"精湛工藝堅固耐用</br>給你最有質感的生活體驗",
   "sectionKVAlt": "三合一折疊磁吸無線充電座",
 
   "__Comment_ProductSizeCarousel": "---------------------No translation--------------------",
@@ -22,44 +22,44 @@
         {
           "color": [
             {
-              "name": "red",
-              "color": "#ff0000",
-              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
-              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
-            },
-            {
               "name": "green",
-              "color": "#00ff00",
-              "urlD": "/media/images/1440x700.jpg",
-              "urlM": "/media/images/1440x700.jpg"
+              "color": "green",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-1-green-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-1-green-1"
             },
             {
               "name": "blue",
-              "color": "#0000ff",
-              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
-              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+              "color": "blue",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-1-blue-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-1-blue-1"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-1-red-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-1-red-1"
             }
           ]
         },
         {
           "color": [
             {
-              "name": "red",
-              "color": "#ff0000",
-              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
-              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
-            },
-            {
               "name": "green",
-              "color": "#00ff00",
-              "urlD": "/media/images/1440x700.jpg",
-              "urlM": "/media/images/1440x700.jpg"
+              "color": "green",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-1-green-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-1-green-2"
             },
             {
               "name": "blue",
-              "color": "#0000ff",
-              "urlD": "/media/images/htc-vive-full-face-tracker-bottom-1920.jpg",
-              "urlM": "/media/images/htc-vive-full-face-tracker-bottom-360.jpg"
+              "color": "blue",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-1-blue-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-1-blue-2"
+            },
+            {
+              "name": "blue",
+              "color": "#ff0000",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-1-red-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-1-red-2"
             }
           ]
         }
@@ -72,21 +72,43 @@
           "color": [
             {
               "name": "green",
-              "color": "#00ff00",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-green-1",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-green-1"
+              "color": "green",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-green-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-2-green-1"
             },
             {
               "name": "blue",
-              "color": "#0000ff",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-blue-1",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-blue-1"
+              "color": "blue",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-blue-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-2-blue-1"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-red-1",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-2-red-1"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-green-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-2-green-2"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-blue-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-2-blue-2"
             },
             {
               "name": "blue",
               "color": "#ff0000",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-red-1",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-red-1"
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-red-2",
+              "urlM": "https://fakeimg.pl/350x200/?text=m-2-red-2"
             }
           ]
         },
@@ -95,42 +117,20 @@
             {
               "name": "green",
               "color": "#00ff00",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-green-2",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-green-2"
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-green-3",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-2-green-3"
             },
             {
               "name": "blue",
               "color": "#0000ff",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-blue-2",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-blue-2"
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-blue-3",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-2-blue-3"
             },
             {
-              "name": "blue",
-              "color": "#ff0000",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-red-2",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-red-2"
-            }
-          ]
-        },
-        {
-          "color": [
-            {
-              "name": "green",
-              "color": "#00ff00",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-green-3",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-green-3"
-            },
-            {
-              "name": "blue",
-              "color": "#0000ff",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-blue-3",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-blue-3"
-            },
-            {
-              "name": "blue",
-              "color": "#ff0000",
-              "urlD": "https://fakeimg.pl/350x200/?text=1920-red-3",
-              "urlM": "https://fakeimg.pl/350x200/?text=360-red-3"
+              "name": "red",
+              "color": "red",
+              "urlD": "https://fakeimg.pl/350x200/?text=d-2-red-3",
+              "urlM": "https://fakeimg.pl/350x200/?text=360-2-red-3"
             }
           ]
         }
@@ -159,6 +159,33 @@
   "sectionVideoAndYtTitle": "VIVE Full Face Tracker",
   "sectionVideoAndYtPoster": "htc-vive-full-face-tracker-attached-to-vive-xr-elite",
   "sectionVideoAndYtUrl": "htc-vive-full-face-tracker-attached-to-vive-xr-elite",
+
+
+  "__Comment_FeatureList": "---------------------No translation--------------------",
+  "sectionFeatureListTitle": "快速磁吸對位, 無線充電,</br>不論是瀏覽訊息或觀賞影片都能提供磁吸帶來的最佳充電體體驗",
+  "sectionFeatureList": [
+    {
+      "url": "",
+      "name": "直橫皆可充"
+    },
+    {
+      "url": "",
+      "name": "鋁製金屬打造"
+    },
+    {
+      "url": "",
+      "name": "摺疊收納不佔空間"
+    },
+    {
+      "url": "",
+      "name": "MagSafe</br>磁吸無線充電"
+    },
+    {
+      "url": "",
+      "name": "支援 AirPods / Pro 無線充電"
+    }
+  ],
+
 
 
   "__Comment_Spec": "---------------------No translation--------------------",

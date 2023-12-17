@@ -340,7 +340,39 @@ const productSizeOwl = (function () {
           setNavWidth(dots, nav);
         },
       });
-      owl.trigger('replace.owl.carousel', innerHTMLArray[1]).trigger('refresh.owl.carousel');
+
+      // size change
+      $(document).on('click', '.product-size-content .size-item:not(".active")', (e) => {
+        e.preventDefault();
+        const target = $(e.currentTarget);
+        const index = parseInt(target.attr('data-index'));
+        owl.trigger('replace.owl.carousel', innerHTMLArray[index]).trigger('refresh.owl.carousel');
+        parentElement.find('.size-item.active').removeClass('active');
+        target.addClass('active');
+        parentElement.find('.color-item.active').removeClass('active')
+        parentElement.find('.color-item').eq(0).addClass('active');
+
+        const dots = owl.find('.owl-dots')[0];
+        const nav = owl.find('.owl-nav')[0];
+        setNavWidth(dots, nav);
+      });
+
+      // color change
+      $(document).on('click', '.product-size-content .color-item:not(".active")', (e) => {
+        e.preventDefault();
+        const target = $(e.currentTarget);
+        const index = parseInt(target.attr('data-index'));
+        owl.find('.product-size-item').each((i, e) => {
+          const u1920 = $(e).find('[data-d-url]').eq(index).attr('data-d-url');
+          const u360 = $(e).find('[data-m-url]').eq(index).attr('data-d-url');
+          $(e).find('.s1920').attr('srcset', u1920);
+          $(e).find('.s360').attr('srcset', u360);
+          
+          parentElement.find('.color-item.active').removeClass('active');
+          target.addClass('active');
+        });
+      });
+      
     },
   };
   return productSizeOwlCB;

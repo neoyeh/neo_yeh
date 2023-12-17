@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="">
     <title>Chrome testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
           <div class="wording-area">
             <p class="h3"><%= json.sectionKVText %></p>
             <h1 class="h1 mt-s"><%= json.sectionKVTitle %></h1>
-            <!-- <p class="mt-l"><%= json.sectionKVDescribe %></p> -->
+            <p class="mt-l"><%= json.sectionKVDescribe %></p>
             <div class="btn-area mt-l">
               <a href="#" class="btn-link btn--outline light"><%= json.experience %></a>
               <a href="#" class="btn-link"><%= json.buyNow %></a>
@@ -58,6 +59,7 @@
             <% for(var i=0; i < json.sectionProductSizeList[d].sectionProductColorList.length; i++) {%>
               <div class="product-size-item">
                 <div class="image-block">
+                  <!-- 輪播第N組的顏色圖片 -->
                   <div class="color-url-list">
                     <% for(var o=0; o < json.sectionProductSizeList[d].sectionProductColorList[i].color.length; o++) {%>
                     <div 
@@ -68,8 +70,10 @@
                   </div>
                   <picture>
                     <source 
+                      class="s1920"
                       srcset="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].urlD %>" media="(min-width: 992px)" />
                     <source 
+                      class="s360"
                       srcset="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].urlM %>" />
                     <img alt="<%= json.sectionProductSizeAlt %>" />
                   </picture>
@@ -87,7 +91,7 @@
               <p class="select-name">產品類型</p> 
               <div class="product-size">
                 <% for(var i=0; i < json.sectionProductSizeList.length; i++) {%>
-                <div class="size-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionProductSizeList[i].name %></div>
+                <div class="size-item <%= (i === 0) ? 'active' : '' %>" data-index="<%= i %>"><%= json.sectionProductSizeList[i].name %></div>
                 <% } %>
               </div>
             </div>
@@ -95,7 +99,7 @@
               <p class="select-name">顏色</p> 
               <div class="product-color">
                 <% for(var i=0; i < json.sectionProductSizeList[0].sectionProductColorList[0].color.length; i++) {%>
-                <div class="color-item <%= (i === 0) ? 'active' : '' %>" style="background-color: <%= json.sectionProductSizeList[0].sectionProductColorList[0].color[i].color %>;">
+                <div class="color-item <%= (i === 0) ? 'active' : '' %>" data-index="<%= i %>" style="background-color: <%= json.sectionProductSizeList[0].sectionProductColorList[0].color[i].color %>;">
                   <%= json.sectionProductSizeList[0].sectionProductColorList[0].color[i].name %>
                 </div>
                 <% } %>
@@ -112,7 +116,7 @@
     <div class="sub-header">
       <div class="container">
         <div class="content-block">
-          <div class="sub-h-name h2"><%= json.sectionSubHeaderName %></div>
+          <div class="sub-h-name h3"><%= json.sectionSubHeaderName %></div>
           <div class="sub-h-list">
             <% for(var i=0; i < json.sectionSubHeaderList.length; i++) {%>
               <a href="<%= json.sectionSubHeaderList[i].link %>" target="_blank" class="sub-h-item"><%= json.sectionSubHeaderList[i].text %></a>
@@ -153,7 +157,23 @@
     </section>
 
     <section class="section-feature-list">
-      
+      <div class="container">
+        <div class="content-block">
+          <div class="wording-area">
+            <div><%= json.sectionFeatureListTitle %></div>
+            <div class="feature-list mt-m">
+              <% for(var i=0; i < json.sectionFeatureList.length; i++) {%>
+                <div class="feature-item">
+                  <div class="image-block">
+                    <img src="/media/images/ellipse.svg" width="64" height="64" alt="<%= json.sectionFeatureList[i].name %>">
+                  </div>
+                  <div class="h3 mt-s"><%= json.sectionFeatureList[i].name %></div>
+                </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section-spec">
