@@ -186,6 +186,26 @@
     }
   ],
 
+  "__Comment_FeatureCarouse": "---------------------No translation--------------------",
+  "sectionFeatureCarouselList": [
+    {
+      "text": "小巧易攜 出國必備",
+      "url": "kv"
+    },
+    {
+      "text": "完美貼合 不卡鏡頭",
+      "url": "kv"
+    },
+    {
+      "text": "三合一 無線充電",
+      "url": "kv"
+    },
+    {
+      "text": "輕量化設計",
+      "url": "kv"
+    }
+  ],
+
 
 
   "__Comment_Spec": "---------------------No translation--------------------",

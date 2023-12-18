@@ -14,7 +14,7 @@ $d-width-content__min: 1024 ;
 $d-width-sm__bootstrap: 768;
 // $m-width-content__max: $d-width-sm__bootstrap - 0.02;
 // $m-width-xs__bootstrap: 576;
-$m-width-content__min: 360;
+$m-width-content__min: 375;
 
 // ────────────────────────────────────────────────────── I ──────────
 //   :::::: L A R G E D E S K T O P  1920px ~ 2560px
@@ -52,9 +52,9 @@ $tablet-max-width: ($d-width-md__bootstrap - 0.02)*1px;
  * Setting: Colors
  *
  */
- $color-base: #333;
- $col-color-white: #fff;
- $col-color-black: #000;
+$color-base: #333;
+$col-color-white: #fff;
+$col-color-black: #000;
 $col-default-blue: #00b3e3;
 $col-link-gary: #526678;
 $col-disclaimer-gary: #878787;
@@ -68,24 +68,6 @@ $col-dark-blue: #000324;
  * Setting: Gutters;
  *
  */
-$ld-section-gutter: 85;
-$d-section-gutter: 75;
-$l-section-gutter: 50;
-$t-section-gutter: 65;
 
-$ld-wording-gutter: 27;
-$d-wording-gutter: 17;
-$l-wording-gutter: 15;
-$t-wording-gutter: 21;
+$t-each-side-gutter: 20;
 
-$ld-each-side-gutter: 47;
-$d-each-side-gutter: 34;
-$l-each-side-gutter: 17;
-$t-each-side-gutter: 18;
-
-$t-out-side-gutter: 6;
-
-
-$breakpoint-mlg: 992px;
-$breakpoint-xl: 1366px;
-$breakpoint-3xl: 1920px;

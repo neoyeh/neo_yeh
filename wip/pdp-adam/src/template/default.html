@@ -26,8 +26,8 @@
     <section class="section-kv">
       <div class="bg-block">
         <picture>
-          <source srcset="/media/images/1440x700.jpg" media="(min-width: 992px)" />
-          <source srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
+          <source srcset="/media/images/kv-1920.jpg" media="(min-width: 992px)" />
+          <source srcset="/media/images/kv-360.jpg" />
           <img alt="<%= json.sectionKVAlt %>" />
         </picture>
       </div>
@@ -172,6 +172,37 @@
               <% } %>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-feature-carousel">
+        <div class="feature-carousel-list">
+          <% for(var i=0; i < json.sectionFeatureCarouselList.length; i++) {%>
+          <div class="feature-carousel-item <%= (i === 0) ? 'active' : '' %>" data-index="<%= i %>" role="button" aria-label="<%= json.sectionFeatureCarouselList[i].text %>">
+            <%= json.sectionFeatureCarouselList[i].text %>
+          </div>
+          <% } %>
+        </div>
+        <div class="feature-carousel owl-carousel">
+          <% for(var i=0; i < json.sectionFeatureCarouselList.length; i++) {%>
+          <div class="carousel-item">
+            <div class="image-block">
+              <picture>
+                <source srcset="/media/images/<%= json.sectionFeatureCarouselList[i].url %>-1920.jpg" media="(min-width: 992px)" />
+                <source srcset="/media/images/<%= json.sectionFeatureCarouselList[i].url %>-360.jpg" />
+                <img alt="<%= json.sectionFeatureCarouselList[i].text %>" />
+              </picture>
+            </div>
+          </div>
+          <% } %>
+        </div>
+    </section>
+
+    <section class="section-application">
+      <div class="container">
+        <div class="wording-area">
+          <h2 class="h1">鋁金屬質感輕量化設計</h2>
         </div>
       </div>
     </section>

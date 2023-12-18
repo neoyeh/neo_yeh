@@ -378,6 +378,56 @@ const productSizeOwl = (function () {
   return productSizeOwlCB;
 }());
 
+/*= ========================================================
+=       Section: fearure carousel                    =
+========================================================= */
+const fearureOwl = (function () {
+  const fearureOwlCB = {
+    init() {
+      const owlSection = $('.section-feature-carousel');
+      if (owlSection.length > 0) {
+        $.each(owlSection, (index, el) => {
+          const currentSection = $(el);
+          fearureOwlCB.setupCaruosel(currentSection);
+        });
+      }
+    },
+    setupCaruosel(parentElement) {
+      const owl = parentElement.find('.owl-carousel');
+      owl.owlCarousel({
+        loop: false,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+            autoWidth: true,
+          },
+          992: {
+            items: 1,
+          },
+        },
+        onInitialized(e) {
+        },
+        onTranslate(e) {
+          const { index } = e.item;
+          parentElement.find('.feature-carousel-item.active').removeClass('active');
+          parentElement.find(`.feature-carousel-item[data-index=${index}]`).addClass('active');
+        },
+      });
+      parentElement.find('.feature-carousel-item').on('click', (e) => {
+        e.preventDefault();
+        if (!$(e.currentTarget).hasClass('active')) {
+          parentElement.find('.feature-carousel-item.active').removeClass('active');
+          const index = parseInt($(e.currentTarget).attr('data-index'));
+          owl.trigger('to.owl.carousel', index);
+          $(e.currentTarget).addClass('active');
+        }
+      });
+    },
+  };
+  return fearureOwlCB;
+}());
 
 /*= ========================================================
 =       Section: click toggle active                       =
@@ -667,11 +717,9 @@ $(() => {
   fixWidows.init();
   lazyLoadImg.init();
   productSizeOwl.init();
+  fearureOwl.init();
   modalVideo.init();
   playIntroVideo.init();
   clickToggleActive.init();
   appOwl.init();
-  document.fonts.ready.then(function () {
-    document.body.classList.add('font-loaded');
-  });
 });
