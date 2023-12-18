@@ -163,6 +163,7 @@ html, body {
   }
 
   .section-product-size-carousel {
+    background-color: #F5F5F5;
     .product-size-content {
       width: 1200px;
       margin: 0 auto;
@@ -194,7 +195,7 @@ html, body {
           width: return-desktop-size-by-vw(550);
         }
         @media screen and (max-width: ($tablet-max-width)) {
-          width: 100vw;
+          width: 100%;
         }
         &.owl-loaded {
           opacity: 1;
@@ -225,6 +226,9 @@ html, body {
           justify-content: space-between;
           font-size: 28px;
           color: #ababab;
+          @media screen and (max-width: ($tablet-max-width)) {
+            bottom: -16px;
+          }
         }
         .owl-dots {
           position: absolute;
@@ -234,6 +238,9 @@ html, body {
           width: auto;
           display: inline-flex;
           gap: 10px;
+          @media screen and (max-width: ($tablet-max-width)) {
+            bottom: -30px;
+          }
           .owl-dot {
             width: 15px;
             height: 15px;
@@ -253,6 +260,21 @@ html, body {
         @media screen and (max-width: ($laptop-max-width)) {
           padding-left: return-desktop-size-by-vw(120);
         }
+        @media screen and (max-width: ($tablet-max-width)) {
+          padding-left: 0;
+          padding-top: return-tablet-size-by-vw(40);
+          margin-top: 50px;
+          width: return-tablet-full-wide();
+        }
+        .text-describe {
+          margin-top: 30px;
+          @media screen and (max-width: ($laptop-max-width)) {
+            margin-top: return-desktop-size-by-vw(30);
+          }
+          @media screen and (max-width: ($tablet-max-width)) {
+            margin-top: return-tablet-size-by-vw(10);
+          }
+        }
         .select-content {
           display: flex;
           flex-wrap: wrap;
@@ -262,12 +284,18 @@ html, body {
           @media screen and (max-width: ($laptop-max-width)) {
             padding: return-desktop-size-by-vw(30) 0;
           }
+          @media screen and (max-width: ($tablet-max-width)) {
+            padding: return-tablet-size-by-vw(30) 0;
+          }
           .select-list {
             width: 100%;
             .select-name {
               padding-bottom: 15px;
               @media screen and (max-width: ($laptop-max-width)) {
                 padding-bottom: return-desktop-size-by-vw(15);
+              }
+              @media screen and (max-width: ($tablet-max-width)) {
+                padding-bottom: return-tablet-size-by-vw(10);
               }
             }
           }
@@ -276,6 +304,10 @@ html, body {
           display: flex;
           flex-wrap: wrap;
           gap: 13px;
+          @media screen and (max-width: ($tablet-max-width)) {
+            gap: return-tablet-size-by-vw(15);
+            flex-direction: column;
+          }
           .size-item {
             @include typography-btn();
             user-select: none;
@@ -284,6 +316,10 @@ html, body {
             border-radius: 50px;
             border: 1px solid #333;
             white-space: nowrap;
+            @media screen and (max-width: ($tablet-max-width)) {
+              width: 100%;
+              text-align: center;
+            }
             &.active {
               background-color: #333;
               color: #fff;
@@ -335,16 +371,38 @@ html, body {
       align-items: center;
       justify-content: space-between;
       padding: 0 120px;
+      @media screen and (max-width: ($laptop-max-width)) {
+        padding: 0 return-desktop-size-by-vw(120);
+      }
+      @media screen and (max-width: ($tablet-max-width)) {
+        padding: 0;
+      }
     }
     .sub-h-name {
       color: #fff;
+      @media screen and (max-width: ($tablet-max-width)) {
+        display: none;
+      }
     }
     .sub-h-list {
       display: flex;
       gap: 40px;
+      height: 100%;
+      @media screen and (max-width: ($tablet-max-width)) {
+        width: 100%;
+        justify-content: center;
+        gap: 28px;
+      }
       .sub-h-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
         color: #fff;
         text-decoration: none;
+        @media screen and (max-width: ($tablet-max-width)) {
+          width: 80px;
+        }
       }
     }
   }
@@ -361,8 +419,8 @@ html, body {
         height: return-desktop-size-by-vw(510);
       }
       @media screen and (max-width: ($tablet-max-width)) {
-        width: return-tablet-size-by-vw(324);
-        height: return-tablet-size-by-vw(201);
+        width: 100%;
+        height: return-tablet-size-by-vw(375);
       }
       video {
         position: absolute;
@@ -406,7 +464,6 @@ html, body {
             font-size: 26px;
             top: 0;
             font-weight: 900;
-            border: 3px solid rgba(255, 255, 255, 1.00);
             background: rgba(255, 255, 255, .4);
             border-radius: 50%;
             text-align: center;
@@ -420,10 +477,10 @@ html, body {
               line-height: 54px;
             }
             @media screen and (max-width: ($tablet-max-width)) {
-              width: 45px;
-              height: 45px;
-              font-size: 1em; 
-              line-height: 39px;
+              width: 100px;
+              height: 100px;
+              font-size: 40px; 
+              line-height: 98px;
             }
           }
   

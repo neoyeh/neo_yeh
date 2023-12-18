@@ -342,8 +342,9 @@ const productSizeOwl = (function () {
       });
 
       // size change
-      $(document).on('click', '.product-size-content .size-item:not(".active")', (e) => {
+      parentElement.find('.size-item').on('click', (e) => {
         e.preventDefault();
+        if ($(e.currentTarget).hasClass('active')) return;
         const target = $(e.currentTarget);
         const index = parseInt(target.attr('data-index'));
         owl.trigger('replace.owl.carousel', innerHTMLArray[index]).trigger('refresh.owl.carousel');
@@ -358,8 +359,9 @@ const productSizeOwl = (function () {
       });
 
       // color change
-      $(document).on('click', '.product-size-content .color-item:not(".active")', (e) => {
+      parentElement.find('.color-item').on('click', (e) => {
         e.preventDefault();
+        if ($(e.currentTarget).hasClass('active')) return;
         const target = $(e.currentTarget);
         const index = parseInt(target.attr('data-index'));
         owl.find('.product-size-item').each((i, e) => {
@@ -417,12 +419,11 @@ const fearureOwl = (function () {
       });
       parentElement.find('.feature-carousel-item').on('click', (e) => {
         e.preventDefault();
-        if (!$(e.currentTarget).hasClass('active')) {
-          parentElement.find('.feature-carousel-item.active').removeClass('active');
-          const index = parseInt($(e.currentTarget).attr('data-index'));
-          owl.trigger('to.owl.carousel', index);
-          $(e.currentTarget).addClass('active');
-        }
+        if ($(e.currentTarget).hasClass('active')) return;
+        parentElement.find('.feature-carousel-item.active').removeClass('active');
+        const index = parseInt($(e.currentTarget).attr('data-index'));
+        owl.trigger('to.owl.carousel', index);
+        $(e.currentTarget).addClass('active');
       });
     },
   };
