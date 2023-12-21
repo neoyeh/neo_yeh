@@ -4,7 +4,6 @@
 @import './libs/mixins';
 @import './libs/mixins.typography';
 @import './libs/typography';
-@import './libs/font-awesome/css/font-awesome.min.css';
 
 
 html, body {
@@ -690,12 +689,6 @@ html, body {
         .owl-prev, .owl-next {
           width: 20px;
           height: 22px;
-        }
-        .owl-prev {
-          background: url(../../media/images/arrow-l.svg) no-repeat center center;
-        }
-        .owl-next {
-          background: url(../../media/images/arrow-r.svg) no-repeat center center;
         }
       }
     }

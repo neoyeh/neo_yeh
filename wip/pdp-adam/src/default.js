@@ -409,6 +409,10 @@ const fearureOwl = (function () {
         loop: false,
         nav: true,
         dots: false,
+        navText: [
+          '<button type="button" role="presentation" aria-label="Previous" class="owl-prev"><img width="13" height="22" src="media/images/arrow-l.svg"></button>',
+          '<button type="button" role="presentation" aria-label="Next" class="owl-next "><img width="13" height="22" src="media/images/arrow-r.svg"></button>',
+        ],
         responsive: {
           0: {
             items: 1,
@@ -458,6 +462,10 @@ const applicationOwl = (function () {
         loop: true,
         nav: true,
         dots: true,
+        navText: [
+          '<button type="button" role="presentation" aria-label="Previous" class="owl-prev"><img width="13" height="22" src="media/images/arrow-l.svg"></button>',
+          '<button type="button" role="presentation" aria-label="Next" class="owl-next "><img width="13" height="22" src="media/images/arrow-r.svg"></button>',
+        ],
         responsive: {
           0: {
             items: 1,
