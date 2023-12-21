@@ -1,5 +1,4 @@
 import './styles/default.scss';
-import TypeMate from 'typemate';
 import LazyLoad from 'vanilla-lazyload';
 import 'picturefill';
 import { gsap } from 'gsap';
@@ -11,8 +10,6 @@ import 'owl.carousel';
 import ScrollMagic from 'ScrollMagic';
 // import 'ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
-// fuzzy-search
-import Fuse from 'fuse.js';
 import settings from '../settings.json';
 
 ScrollMagicPluginGsap(ScrollMagic, gsap);
@@ -71,35 +68,6 @@ const commonSetting = {
       && !isDesktopView
     ) {
       window.location.reload();
-    }
-  },
-};
-
-const fixWidows = {
-  init() {
-    const siteList = [
-      'us',
-      'uk',
-      'sg',
-      'nz',
-      'my-en',
-      'mea-en',
-      'in',
-      'hk',
-      'eu',
-      'ca',
-      'au',
-    ];
-    const prefix = $(document.querySelector('body')).attr('data-site');
-    const detectString = '.text-fix-widow';
-    if (siteList.indexOf(prefix) >= 0) {
-      const contentElement = document.querySelectorAll(
-        `.${settings.bodyClass}`,
-      )[0];
-      const typeMateInstance = new TypeMate(contentElement, {
-        selector: detectString,
-      });
-      typeMateInstance.apply();
     }
   },
 };
@@ -170,13 +138,10 @@ const playIntroVideo = (() => {
               const videoData = {
                   poster: $video.data('poster-path'),
                   video: $video.data('video-path'),
-                  webm: $video.data('video-webm-path'),
                   posterT: $video.data('t-poster-path'),
                   videoT: $video.data('t-video-path'),
-                  webmT: $video.data('t-video-webm-path'),
               };
               $video.attr('poster', isDesktop ? videoData.poster : videoData.posterT);
-              $video.find('.webm').attr('src', isDesktop ? videoData.webm : videoData.webmT);
               $video.find('.mp4').attr('src', isDesktop ? videoData.video : videoData.videoT);
 
               const playPromise = video.load();
@@ -292,6 +257,44 @@ const playIntroVideo = (() => {
 })();
 
 /*= ========================================================
+=       Section: scroll fadin in                           =
+========================================================= */
+const scrollFadeIn = (() => {
+  const scrollFadeInCB = {
+    init() {
+      const content = $('.scroll-fade-in');
+      if (content.length > 0) {
+        // eslint-disable-next-line func-names
+        $.each(content, function (i) {
+          const currentcontent = $(this);
+          scrollFadeIn.setupAnimationScrollMagic(currentcontent, i);
+        });
+      }
+    },
+    setupAnimationScrollMagic(parentElement) {
+      console.log
+      let tl = gsap.timeline();
+      tl.from(parentElement.find('.scroll-fade-in--1'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" })
+        .from(parentElement.find('.scroll-fade-in--2'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" }, "-=0.5")
+        .from(parentElement.find('.scroll-fade-in--3'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" }, "-=0.5");
+
+      new ScrollMagic.Scene({
+        triggerElement: parentElement[0],
+        triggerHook: 0.75,
+        reverse: false,
+      })
+      .setTween(tl)
+      // .addIndicators({name: 'scroll' })
+      .addTo(centerController);
+    }
+  };
+  return scrollFadeInCB;
+})();
+
+
+
+
+/*= ========================================================
 =       Section: product size carousel                    =
 ========================================================= */
 const productSizeOwl = (function () {
@@ -403,7 +406,6 @@ const fearureOwl = (function () {
         responsive: {
           0: {
             items: 1,
-            autoWidth: true,
           },
           992: {
             items: 1,
@@ -431,32 +433,45 @@ const fearureOwl = (function () {
 }());
 
 /*= ========================================================
-=       Section: click toggle active                       =
+=       Section: application carousel                    =
 ========================================================= */
-const clickToggleActive = (() => {
-  const clickToggleActiveCB = {
-      init() {
-          const section = $('.click-toggle-active');
-          if (section.length > 0) {
-              // eslint-disable-next-line func-names
-              $.each(section, function (i) {
-                  const currentSection = $(this);
-                  clickToggleActive.setupToggleActive(currentSection, i);
-              });
+const applicationOwl = (function () {
+  const applicationOwlCB = {
+    init() {
+      console.log('test')
+      const owlSection = $('.section-application');
+      if (owlSection.length > 0) {
+        $.each(owlSection, (index, el) => {
+          const currentSection = $(el);
+          applicationOwlCB.setupCaruosel(currentSection);
+        });
+      }
+    },
+    setupCaruosel(parentElement) {
+      const owl = parentElement.find('.owl-carousel');
+      owl.owlCarousel({
+        loop: true,
+        nav: true,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1,
+            autoWidth: true,
+          },
+          992: {
+            items: 1,
+            autoWidth: true,
           }
-      },
-      setupToggleActive(parentElement) {
-          const btn = parentElement.find('.btn-toggle');
-          const target = parentElement.find('.target-toggle-active');
-          btn.on('click', () => {
-              target.toggleClass('active');
-              btn.toggleClass('active');
-          });
-      },
+        },
+        onInitialized(e) {
+        },
+        onTranslate(e) {
+        },
+      });
+    },
   };
-
-  return clickToggleActiveCB;
-})();
+  return applicationOwlCB;
+}());
 
 /*= ========================================================
 =       Section: suppport Topics carousel
@@ -515,7 +530,6 @@ const appOwl = (function () {
         responsive: {
           0: {
             items: 1,
-            autoWidth: true,
           },
           992: {
             items: 2,
@@ -715,12 +729,19 @@ const youtubeVideo = {
 };
 
 $(() => {
-  fixWidows.init();
   lazyLoadImg.init();
   productSizeOwl.init();
   fearureOwl.init();
+  applicationOwl.init();
   modalVideo.init();
   playIntroVideo.init();
-  clickToggleActive.init();
-  appOwl.init();
+  scrollFadeIn.init();
+
+  document.getElementById("toTopBtn").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 });

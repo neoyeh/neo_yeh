@@ -7,14 +7,18 @@
 
   "__Comment_KV": "---------------------No translation--------------------",
   "sectionKVText":"Mag 3",
+  "sectionKVImageUrl":"Mag3-kv",
   "sectionKVTitle":"三合一折疊磁吸無線充電座",
   "sectionKVDescribe":"精湛工藝堅固耐用</br>給你最有質感的生活體驗",
   "sectionKVAlt": "三合一折疊磁吸無線充電座",
+  "sectionKVBtn1link": "#",
+  "sectionKVBtn2link": "#",
+
 
   "__Comment_ProductSizeCarousel": "---------------------No translation--------------------",
   "sectionProductSizeTitle":"VIVE Full Face Tracker",
   "sectionProductSizeText":"Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>",
-  "sectionProductSizeAlt": "VIVE Full Face Tracker",
+  "sectionProductSizeAlt": "",
   "sectionProductSizeList": [
     {
       "name": "CS5 - 5000mAh",
@@ -156,32 +160,33 @@
   ],  
 
   "__Comment_VideoAndYt": "---------------------No translation--------------------",
-  "sectionVideoAndYtTitle": "VIVE Full Face Tracker",
-  "sectionVideoAndYtPoster": "htc-vive-full-face-tracker-attached-to-vive-xr-elite",
-  "sectionVideoAndYtUrl": "htc-vive-full-face-tracker-attached-to-vive-xr-elite",
+  "sectionVideoAndYtTitle": "",
+  "sectionVideoAndYtPoster": "test1",
+  "sectionVideoAndYtUrl": "test1",
+  "sectionVideoAndYtID": "AiUX8lQGh2w",
 
 
   "__Comment_FeatureList": "---------------------No translation--------------------",
   "sectionFeatureListTitle": "快速磁吸對位, 無線充電,</br>不論是瀏覽訊息或觀賞影片都能提供磁吸帶來的最佳充電體體驗",
   "sectionFeatureList": [
     {
-      "url": "",
+      "url": "ellipse",
       "name": "直橫皆可充"
     },
     {
-      "url": "",
+      "url": "ellipse",
       "name": "鋁製金屬打造"
     },
     {
-      "url": "",
+      "url": "ellipse",
       "name": "摺疊收納不佔空間"
     },
     {
-      "url": "",
+      "url": "ellipse",
       "name": "MagSafe</br>磁吸無線充電"
     },
     {
-      "url": "",
+      "url": "ellipse",
       "name": "支援 AirPods / Pro 無線充電"
     }
   ],
@@ -190,21 +195,94 @@
   "sectionFeatureCarouselList": [
     {
       "text": "小巧易攜 出國必備",
-      "url": "kv"
+      "url": "Mag3-feature-01",
+      "alt": ""
     },
     {
       "text": "完美貼合 不卡鏡頭",
-      "url": "kv"
+      "url": "Mag3-feature-02",
+      "alt": ""
     },
     {
       "text": "三合一 無線充電",
-      "url": "kv"
+      "url": "Mag3-feature-03",
+      "alt": ""
     },
     {
       "text": "輕量化設計",
-      "url": "kv"
+      "url": "Mag3-feature-04",
+      "alt": ""
     }
   ],
+
+  "__Comment_ProductInfo": "---------------------No translation--------------------",
+  "sectionProductInfoTitle": "產品特色",
+  "sectionProductInfo1Image": "Mag3-kv",
+  "sectionProductInfo1Alt": "",
+  "sectionProductInfo1Title": "鋁金屬質感輕量化設計",
+  "sectionProductInfo1Text": "精湛工藝堅固耐用，給你最有質感的生活體驗",
+
+  "sectionProductInfoCard1Url": "test1",
+  "sectionProductInfoCard1Alt": "",
+  "sectionProductInfoCard1Title": "直立橫向皆可充",
+  "sectionProductInfoCard1Text": "不論是瀏覽訊息或觀賞影片</br>都能提供磁吸帶來的最佳充電體體驗",
+
+  "sectionProductInfoCard2Url": "Mag3-kv",
+  "sectionProductInfoCard2Alt": "",
+  "sectionProductInfoCard2Title": "可折疊收納 不佔空間 出國必備",
+  "sectionProductInfoCard2Text": "出國旅行、外出洽公，輕鬆好收納不佔空間，</br>同時滿足出門在外所有行動裝置充電需求。",
+
+  "sectionProductInfoCard3Url": "test1",
+  "sectionProductInfoCard3Alt": "",
+  "sectionProductInfoCard3Title": "Apple Watch 全系列無線充電座",
+  "sectionProductInfoCard3Text": "支援 Apple Watch Ultra / S9 / S8 / S7 等機種快速充電",
+
+
+  "sectionProductInfoBottomCard1Url": "Mag3-kv",
+  "sectionProductInfoBottomCard1Alt": "",
+  "sectionProductInfoBottomCard1Title": "直立橫向皆可充",
+  "sectionProductInfoBottomCard1Text": "不論是瀏覽訊息或觀賞影片</br>都能提供磁吸帶來的最佳充電體體驗",
+
+  "sectionProductInfoBottomCard2Url": "test1",
+  "sectionProductInfoBottomCard2Alt": "",
+  "sectionProductInfoBottomCard2Title": "可折疊收納 不佔空間 出國必備",
+  "sectionProductInfoBottomCard2Text": "出國旅行、外出洽公，輕鬆好收納不佔空間，</br>同時滿足出門在外所有行動裝置充電需求。",
+
+  "sectionProductInfoBottomCard3Url": "test1",
+  "sectionProductInfoBottomCard3Alt": "",
+  "sectionProductInfoBottomCard3Title": "Apple Watch 全系列無線充電座",
+  "sectionProductInfoBottomCard3Text": "支援 Apple Watch Ultra / S9 / S8 / S7 等機種快速充電",
+
+
+
+
+
+  "__Comment_Application": "---------------------No translation--------------------",
+  "sectionApplicationTitle": "鋁金屬質感輕量化設計",
+  "sectionApplicationDescribe": "精湛工藝堅固耐用，給你最有質感的生活體驗",
+  "sectionApplicationList": [
+    {
+      "url": "Mag3-kv",
+      "alt": ""
+    },{
+      "url": "Mag3-kv",
+      "alt": ""
+    },{
+      "url": "Mag3-kv",
+      "alt": ""
+    },{
+      "url": "Mag3-kv",
+      "alt": ""
+    }
+  ],
+  "sectionApplicationImageTL": "Mag3-kv",
+  "sectionApplicationImageTLAlt": "",
+  "sectionApplicationImageRT": "Mag3-kv",
+  "sectionApplicationImageRTAlt": "",
+  "sectionApplicationImageRB": "Mag3-kv",
+  "sectionApplicationImageRBAlt": "",
+  "sectionApplicationImageB": "Mag3-kv",
+  "sectionApplicationImageBAlt": "",
 
 
 
@@ -235,6 +313,7 @@
 
   "__Comment_BottomKV": "---------------------No translation--------------------",
   "sectionBottomKVTitle": "In-box items",
+  "sectionBottomKVTImage": "Mag3-kv",
   "sectionBottomKVList": [
     {
       "name": "VIVE Full Face Tracker"
@@ -257,26 +336,20 @@
   "sectionProductFeatureTitle": "VIVE Full Face Tracker",
   "sectionProductFeatureList": [
     {
-      "url": "htc-vive-full-face-tracker-bottom",
-      "alt": "VIVE Full Face Tracker",
+      "url": "Mag3-kv",
+      "alt": "",
       "title": "VIVE Full Face Tracker",
       "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>"
     },
     {
-      "url": "htc-vive-full-face-tracker-bottom",
-      "alt": "VIVE Full Face Tracker",
+      "url": "Mag3-kv",
+      "alt": "",
       "title": "VIVE Full Face Tracker",
       "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>"
     },
     {
-      "url": "htc-vive-full-face-tracker-bottom",
-      "alt": "VIVE Full Face Tracker",
-      "title": "VIVE Full Face Tracker",
-      "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>"
-    },
-    {
-      "url": "htc-vive-full-face-tracker-bottom",
-      "alt": "VIVE Full Face Tracker",
+      "url": "Mag3-kv",
+      "alt": "",
       "title": "VIVE Full Face Tracker",
       "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.<sup>1</sup>"
     }
@@ -285,239 +358,11 @@
   "sectionProductFeatureName": "Mag 3",
   "sectionProductFeatureText": "三合一折疊磁吸無線充電座",
 
+  "sectionProductBottomImage": "Mag3-kv",
+  "sectionProductBottomAlt": "",
+  "sectionProductBottomLink1": "#",
+  "sectionProductBottomLink2": "#"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "metaTitle": "VIVE Full Face Tracker - Eye and Face Tracking on VIVE XR Elite",
-  "metaDescription": "Get eye and facial tracking for VIVE XR Elite in a single accessory. Lifelike expressions, natural interactions, and unmatched VR presence.",
-  "productName": "VIVE Full Face Tracker",
-  "TellMeMore": "Tell me more",
-  "learnMore": "Learn more",
-  "sectionKVPrice": "$XXX.XX",
-  "addToCart": "Add to cart",
-  "preOrder": "Pre-order",
-  "comingSoon": "Coming soon",
-  "sectionIntroText": "Lifelike expressions. Real-time, natural interactions. Unmatched virtual presence. Your all-in-one VR experience is primed and ready to go up a notch.",
-  "sectionTrackerProfileAlt": "HTC VIVE Full Face Tracker and VIVE XR Elite VR headset. Provies facial and eye tracking in one accessory.",
-  "sectionImageRowContent1Alt": "HTC VIVE Full Face Tracker provides automatic IPD adjustment when attached to the VIVE XR Elite headset. ",
-  "sectionImageRowContent1Title": "Automatically adjusts to your viewing sweet spot.",
-  "sectionImageRowContent1Text": "The tracker intelligently detects your interpupillary distance (IPD) and automatically calibrates the headset for optimal viewing comfort and visual clarity.<sup>2</sup></br></br>Easily share your VIVE XR Elite with multiple users without manually adjusting the IPD slider each time.",
-  "sectionImageRowContent2Alt": "Eye tracking technology for VR avatar.",
-  "sectionImageRowContent2Title": "Your eyes are the window to next-level XR.",
-  "sectionImageRowContent2Text": "The two sensors, with infra-red illuminators, capture your gaze direction, pupil size and position, and eye openness.<sup>3</sup> The tracker further unlocks dynamic foveated rendering to optimize processing performance for the graphics in your line of sight.<sup>4</sup></br></br>Natural avatar interactions with realistic eye movements, gaze-based control, GPU optimization, and advanced insights based on user-specific data are several of the many applications.<sup>5</sup>",
-  "sectionImageRowContent3Alt": "Facial tracking for VR avatar. ",
-  "sectionImageRowContent3Alt2": "VIVE Full Face Tracker enables eye and facial tracking.",
-  "sectionImageRowContent3Title": "Beyond verbal communication.",
-  "sectionImageRowContent3Text": "The tracker captures expressions through 38 blend shapes across your lips, teeth, tongue, cheeks, and chin at a 60 Hz tracking rate, enabling near-zero latency between lifelike facial movements and voice audio.</br></br>Communicate and interact with non-verbal cues just as you would in the physical world.",
-  "sectionUsecaseText": "Realism with expressive, insightful interactions. VIVE Full Face Tracker unlocks incredible immersive experiences.",
-  "sectionUsecaseAlt": "Eye and facial tracking in Mare. ",
-  "sectionSpecList2Title": "Headset specs",
-  "sectionSpecList2": [
-    {
-      "sectionSpecTitle": "Headset compatibility",
-      "sectionSpecText": "VIVE XR Elite"
-    },
-    {
-      "sectionSpecTitle": "Attachment",
-      "sectionSpecText": "Magnetic"
-    },
-    {
-      "sectionSpecTitle": "Connectivity",
-      "sectionSpecText": "USB Type-C"
-    },
-    {
-      "sectionSpecTitle": "Weight",
-      "sectionSpecText": "VIVE Facial Tracker: 80.0 g +/- 5 g</br></br>Gasket Spacer: 4.8 g +/- 10%</br></br>VR Face Gasket: 32.0 g +/- 10%"
-    }
-  ],
-  "sectionSpecList3Title": "Eye-tracking specs",
-  "sectionSpecList3": [
-    {
-      "sectionSpecTitle": "Gaze data output frequency (binocular)",
-      "sectionSpecText": "120 Hz"
-    },
-    {
-      "sectionSpecTitle": "Accuracy<sup>3</sup>",
-      "sectionSpecText": "0.5°~1.1°"
-    },
-    {
-      "sectionSpecTitle": "Calibration",
-      "sectionSpecText": "5 points"
-    }
-  ],
-  "sectionSpecList4Title": "Face-tracking specs",
-  "sectionSpecList4": [
-    {
-      "sectionSpecTitle": "Sensors",
-      "sectionSpecText": "Mono camera at 60 Hz</br></br>Diagonal field of view 151°"
-    }
-  ],
-  "sectionSpecList5Title": "Developer resources",
-  "sectionSpecList5": [
-    {
-      "sectionSpecTitle": "",
-      "sectionSpecText": "Learn how to develop content for VIVE Full Face Tracker."
-    }
-  ],
-  "sectionSpecCTA": "View developer guide",
-  "sectionPurchasingName": "VIVE Full Face Tracker",
-  "sectionPurchasingTitle": "Expressive, insightful VR.",
-  "sectionPurchasingText": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory. ",
-  "sectionPurchasingAlt": "HTC VIVE Full Face Tracker provides facial and eye tracking in VR. ",
-  "sectionBundleName": "VIVE XR Elite",
-  "sectionBundleTitle": "Compact. Powerful. Versatile.",
-  "sectionBundleText": "VR, AR, or MR. Enjoy untethered freedom and harness the power of PC VR. Meet VIVE XR Elite, the all-in-one headset that does it all. ",
-  "sectionBundleLearnMore": "Discover VIVE XR Elite",
-  "sectionBundleAlt": "HTC VIVE XR Elite VR headset and two controllers.",
-  "sectionAccessoriesTitle": "Explore the full potential of your VR experience.",
-  "sectionAccessoriesText": "PC VR performance. Spatial awareness. Extended gameplay. And more. Find out how these VIVE XR Elite accessories can help you take virtual reality to the next level.",
-  "sectionAccessoriesitems": [
-    {
-      "slug": "vive-ultimate-tracker-3-plus-1-kit",
-      "image": "htc-vive-ultimate-tracker-3-plus-1-bundle-accessory",
-      "gaBtnLabel": "addtocart-accessory-vive-ultimate-tracker-3-plus-1-kit",
-      "gaLinkLabel": "detail-accessory-vive-ultimate-tracker-3-plus-1-kit",
-      "link": "/us/accessory/vive-ultimate-tracker/",
-      "title": "VIVE Ultimate Tracker 3+1 Kit",
-      "text": "Three VIVE Ultimate Trackers plus one VIVE Wireless Dongle. Use with a headset and two controllers for 6-point full-body tracking.<sup>6, 7</sup>",
-      "alt": "VIVE Ultimate Tracker 3+1 Kit featuring three VIVE Ultimate Trackers and one VIVE Wireless Dongle."
-    },
-    {
-      "slug": "vive-ultimate-tracker",
-      "image": "htc-vive-ultimate-tracker-accessory",
-      "gaBtnLabel": "addtocart-accessory-vive-ultimate-tracker",
-      "gaLinkLabel": "detail-accessory-vive-ultimate-tracker",
-      "link": "/us/accessory/vive-ultimate-tracker/",
-      "title": "VIVE Ultimate Tracker",
-      "text": "High-performance, low-latency VR tracker for standalone headsets.<sup>6</sup> Requires a VIVE Wireless Dongle to connect.",
-      "alt": "VIVE Ultimate Tracker, the all-in-one VR tracker from HTC VIVE."
-    },
-    {
-      "slug": "vive-wireless-dongle",
-      "image": "htc-vive-wireless-dongle-accessory",
-      "gaBtnLabel": "addtocart-accessory-vive-full-face-tracker",
-      "gaLinkLabel": "detail-accessory-vive-full-face-tracker",
-      "link": "/us/accessory/vive-wireless-dongle/",
-      "title": "VIVE Wireless Dongle",
-      "text": "Attaches to your compatible VR headset via USB-C to let you wirelessly connect up to 5 VIVE Ultimate Trackers.<sup>6</sup>",
-      "alt": "VIVE Wireless Dongle, the VR accessory that connects a compatible headset to 1–5 VIVE Ultimate Trackers."
-    },
-    {
-      "slug": "vive-full-face-tracker",
-      "image": "htc-vive-full-face-tracker-accessory",
-      "gaBtnLabel": "addtocart-accessory-vive-full-face-tracker",
-      "gaLinkLabel": "detail-accessory-vive-full-face-tracker",
-      "link": "/us/accessory/vive-full-face-tracker/",
-      "title": "VIVE Full Face Tracker",
-      "text": "Bring both eye and facial tracking to the VIVE XR Elite experience in a single exceptionally engineered accessory.",
-      "alt": "VIVE Full Face Tracker, the eye and facial tracking accessory for AIO VR from HTC VIVE."
-    },
-    {
-      "slug": "trackstraps-for-vive-ultimate-tracker-plus-dance-dash",
-      "image": "htc-vive-trackstrap-accessory",
-      "gaBtnLabel": "addtocart-accessory-trackstraps-for-vive-ultimate-tracker-plus-dance-dash",
-      "gaLinkLabel": "detail-accessory-trackstraps-for-vive-ultimate-tracker-plus-dance-dash",
-      "link": "/us/accessory/trackstraps-for-vive-ultimate-tracker-plus-dance-dash/",
-      "title": "TrackStraps for VIVE Ultimate Tracker + Dance Dash Game Key",
-      "text": "Breathable, elastic neoprene belt and straps that fit most waists and feet or shoes. Includes a key redeemable for <em>Dance Dash</em> on VIVEPORT.",
-      "alt": "TrackStraps for VIVE Ultimate Tracker for full-body tracking in VR games."
-    },
-    {
-      "slug": "vive-streaming-cable",
-      "image": "vive-xr-pc-streaming-5m-link-cable",
-      "gaBtnLabel": "addtocart-accessory-vive-streaming-cable",
-      "gaLinkLabel": "detail-accessory-vive-streaming-cable",
-      "link": "/us/accessory/vive-streaming-cable/",
-      "title": "VIVE Streaming Cable",
-      "text": "Connect to a computer for PC VR games and graphically demanding content.",
-      "alt": "VIVE Streaming Cable"
-    },
-    {
-      "slug": "vive-mr-gasket",
-      "image": "vive-mr-gasket",
-      "gaBtnLabel": "addtocart-accessory-vive-mr-gasket",
-      "gaLinkLabel": "detail-accessory-vive-mr-gasket",
-      "link": "/us/accessory/vive-mr-gasket/",
-      "title": "VIVE MR Gasket",
-      "text": "A forehead cushion that increases peripheral vision and spatial freedom while enhancing comfort and ventilation.",
-      "alt": "VIVE MR Gasket, a forehead rest attachment for VIVE XR Elite, the mixed reality headset from HTC VIVE."
-    },
-    {
-      "slug": "vive-controller",
-      "image": "vive-xr-right-hand-6dof-controller",
-      "gaBtnLabel": "addtocart-accessory-vive-controller",
-      "gaLinkLabel": "detail-accessory-vive-controller",
-      "link": "/us/accessory/",
-      "title": "VIVE Controller for XR Series",
-      "text": "6DoF (6 degrees of freedom) controller with ergonomically placed buttons, trigger, and touch sensors.",
-      "alt": "VIVE Controller for XR Series (R)"
-    }
-  ],
-  "sectionFootnote": [
-    {
-      "sectionFootnoteText": "1. Content compatibility required. Please check the specifications to ensure the content supports face/lip tracking functions.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "2. The precision of auto-IPD may vary from user to user.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "3. Within FOV 20°. Eye surgery, eye disease, heavy makeup, and high myopia may affect eye-tracking performance.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "4. The performance of dynamic foveated rendering may vary based on the content and the application.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "5. User performance data collection and usage may vary based on the content and the application, and may be regulated or restricted under applicable privacy law.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "6. VIVE Ultimate Tracker requires a VIVE Wireless Dongle to connect with compatible devices. VIVE Wireless Dongle and compatible devices sold separately. Each VIVE Wireless Dongle can connect with one to five (1–5) VIVE Ultimate Trackers. Devices compatible with VIVE Ultimate Tracker currently include: VIVE XR Elite, VIVE Focus 3.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "7. Content compatibility required. Compatible content and devices sold separately. PC VR titles are available on VIVE XR Elite via VIVE Streaming and on VIVE Focus 3 via VIVE Business Streaming. System requirements must be met.",
-      "sectionFootnoteSpace": "</br></br>"
-    },
-    {
-      "sectionFootnoteText": "8. The VIVE Case for XR Series requires the battery cradle to be detached from the VIVE XR Elite and stored separately.",
-      "sectionFootnoteSpace": ""
-    }
-  ]
 }

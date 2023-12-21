@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" as="style">
 
 
     <% json=require(`./${htmlWebpackPlugin.options.json.trim()}.json`)%> 
@@ -27,27 +28,27 @@
     <section class="section-kv">
       <div class="bg-block">
         <picture>
-          <source srcset="/media/images/kv-1920.jpg" media="(min-width: 992px)" />
-          <source srcset="/media/images/kv-360.jpg" />
+          <source srcset="/media/images/<%= json.sectionKVImageUrl %>-1920.jpg" media="(min-width: 992px)" />
+          <source srcset="/media/images/<%= json.sectionKVImageUrl %>-360.jpg" />
           <img alt="<%= json.sectionKVAlt %>" />
         </picture>
       </div>
-      <div class="container">
+      <div class="container scroll-fade-in">
         <div class="content-block">
           <div class="wording-area">
-            <p class="h3"><%= json.sectionKVText %></p>
-            <h1 class="h1 mt-s"><%= json.sectionKVTitle %></h1>
-            <p class="mt-l"><%= json.sectionKVDescribe %></p>
-            <div class="btn-area mt-l">
-              <a href="#" class="btn-link btn--outline light"><%= json.experience %></a>
-              <a href="#" class="btn-link"><%= json.buyNow %></a>
+            <p class="h3 scroll-fade-in--1"><%= json.sectionKVText %></p>
+            <h1 class="h1 mt-s scroll-fade-in--2"><%= json.sectionKVTitle %></h1>
+            <p class="mt-l scroll-fade-in--3"><%= json.sectionKVDescribe %></p>
+            <div class="btn-area mt-l scroll-fade-in--3">
+              <a href="<%= json.sectionKVBtn1link %>" class="btn-link btn--outline light"><%= json.experience %></a>
+              <a href="<%= json.sectionKVBtn2link %>" class="btn-link"><%= json.buyNow %></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-product-size-carousel">
+    <section class="section-product-size-carousel scroll-fade-in">
       <div class="product-size-content">
         <div class="product-size-carousel owl-carousel">
           <div class="carousel-item">
@@ -84,7 +85,7 @@
           </div>
           <% } %>
         </div>
-        <div class="product-size-info">
+        <div class="product-size-info scroll-fade-in--1">
           <h2 class="h2"><%= json.sectionProductSizeTitle %></h2>
           <div class="text-describe"><%= json.sectionProductSizeText %></div>
           <div class="select-content mt-l">
@@ -117,10 +118,10 @@
     <div class="sub-header">
       <div class="container">
         <div class="content-block">
-          <div class="sub-h-name h3"><%= json.sectionSubHeaderName %></div>
+          <a href="#" id="toTopBtn" class="sub-h-name h3"><%= json.sectionSubHeaderName %></a>
           <div class="sub-h-list">
             <% for(var i=0; i < json.sectionSubHeaderList.length; i++) {%>
-              <a href="<%= json.sectionSubHeaderList[i].link %>" target="_blank" class="sub-h-item"><%= json.sectionSubHeaderList[i].text %></a>
+              <a href="<%= json.sectionSubHeaderList[i].link %>" target="_blank" class="sub-h-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionSubHeaderList[i].text %></a>
             <% } %>
           </div>
         </div>
@@ -149,7 +150,7 @@
           <div class="wrap-cta">
             <div class="play-modal-video-btn" data-event-action="click-video"
                   data-event-category="pdp" data-event-label="video-vivepro2" data-gtm="event-tracking"
-                  data-vid="AiUX8lQGh2w" data-vtype="youtube">
+                  data-vid="<%= json.sectionVideoAndYtID %>" data-vtype="youtube">
                   <%= json.playVideo %>
             </div>
           </div>
@@ -157,16 +158,16 @@
       </div>
     </section>
 
-    <section class="section-feature-list">
+    <section class="section-feature-list scroll-fade-in">
       <div class="container">
         <div class="content-block">
           <div class="wording-area">
-            <div><%= json.sectionFeatureListTitle %></div>
-            <div class="feature-list mt-m">
+            <div class="scroll-fade-in--1"><%= json.sectionFeatureListTitle %></div>
+            <div class="feature-list mt-m scroll-fade-in--2">
               <% for(var i=0; i < json.sectionFeatureList.length; i++) {%>
                 <div class="feature-item">
                   <div class="image-block">
-                    <img src="/media/images/ellipse.svg" width="64" height="64" alt="<%= json.sectionFeatureList[i].name %>">
+                    <img src="/media/images/<%= json.sectionFeatureList[i].url %>.svg" width="64" height="64" alt="<%= json.sectionFeatureList[i].name %>">
                   </div>
                   <div class="h3 mt-s"><%= json.sectionFeatureList[i].name %></div>
                 </div>
@@ -192,7 +193,7 @@
               <picture>
                 <source srcset="/media/images/<%= json.sectionFeatureCarouselList[i].url %>-1920.jpg" media="(min-width: 992px)" />
                 <source srcset="/media/images/<%= json.sectionFeatureCarouselList[i].url %>-360.jpg" />
-                <img alt="<%= json.sectionFeatureCarouselList[i].text %>" />
+                <img alt="<%= json.sectionFeatureCarouselList[i].alt %>" />
               </picture>
             </div>
           </div>
@@ -200,42 +201,191 @@
         </div>
     </section>
 
+    <section class="section-product-info">
+      <div class="container">
+        <div class="info-top">
+          <h2 class="h1"><%= json.sectionProductInfoTitle %></h2>
+          <div class="image-block">
+            <picture>
+              <source data-srcset="/media/images/<%= json.sectionProductInfo1Image %>-1920.jpg" media="(min-width: 992px)" />
+              <source data-srcset="/media/images/<%= json.sectionProductInfo1Image %>-360.jpg" />
+              <img class="lazy-img" alt="<%= json.sectionProductInfo1Alt %>" />
+            </picture>
+          </div>
+          <div class="wording-area scroll-fade-in">
+            <div class="h3 scroll-fade-in--1"><%= json.sectionProductInfo1Title %></div>
+            <div class="info-text scroll-fade-in--1"><%= json.sectionProductInfo1Text %></div>
+          </div>
+        </div>
+        <div class="info-column-list">
+
+          <div class="info-card">
+            <div class="image-block video-scroll-play">
+              <video
+                  muted
+                  playsinline
+                  loop
+                  preload="none"
+                  title="<%= json.sectionProductInfoCard1Alt %>"
+                  poster
+                  data-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.jpg"
+                  data-t-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.jpg"
+                  data-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.mp4"
+                  data-t-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.mp4"
+              >
+                <source class="mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="wording-area scroll-fade-in">
+              <div class="h3 scroll-fade-in--1"><%= json.sectionProductInfoCard1Title %></div>
+              <div class="info-text scroll-fade-in--2"><%= json.sectionProductInfoCard1Text %></div>
+            </div>
+          </div>
+          <div class="info-card info-card--reverse">
+            <div class="image-block">
+              <picture>
+                <source data-srcset="/media/images/<%= json.sectionProductInfoCard2Url %>-1920.jpg" media="(min-width: 992px)" />
+                <source data-srcset="/media/images/<%= json.sectionProductInfoCard2Url %>-360.jpg" />
+                <img class="lazy-img" alt="<%= json.sectionProductInfoCard2Alt %>" />
+              </picture>
+            </div>
+            <div class="wording-area scroll-fade-in">
+              <div class="h3 scroll-fade-in--1"><%= json.sectionProductInfoCard2Title %></div>
+              <div class="info-text scroll-fade-in--2"><%= json.sectionProductInfoCard2Text %></div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="image-block video-scroll-play">
+              <video
+                  muted
+                  playsinline
+                  loop
+                  preload="none"
+                  title="<%= json.sectionProductInfoCard1Alt %>"
+                  poster
+                  data-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.jpg"
+                  data-t-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.jpg"
+                  data-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.mp4"
+                  data-t-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.mp4"
+              >
+                <source class="mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="wording-area scroll-fade-in">
+              <div class="h3 scroll-fade-in--1"><%= json.sectionProductInfoCard3Title %></div>
+              <div class="info-text scroll-fade-in--2"><%= json.sectionProductInfoCard3Text %></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-list">
+
+          <div class="card-item scroll-fade-in">
+            <div class="image-block">
+              <picture>
+                <source data-srcset="/media/images/<%= json.sectionProductInfoBottomCard1Url %>-1920.jpg" media="(min-width: 992px)" />
+                <source data-srcset="/media/images/<%= json.sectionProductInfoBottomCard1Url %>-360.jpg" />
+                <img class="lazy-img" alt="<%= json.sectionProductInfoBottomCard1Alt %>" />
+              </picture>
+            </div>
+            <div class="h3 card-text scroll-fade-in--1"><%= json.sectionProductInfoBottomCard1Title %></div>
+            <p class="mt-s scroll-fade-in--2"><%= json.sectionProductInfoBottomCard1Text %></p>
+          </div>
+          <div class="card-item scroll-fade-in">
+            <div class="image-block video-scroll-play">
+              <video
+                  muted
+                  playsinline
+                  loop
+                  preload="none"
+                  title="<%= json.sectionProductInfoBottomCard2Alt %>"
+                  poster
+                  data-poster-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-1920.jpg"
+                  data-t-poster-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-360.jpg"
+                  data-video-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-1920.mp4"
+                  data-t-video-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-360.mp4"
+              >
+                <source class="mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="h3 card-text scroll-fade-in--1"><%= json.sectionProductInfoBottomCard2Title %></div>
+            <p class="mt-s scroll-fade-in--2"><%= json.sectionProductInfoBottomCard2Text %></p>
+          </div>
+          <div class="card-item scroll-fade-in">
+            <div class="image-block video-scroll-play">
+              <video
+                  muted
+                  playsinline
+                  loop
+                  preload="none"
+                  title="<%= json.sectionProductInfoBottomCard3Alt %>"
+                  poster
+                  data-poster-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-1920.jpg"
+                  data-t-poster-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-360.jpg"
+                  data-video-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-1920.mp4"
+                  data-t-video-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-360.mp4"
+              >
+                <source class="mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="h3 card-text scroll-fade-in--1"><%= json.sectionProductInfoBottomCard3Title %></div>
+            <p class="mt-s scroll-fade-in--2"><%= json.sectionProductInfoBottomCard3Text %></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <section class="section-application">
       <div class="container">
         <div class="wording-area">
-          <h2 class="h1">鋁金屬質感輕量化設計</h2>
+          <h2 class="h1"><%= json.sectionApplicationTitle %></h2>
+          <p class="mt-m"><%= json.sectionApplicationDescribe %></p>
+        </div>
+        <div class="application-carousel owl-carousel">
+          <% for(var i=0; i < json.sectionApplicationList.length; i++) {%>
+            <div class="application-carousel-item">
+              <div class="image-block">
+                <picture>
+                  <source srcset="/media/images/<%= json.sectionApplicationList[i].url %>-1920.jpg" media="(min-width: 992px)" />
+                  <source srcset="/media/images/<%= json.sectionApplicationList[i].url %>-360.jpg" />
+                  <img alt="<%= json.sectionApplicationList[i].alt %>" />
+                </picture>
+              </div>
+            </div>
+          <% } %>
         </div>
         <div class="image-area">
           <div class="top-block">
             <div class="image-block image-block--top-left">
               <picture>
-                <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
-                <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-                <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
+                <source data-srcset="/media/images/<%= json.sectionApplicationImageTL %>-1920.jpg" media="(min-width: 992px)" />
+                <source data-srcset="/media/images/<%= json.sectionApplicationImageTL %>-360.jpg" />
+                <img class="lazy-img" alt="<%= json.sectionApplicationImageTLAlt %>" />
               </picture>
             </div>
             <div class="top-right-block">
               <div class="image-block image-block--right-top">
                 <picture>
-                  <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
-                  <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-                  <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
+                  <source data-srcset="/media/images/<%= json.sectionApplicationImageRT %>-1920.jpg" media="(min-width: 992px)" />
+                  <source data-srcset="/media/images/<%= json.sectionApplicationImageRT %>-360.jpg" />
+                  <img class="lazy-img" alt="<%= json.sectionApplicationImageRTAlt %>" />
                 </picture>
               </div>
               <div class="image-block image-block--right-bottom">
                 <picture>
-                  <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
-                  <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-                  <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
+                  <source data-srcset="/media/images/<%= json.sectionApplicationImageRB %>-1920.jpg" media="(min-width: 992px)" />
+                  <source data-srcset="/media/images/<%= json.sectionApplicationImageRB %>-360.jpg" />
+                  <img class="lazy-img" alt="<%= json.sectionApplicationImageRBAlt %>" />
                 </picture>
               </div>
             </div>
           </div>
           <div class="image-block image-block--bottom">
             <picture>
-              <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
-              <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-              <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
+              <source data-srcset="/media/images/<%= json.sectionApplicationImageB %>-1920.jpg" media="(min-width: 992px)" />
+              <source data-srcset="/media/images/<%= json.sectionApplicationImageB %>-360.jpg" />
+              <img class="lazy-img" alt="<%= json.sectionApplicationImageBAlt %>" />
             </picture>
           </div>
         </div>
@@ -247,9 +397,9 @@
         <h2 class="h1 spec-title"><%= json.sectionSpecListTitle %></h2>
         <div class="spec-list">
           <% for(var i=0; i < json.sectionSpecList.length; i++) {%>
-            <div class="spec-item">
-              <div class="h3 spec-name"><%= json.sectionSpecList[i].sectionSpecTitle %></div>
-              <p class=""><%= json.sectionSpecList[i].sectionSpecText %></p>
+            <div class="spec-item scroll-fade-in">
+              <div class="h3 spec-name scroll-fade-in--1"><%= json.sectionSpecList[i].sectionSpecTitle %></div>
+              <p class="scroll-fade-in--1"><%= json.sectionSpecList[i].sectionSpecText %></p>
             </div>
           <% } %>
         </div>
@@ -258,17 +408,17 @@
 
     <section class="section-bottom-kv">
       <div class="container">
-        <div class="content-block">
-          <div class="image-block">
+        <div class="content-block scroll-fade-in">
+          <div class="image-block scroll-fade-in--1">
             <picture>
-              <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
-              <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
+              <source data-srcset="/media/images/<%= json.sectionBottomKVTImage %>-1920.jpg" media="(min-width: 992px)" />
+              <source data-srcset="/media/images/<%= json.sectionBottomKVTImage %>-360.jpg" />
               <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
             </picture>
           </div>
           <div class="wording-area">
-            <h3 class="product-title h2"><%= json.sectionBottomKVTitle %></h3>
-            <ul class="product-info-list">
+            <h3 class="product-title h2 scroll-fade-in--2"><%= json.sectionBottomKVTitle %></h3>
+            <ul class="product-info-list scroll-fade-in--3">
               <% for(var i=0; i < json.sectionBottomKVList.length; i++) {%>
                 <li class="product-info-item">
                   <%= json.sectionBottomKVList[i].name %>
@@ -286,35 +436,35 @@
           <h2 class="h1 product-feature-title"><%= json.sectionProductFeatureTitle %></h2>
           <div class="card-list">
             <% for(var i=0; i < json.sectionProductFeatureList.length; i++) {%>
-              <div class="card-item">
-                <div class="image-block">
+              <div class="card-item scroll-fade-in">
+                <div class="image-block scroll-fade-in--1">
                   <picture>
                     <source data-srcset="/media/images/<%= json.sectionProductFeatureList[i].url %>-1920.jpg" media="(min-width: 992px)" />
                     <source data-srcset="/media/images/<%= json.sectionProductFeatureList[i].url %>-360.jpg" />
                     <img class="lazy-img" alt="<%= json.sectionProductFeatureList[i].alt %>" />
                   </picture>
                 </div>
-                <div class="h3 card-text"><%= json.sectionProductFeatureList[i].title %></div>
-                <p class="mt-s"><%= json.sectionProductFeatureList[i].text %></p>
+                <div class="h3 card-text scroll-fade-in--2"><%= json.sectionProductFeatureList[i].title %></div>
+                <p class="mt-s scroll-fade-in--3"><%= json.sectionProductFeatureList[i].text %></p>
               </div>
             <% } %>
           </div>
-          <div class="product-card">
+          <div class="product-card scroll-fade-in">
             <div class="wording-area">
-              <h3 class="product-title h2"><%= json.sectionProductFeatureName %></h3>
-              <p class="h3 mt-m"><%= json.sectionProductFeatureText %></p>
+              <h3 class="product-title h2 scroll-fade-in--1"><%= json.sectionProductFeatureName %></h3>
+              <p class="h3 product-text scroll-fade-in--2"><%= json.sectionProductFeatureText %></p>
             </div>
-            <div class="image-block mt-m">
+            <div class="image-block mt-m scroll-fade-in--3">
               <picture>
-                <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-1920.jpg" media="(min-width: 992px)" />
-                <source data-srcset="/media/images/htc-vive-full-face-tracker-bottom-360.jpg" />
-                <img class="lazy-img" alt="<%= json.sectionPurchasingAlt %>" />
+                <source data-srcset="/media/images/<%= json.sectionProductBottomImage %>-1920.jpg" media="(min-width: 992px)" />
+                <source data-srcset="/media/images/<%= json.sectionProductBottomImage %>-360.jpg" />
+                <img class="lazy-img" alt="<%= json.sectionProductBottomAlt %>" />
               </picture>
             </div>
             <div class="wording-area mt-l">
               <div class="btn-area">
-                <a href="#" class="btn-link btn--outline"><%= json.experience %></a>
-                <a href="#" class="btn-link"><%= json.buyNow %></a>
+                <a href="<%= json.sectionProductBottomLink1 %>" class="btn-link btn--outline"><%= json.experience %></a>
+                <a href="<%= json.sectionProductBottomLink2 %>" class="btn-link"><%= json.buyNow %></a>
               </div>
             </div>
           </div>
