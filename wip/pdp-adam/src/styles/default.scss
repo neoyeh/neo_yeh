@@ -486,13 +486,13 @@ html, body {
             border-radius: 50%;
             text-align: center;
             transform: translateX(-50%);
-            line-height: 59px; // 65 - 3*3
+            line-height: 65px;
     
             @media screen and (max-width: ($laptop-max-width)) {
               width: 60px;
               height: 60px;
               font-size: 1.625em;
-              line-height: 54px;
+              line-height: 60px;
             }
             @media screen and (max-width: ($tablet-max-width)) {
               width: 100px;
@@ -1087,6 +1087,9 @@ html, body {
         }
         @media screen and (max-width: ($tablet-max-width)) {
           width: 100%
+        }
+        a {
+          color: #fff;
         }
         .spec-name {
           &:after {

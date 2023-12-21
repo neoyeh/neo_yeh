@@ -272,11 +272,17 @@ const scrollFadeIn = (() => {
       }
     },
     setupAnimationScrollMagic(parentElement) {
-      console.log
       let tl = gsap.timeline();
-      tl.from(parentElement.find('.scroll-fade-in--1'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" })
+      if (parentElement.find('.scroll-fade-in--3').length > 0) {
+        tl.from(parentElement.find('.scroll-fade-in--1'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" })
         .from(parentElement.find('.scroll-fade-in--2'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" }, "-=0.5")
         .from(parentElement.find('.scroll-fade-in--3'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" }, "-=0.5");
+      } else if (parentElement.find('.scroll-fade-in--2').length > 0) {
+        tl.from(parentElement.find('.scroll-fade-in--1'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" })
+        .from(parentElement.find('.scroll-fade-in--2'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" }, "-=0.5")
+      } else {
+        tl.from(parentElement.find('.scroll-fade-in--1'), { opacity: 0, translateY: 100, duration: 0.8, ease: "power4.out" })
+      }
 
       new ScrollMagic.Scene({
         triggerElement: parentElement[0],
@@ -438,7 +444,6 @@ const fearureOwl = (function () {
 const applicationOwl = (function () {
   const applicationOwlCB = {
     init() {
-      console.log('test')
       const owlSection = $('.section-application');
       if (owlSection.length > 0) {
         $.each(owlSection, (index, el) => {

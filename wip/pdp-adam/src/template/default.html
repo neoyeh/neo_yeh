@@ -65,18 +65,18 @@
                   <div class="color-url-list">
                     <% for(var o=0; o < json.sectionProductSizeList[d].sectionProductColorList[i].color.length; o++) {%>
                     <div 
-                      data-d-url="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[o].urlD %>"
-                      data-m-url="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[o].urlM %>"
+                      data-d-url="/media/images/<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[o].url %>-1920.jpg"
+                      data-m-url="/media/images/<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[o].url %>-360.jpg"
                     ></div>
                     <% } %>
                   </div>
                   <picture>
                     <source 
                       class="s1920"
-                      srcset="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].urlD %>" media="(min-width: 992px)" />
+                      srcset="/media/images/<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].url %>-1920.jpg" media="(min-width: 992px)" />
                     <source 
                       class="s360"
-                      srcset="<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].urlM %>" />
+                      srcset="/media/images/<%= json.sectionProductSizeList[d].sectionProductColorList[i].color[0].url %>-360.jpg" />
                     <img alt="<%= json.sectionProductSizeAlt %>" />
                   </picture>
                 </div>
@@ -139,8 +139,8 @@
             poster
             data-poster-path="/media/images/<%= json.sectionVideoAndYtPoster %>-1920.jpg"
             data-t-poster-path="/media/images/<%= json.sectionVideoAndYtPoster %>-360.jpg"
-            data-video-path="/media/images/<%= json.sectionVideoAndYtUrl %>-1920.mp4"
-            data-t-video-path="/media/images/<%= json.sectionVideoAndYtUrl %>-360.mp4"
+            data-video-path="/media/images/video/<%= json.sectionVideoAndYtUrl %>-1920.mp4"
+            data-t-video-path="/media/images/video/<%= json.sectionVideoAndYtUrl %>-360.mp4"
         >
             <source class="mp4" type="video/mp4" />
         </video>
@@ -205,12 +205,21 @@
       <div class="container">
         <div class="info-top">
           <h2 class="h1"><%= json.sectionProductInfoTitle %></h2>
-          <div class="image-block">
-            <picture>
-              <source data-srcset="/media/images/<%= json.sectionProductInfo1Image %>-1920.jpg" media="(min-width: 992px)" />
-              <source data-srcset="/media/images/<%= json.sectionProductInfo1Image %>-360.jpg" />
-              <img class="lazy-img" alt="<%= json.sectionProductInfo1Alt %>" />
-            </picture>
+          <div class="image-block video-scroll-play">
+            <video
+              muted
+              playsinline
+              loop
+              preload="none"
+              title="<%= json.sectionProductInfo1Alt %>"
+              poster
+              data-poster-path="/media/images/<%= json.sectionProductInfo1Image %>-1920.jpg"
+              data-t-poster-path="/media/images/<%= json.sectionProductInfo1Image %>-360.jpg"
+              data-video-path="/media/images/video/<%= json.sectionProductInfo1Image %>-1920.mp4"
+              data-t-video-path="/media/images/video/<%= json.sectionProductInfo1Image %>-360.mp4"
+              >
+                <source class="mp4" type="video/mp4" />
+              </video>
           </div>
           <div class="wording-area scroll-fade-in">
             <div class="h3 scroll-fade-in--1"><%= json.sectionProductInfo1Title %></div>
@@ -230,8 +239,8 @@
                   poster
                   data-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.jpg"
                   data-t-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.jpg"
-                  data-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.mp4"
-                  data-t-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.mp4"
+                  data-video-path="/media/images/video/<%= json.sectionProductInfoCard1Url %>-1920.mp4"
+                  data-t-video-path="/media/images/video/<%= json.sectionProductInfoCard1Url %>-360.mp4"
               >
                 <source class="mp4" type="video/mp4" />
               </video>
@@ -265,8 +274,8 @@
                   poster
                   data-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.jpg"
                   data-t-poster-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.jpg"
-                  data-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-1920.mp4"
-                  data-t-video-path="/media/images/<%= json.sectionProductInfoCard1Url %>-360.mp4"
+                  data-video-path="/media/images/video/<%= json.sectionProductInfoCard1Url %>-1920.mp4"
+                  data-t-video-path="/media/images/video/<%= json.sectionProductInfoCard1Url %>-360.mp4"
               >
                 <source class="mp4" type="video/mp4" />
               </video>
@@ -292,41 +301,23 @@
             <p class="mt-s scroll-fade-in--2"><%= json.sectionProductInfoBottomCard1Text %></p>
           </div>
           <div class="card-item scroll-fade-in">
-            <div class="image-block video-scroll-play">
-              <video
-                  muted
-                  playsinline
-                  loop
-                  preload="none"
-                  title="<%= json.sectionProductInfoBottomCard2Alt %>"
-                  poster
-                  data-poster-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-1920.jpg"
-                  data-t-poster-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-360.jpg"
-                  data-video-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-1920.mp4"
-                  data-t-video-path="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-360.mp4"
-              >
-                <source class="mp4" type="video/mp4" />
-              </video>
+            <div class="image-block">
+              <picture>
+                <source data-srcset="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-1920.jpg" media="(min-width: 992px)" />
+                <source data-srcset="/media/images/<%= json.sectionProductInfoBottomCard2Url %>-360.jpg" />
+                <img class="lazy-img" alt="<%= json.sectionProductInfoBottomCard2Alt %>" />
+              </picture>
             </div>
             <div class="h3 card-text scroll-fade-in--1"><%= json.sectionProductInfoBottomCard2Title %></div>
             <p class="mt-s scroll-fade-in--2"><%= json.sectionProductInfoBottomCard2Text %></p>
           </div>
           <div class="card-item scroll-fade-in">
-            <div class="image-block video-scroll-play">
-              <video
-                  muted
-                  playsinline
-                  loop
-                  preload="none"
-                  title="<%= json.sectionProductInfoBottomCard3Alt %>"
-                  poster
-                  data-poster-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-1920.jpg"
-                  data-t-poster-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-360.jpg"
-                  data-video-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-1920.mp4"
-                  data-t-video-path="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-360.mp4"
-              >
-                <source class="mp4" type="video/mp4" />
-              </video>
+            <div class="image-block">
+              <picture>
+                <source data-srcset="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-1920.jpg" media="(min-width: 992px)" />
+                <source data-srcset="/media/images/<%= json.sectionProductInfoBottomCard3Url %>-360.jpg" />
+                <img class="lazy-img" alt="<%= json.sectionProductInfoBottomCard3Alt %>" />
+              </picture>
             </div>
             <div class="h3 card-text scroll-fade-in--1"><%= json.sectionProductInfoBottomCard3Title %></div>
             <p class="mt-s scroll-fade-in--2"><%= json.sectionProductInfoBottomCard3Text %></p>
@@ -498,7 +489,7 @@
     </section>
 
     <!-- ========== PROJECT CONTENT @start ========== -->
-    <script defer src="//www.youtube.com/player_api"></script>
+    <script defer src="https://www.youtube.com/player_api"></script>
 
     <% for(var i=0; i < htmlWebpackPlugin.files.js.length; i++) {%>
     <script type="text/javascript" defer src="<%= htmlWebpackPlugin.files.js[i] %>"></script>
