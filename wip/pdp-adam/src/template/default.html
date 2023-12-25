@@ -119,7 +119,7 @@
     <div class="sub-header">
       <div class="container">
         <div class="content-block">
-          <a href="#" id="toTopBtn" class="sub-h-name h3"><%= json.sectionSubHeaderName %></a>
+          <a href="#" class="sub-h-name h3 to-top"><%= json.sectionSubHeaderName %></a>
           <div class="sub-h-list">
             <% for(var i=0; i < json.sectionSubHeaderList.length; i++) {%>
               <a href="<%= json.sectionSubHeaderList[i].link %>" target="_blank" class="sub-h-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionSubHeaderList[i].text %></a>
@@ -463,6 +463,10 @@
         </div>
       </div>
     </section> 
+
+    <div aria-label="回到上面" role="button" class="totop-btn">
+      <img src="/media/images/totop.svg" width="27" height="27" alt="回到上面">
+    </div>
 
 
 

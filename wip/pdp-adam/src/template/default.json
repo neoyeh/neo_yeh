@@ -281,34 +281,34 @@
   "sectionVideoAndYtTitle": "",
   "sectionVideoAndYtPoster": "Mag3-video-01",
   "sectionVideoAndYtUrl": "Mag3-video-01",
-  "sectionVideoAndYtID": "AiUX8lQGh2w",
+  "sectionVideoAndYtID": "swHCPK4jmvY",
 
 
   "__Comment_FeatureList": "---------------------No translation--------------------",
   "sectionFeatureListTitle": "快速磁吸對位, 無線充電,</br>不論是瀏覽訊息或觀賞影片都能提供磁吸帶來的最佳充電體體驗",
   "sectionFeatureList": [
     {
-      "url": "ellipse",
+      "url": "Mag3-icon-01",
       "name": "直橫皆可充"
     },
     {
-      "url": "ellipse",
+      "url": "Mag3-icon-02",
       "name": "鋁製金屬打造"
     },
     {
-      "url": "ellipse",
+      "url": "Mag3-icon-03",
       "name": "摺疊收納不佔空間"
     },
     {
-      "url": "ellipse",
+      "url": "Mag3-icon-04",
       "name": "MagSafe</br>磁吸無線充電"
     },
     {
-      "url": "ellipse",
+      "url": "Mag3-icon-05",
       "name": "支援 AirPods / Pro 無線充電"
     },
     {
-      "url": "ellipse",
+      "url": "Mag3-icon-06",
       "name": "支援 Apple Watch</br>快速充電"
     }
   ],

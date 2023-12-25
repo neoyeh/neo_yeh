@@ -100,6 +100,29 @@ html, body {
       object-fit: cover;
     }
   }
+
+  .totop-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 11;
+    background-color: rgba(62, 59, 73, 0.60);
+    @media screen and (max-width: ($tablet-max-width)) {
+      right: return-tablet-size-by-vw(15);
+      bottom: return-tablet-size-by-vw(15);
+    }
+    img {
+      width: 27px;
+      height: 27px;
+    }
+  }
   
   .section-kv {
     height: 700px;
@@ -361,7 +384,9 @@ html, body {
   .sub-header {
     width: 100%;
     height: 50px;
-    background-color: #575757;
+    background-color: rgb(87 87 87 / 80%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     left: 0;
@@ -524,9 +549,9 @@ html, body {
     }
     .wording-area {
       text-align: center;
-      width: 800px;
+      width: 1120px;
       @media screen and (max-width: ($laptop-max-width)) {
-        width: return-desktop-size-by-vw(800);
+        width: return-desktop-size-by-vw(1120);
       }
       @media screen and (max-width: ($tablet-max-width)) {
         width: return-tablet-full-wide();
@@ -535,19 +560,19 @@ html, body {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px 100px;
+        gap: 15px 34px;
         @media screen and (max-width: ($laptop-max-width)) {
-          gap: return-desktop-size-by-vw(15) return-desktop-size-by-vw(100);
+          gap: return-desktop-size-by-vw(15) return-desktop-size-by-vw(34);
         }
         @media screen and (max-width: ($tablet-max-width)) {
-          gap: return-tablet-size-by-vw(15);
+          gap: return-tablet-size-by-vw(20) return-tablet-size-by-vw(15);
           grid-template-columns: repeat(2, 1fr);
         }
         .feature-item {
-          width: 200px;
+          width: 350px;
           padding-top: 51px;
           @media screen and (max-width: ($laptop-max-width)) {
-            width: return-desktop-size-by-vw(200);
+            width: return-desktop-size-by-vw(350);
             padding-top: return-desktop-size-by-vw(51);
           }
           @media screen and (max-width: ($tablet-max-width)) {
@@ -556,6 +581,9 @@ html, body {
           }
           .h3 {
             line-height: 130%;
+            @media screen and (max-width: ($tablet-max-width)) {
+              font-size: 15px;
+            }
           }
           .image-block {
             margin: 0 auto;

@@ -324,39 +324,47 @@ const productSizeOwl = (function () {
           const newNav = nav;
           newNav.style.width = `${dots.offsetWidth + 80}px`;
         }
-      }
-      owl.owlCarousel({
-        loop: false,
-        nav: true,
-        dots: true,
-        responsive: {
-          0: {
-            items: 1,
-            autoWidth: true,
+      };
+      function initOwl() {
+        owl.owlCarousel({
+          loop: false,
+          nav: true,
+          dots: true,
+          responsive: {
+            0: {
+              items: 1,
+              autoWidth: true,
+            },
+            992: {
+              items: 1,
+            },
           },
-          992: {
-            items: 1,
+          onInitialized(e) {
+            const dots = e.currentTarget.querySelector('.owl-dots');
+            const nav = e.currentTarget.querySelector('.owl-nav');
+            setNavWidth(dots, nav);
           },
-        },
-        onInitialized(e) {
-          const dots = e.currentTarget.querySelector('.owl-dots');
-          const nav = e.currentTarget.querySelector('.owl-nav');
-          setNavWidth(dots, nav);
-        },
-        onResized(e) {
-          const dots = e.currentTarget.querySelector('.owl-dots');
-          const nav = e.currentTarget.querySelector('.owl-nav');
-          setNavWidth(dots, nav);
-        },
-      });
+          onResized(e) {
+            const dots = e.currentTarget.querySelector('.owl-dots');
+            const nav = e.currentTarget.querySelector('.owl-nav');
+            setNavWidth(dots, nav);
+          },
+        });
+      };
+      initOwl();
 
       // size change
       parentElement.find('.size-item').on('click', (e) => {
         e.preventDefault();
         if ($(e.currentTarget).hasClass('active')) return;
+        const previousScrollPosition = window.scrollY;
         const target = $(e.currentTarget);
         const index = parseInt(target.attr('data-index'));
-        owl.trigger('replace.owl.carousel', innerHTMLArray[index]).trigger('refresh.owl.carousel');
+        // owl.trigger('replace.owl.carousel', innerHTMLArray[index]).trigger('refresh.owl.carousel');
+        owl.data('owl.carousel').destroy();
+        owl.html(innerHTMLArray[index]);
+        initOwl();
+
         parentElement.find('.size-item.active').removeClass('active');
         target.addClass('active');
         parentElement.find('.color-item.active').removeClass('active')
@@ -371,6 +379,7 @@ const productSizeOwl = (function () {
       parentElement.find('.color-item').on('click', (e) => {
         e.preventDefault();
         if ($(e.currentTarget).hasClass('active')) return;
+        
         const target = $(e.currentTarget);
         const index = parseInt(target.attr('data-index'));
         owl.find('.product-size-item').each((i, e) => {
@@ -484,134 +493,6 @@ const applicationOwl = (function () {
     },
   };
   return applicationOwlCB;
-}());
-
-/*= ========================================================
-=       Section: suppport Topics carousel
-========================================================= */
-const appOwl = (function () {
-  const appOwlCB = {
-    init() {
-      const owlSection = $('.accessories-owl-content, .product-size-carousel');
-      if (owlSection.length > 0) {
-        $.each(owlSection, (index, el) => {
-          const isMobileSet = !commonSetting.isMobile();
-          const currentSection = $(el);
-          appOwl.setupCaruosel(currentSection, isMobileSet);
-        });
-      }
-    },
-    setupCaruosel(parentElement, isMobileSet) {
-      let mobileSet = isMobileSet;
-      const slide = parentElement
-        .siblings('.carousel-slide')
-        .find('.topics-slider');
-      const isSlide = slide.length > 0;
-      let count = 0;
-
-      function changeView() {
-        if (commonSetting.isMobile()) {
-          if (!mobileSet) {
-            // console.log('changeView to mobile')
-            mobileSet = true;
-            slide.attr('max', count);
-            slide.val(1);
-            parentElement.trigger('to.owl.carousel', 0);
-          }
-        } else if (mobileSet) {
-          // console.log('changeView to desktop')
-          mobileSet = false;
-          // console.log(count)
-          slide.attr('max', count);
-        }
-      }
-      let rtl = false;
-      if ($('html').attr('dir') === 'rtl') {
-        rtl = true;
-      }
-      parentElement.owlCarousel({
-        rtl,
-        loop: true,
-        nav: true,
-        dots: false,
-        lazyLoad: true,
-        lazyLoadEager: 1,
-        navText: [
-          "<div data-event-category='accessory' data-event-action='click-arrow' data-event-label='arrow-prev-accessory-carousel' data-event-gtm='event-tracking' style='width:100%;height:100%;'><div class='icon-nav icon-prev'></div></div>",
-          "<div data-event-category='accessory' data-event-action='click-arrow' data-event-label='arrow-next-accessory-carousel' data-event-gtm='event-tracking' style='width:100%;height:100%;'><div class='icon-nav icon-next'></div></div>",
-        ],
-        responsive: {
-          0: {
-            items: 1,
-          },
-          992: {
-            items: 2,
-          },
-        },
-        onInitialized(event) {
-          count = event.item.count;
-          if (isSlide) {
-            changeView();
-            slide[0].oninput = function () {
-              parentElement.trigger('to.owl.carousel', this.value - 1);
-            };
-          }
-          const items = parentElement.find('.owl-item:not(.cloned) .js-slug-product');
-          Array.from(items).forEach((item) => {
-            const slug = item.getAttribute('data-slug');
-            if (slug) {
-              const cloneBlock = parentElement.find(`.owl-item.cloned .js-slug-product[data-slug=${slug}]`);
-              if (cloneBlock.length > 0) {
-                const observer = new MutationObserver(() => {
-                  const cloneHtml = item.innerHTML;
-                  const btn = item.querySelectorAll('.vive20-btn')[0];
-                  cloneBlock.each((i, elem) => {
-                    const element = elem;
-                    element.innerHTML = cloneHtml;
-                    element.querySelectorAll('.vive20-btn')[0].addEventListener('click', () => {
-                      event.preventDefault();
-                      btn.click();
-                    });
-                  });
-                });
-                observer.observe(item, {
-                  childList: true,
-                  subtree: true,
-                  attributes: true,
-                  characterData: true,
-                });
-              }
-            }
-          });
-        },
-        onTranslate(event) {
-          if (isSlide) {
-            // eslint-disable-next-line no-underscore-dangle
-            let current = event.item.index + 1 - event.relatedTarget._clones.length / 2;
-            const itemsCount = event.item.count;
-
-            if (current > itemsCount) {
-              current = 1;
-            }
-
-            if (current === 0) {
-              current = event.item.count;
-            }
-            slide.val(current);
-          }
-        },
-      });
-
-      if (isSlide) {
-        $(window).on('resize', () => {
-          if (isSlide) {
-            changeView();
-          }
-        });
-      }
-    },
-  };
-  return appOwlCB;
 }());
 
 /*= ========================================================
@@ -750,11 +631,14 @@ $(() => {
   playIntroVideo.init();
   scrollFadeIn.init();
 
-  document.getElementById("toTopBtn").addEventListener("click", function(e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+  document.querySelectorAll(".to-top, .totop-btn").forEach(function(element) {
+    element.addEventListener("click", function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
   });
+
 });
