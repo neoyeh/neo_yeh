@@ -122,7 +122,7 @@
           <a href="#" class="sub-h-name h3 to-top"><%= json.sectionSubHeaderName %></a>
           <div class="sub-h-list">
             <% for(var i=0; i < json.sectionSubHeaderList.length; i++) {%>
-              <a href="<%= json.sectionSubHeaderList[i].link %>" class="sub-h-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionSubHeaderList[i].text %></a>
+              <a href="<%= json.sectionSubHeaderList[i].link %>" class="sub-h-item menu-<%= json.sectionSubHeaderList[i].target %>"><%= json.sectionSubHeaderList[i].text %></a>
             <% } %>
           </div>
         </div>
@@ -130,7 +130,7 @@
     </div>
   
     <section class="section-video-and-yt" id="design">
-      <div class="image-block video-scroll-play">
+      <div class="image-block video-scroll-play" data-target="design">
         <video
             muted
             playsinline

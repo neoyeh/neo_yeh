@@ -265,15 +265,18 @@
   "sectionSubHeaderList": [
     {
       "text": "設計",
-      "link": "#design"
+      "link": "#design",
+      "target": "design"
     },
     {
       "text": "規格",
-      "link": "#spec"
+      "link": "#spec",
+      "target": "spec"
     },
     {
       "text": "購買",
-      "link": "#buy-block"
+      "link": "#buy-block",
+      "target": "buy-block"
     }
   ],  
 
