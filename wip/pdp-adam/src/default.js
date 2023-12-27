@@ -495,6 +495,32 @@ const applicationOwl = (function () {
   return applicationOwlCB;
 }());
 
+
+/*= ========================================================
+=       Section: sub header click                    =
+========================================================= */
+const subMenuClick = (function () {
+  const subMenuClickCB = {
+    init() {
+      const subMenu = $('.sub-header');
+      if (subMenu.length > 0) {
+        $.each(subMenu, (index, el) => {
+          const currentSection = $(el);
+          subMenuClickCB.setupClick(currentSection);
+        });
+      }
+    },
+    setupClick(parentElement) {
+      parentElement.find('.sub-h-item').on('click', (e) => {
+        const target = $(e.currentTarget);
+        parentElement.find('.sub-h-item.active').removeClass('active');
+        target.addClass('active');
+      });
+    },
+  };
+  return subMenuClickCB;
+}());
+
 /*= ========================================================
 =       Section: Banner modal video                       =
 ========================================================= */
@@ -630,6 +656,7 @@ $(() => {
   modalVideo.init();
   playIntroVideo.init();
   scrollFadeIn.init();
+  subMenuClick.init();
 
   document.querySelectorAll(".to-top, .totop-btn").forEach(function(element) {
     element.addEventListener("click", function(e) {

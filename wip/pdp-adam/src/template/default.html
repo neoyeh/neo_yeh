@@ -122,14 +122,14 @@
           <a href="#" class="sub-h-name h3 to-top"><%= json.sectionSubHeaderName %></a>
           <div class="sub-h-list">
             <% for(var i=0; i < json.sectionSubHeaderList.length; i++) {%>
-              <a href="<%= json.sectionSubHeaderList[i].link %>" target="_blank" class="sub-h-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionSubHeaderList[i].text %></a>
+              <a href="<%= json.sectionSubHeaderList[i].link %>" class="sub-h-item <%= (i === 0) ? 'active' : '' %>"><%= json.sectionSubHeaderList[i].text %></a>
             <% } %>
           </div>
         </div>
       </div>
     </div>
   
-    <section class="section-video-and-yt">
+    <section class="section-video-and-yt" id="design">
       <div class="image-block video-scroll-play">
         <video
             muted
@@ -384,7 +384,7 @@
       </div>
     </section>
 
-    <section class="section-spec">
+    <section class="section-spec" id="spec">
       <div class="container">
         <h2 class="h1 spec-title"><%= json.sectionSpecListTitle %></h2>
         <div class="spec-list">
@@ -441,7 +441,7 @@
               </div>
             <% } %>
           </div>
-          <div class="product-card scroll-fade-in">
+          <div class="product-card scroll-fade-in" id="buy-block">
             <div class="wording-area">
               <h3 class="product-title h2 scroll-fade-in--1"><%= json.sectionProductFeatureName %></h3>
               <p class="h3 product-text scroll-fade-in--2"><%= json.sectionProductFeatureText %></p>
