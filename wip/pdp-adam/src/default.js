@@ -194,9 +194,11 @@ const playIntroVideo = (() => {
                                 // console.log('infirstInitedit')
                                 initVideo(elem);
                             });
-                          
+
+                          // sub menu
                           if (parentElement.attr('data-target')) {
-                            console.log(parentElement.attr('data-target'))
+                            $('.sub-h-list').find('.active').removeClass('active');
+                            $('.sub-h-list').find(`.menu-${parentElement.attr('data-target')}`).addClass('active');
                           }
                       }
                   })
@@ -208,6 +210,9 @@ const playIntroVideo = (() => {
                         .each((i, elem) => {
                             stopVideo(elem);
                         });
+
+                      // sub menu
+                      $('.sub-h-list').find('.active').removeClass('active');
                   })
                   .on('progress', (e) => {
                       const offsetPercent = Math.floor(100 * 1000 / duration());
@@ -223,6 +228,12 @@ const playIntroVideo = (() => {
                             .each((i, elem) => {
                                 startVideo(elem);
                             });
+
+                          // sub menu
+                          if (parentElement.attr('data-target')) {
+                            $('.sub-h-list').find('.active').removeClass('active');
+                            $('.sub-h-list').find(`.menu-${parentElement.attr('data-target')}`).addClass('active');
+                          }
                       } else if (progressValue < offsetPercent + windowHeightPercent * 2.5
                           && start === true) {
                           start = false;
@@ -231,6 +242,9 @@ const playIntroVideo = (() => {
                             .each((i, elem) => {
                                 stopVideo(elem);
                             });
+
+                          // sub menu
+                          $('.sub-h-list').find('.active').removeClass('active');
                       }
                   })
                   // .addIndicators({
