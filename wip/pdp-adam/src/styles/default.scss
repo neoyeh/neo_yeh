@@ -284,6 +284,7 @@ html, body {
         flex-direction: column;
         justify-content: center;
         padding-left: 120px;
+        width: 100%;
         @media screen and (max-width: ($laptop-max-width)) {
           padding-left: return-desktop-size-by-vw(120);
         }
@@ -644,6 +645,9 @@ html, body {
         gap: return-tablet-size-by-vw(5) return-tablet-size-by-vw(8);
         padding: 0 return-tablet-size-by-vw(20);
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+      @media screen and (max-width: (368px)) {
+        padding: 0;
       }
       .feature-carousel-item {
         @include typography-btn();

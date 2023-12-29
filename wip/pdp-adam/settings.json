@@ -13,6 +13,9 @@
         {
             "name": "default",
             "useDefaultTepmlate": true
+        },{
+            "name": "default-us",
+            "useDefaultTepmlate": true
         }
     ],
     "backUp" : [

@@ -1,6 +1,6 @@
 @mixin typography-h1 {
-  font-size: 48px;
-  line-height: 100%;
+  font-size: 40px;
+  line-height: 130%;
   font-weight: 700;
   @media screen and (max-width: ($tablet-max-width)) {
     font-size: 28px;
@@ -9,7 +9,7 @@
 
 @mixin typography-h2 {
   font-size: 32px;
-  line-height: 100%;
+  line-height: 130%;
   font-weight: 700;
   @media screen and (max-width: ($tablet-max-width)) {
     font-size: 20px;
@@ -18,7 +18,7 @@
 
 @mixin typography-h3 {
   font-size: 24px;
-  line-height: 100%;
+  line-height: 130%;
   font-weight: 700;
   @media screen and (max-width: ($tablet-max-width)) {
     font-size: 18px;

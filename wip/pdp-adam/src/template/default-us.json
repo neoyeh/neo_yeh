@@ -1,0 +1,515 @@
+{
+  "buyNow": "Buy now",
+  "experience": "門市體驗",
+  "playVideo": "播放影片",
+
+
+
+  "__Comment_KV": "---------------------No translation--------------------",
+  "sectionKVText":"Mag 3",
+  "sectionKVImageUrl":"Mag3-kv-01",
+  "sectionKVTitle":"三合一折疊磁吸無線充電座",
+  "sectionKVDescribe":"精湛工藝堅固耐用</br>給你最有質感的生活體驗",
+  "sectionKVAlt": "三合一折疊磁吸無線充電座",
+  "sectionKVBtn1link": "#",
+  "sectionKVBtn2link": "#",
+
+
+  "__Comment_ProductSizeCarousel": "---------------------No translation--------------------",
+  "sectionProductSizeTitle":"GRAVITY</br>CS series",
+  "sectionProductSizeText":"精湛工藝堅固耐用</br>給你最有質感的生活體驗",
+  "sectionProductSizeAlt": "",
+  "sectionProductSizeList": [
+    {
+      "name": "CS5 - 5000mAh",
+      "sectionProductColorList": [
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-01"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-01"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-01"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-02"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-02"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-02"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-03"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-03"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-03"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-04"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-04"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-04"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-05"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-05"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-05"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-06"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-06"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-06"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-07"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-07"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-07"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-08"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-08"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-08"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-09"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-09"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-09"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-10"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-10"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CS5 - 10000mAh",
+      "sectionProductColorList": [
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-01"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-01"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-01"
+            }
+          ]
+        },
+        {
+          "color": [
+            {
+              "name": "green",
+              "color": "green",
+              "url": "Mag3-product-02"
+            },
+            {
+              "name": "blue",
+              "color": "blue",
+              "url": "Mag3-product-02"
+            },
+            {
+              "name": "red",
+              "color": "red",
+              "url": "Mag3-product-02"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "__Comment_SubHeader": "---------------------No translation--------------------",
+  "sectionSubHeaderName": "Mag 3",
+  "sectionSubHeaderList": [
+    {
+      "text": "設計",
+      "link": "#design",
+      "target": "design"
+    },
+    {
+      "text": "規格",
+      "link": "#spec",
+      "target": "spec"
+    },
+    {
+      "text": "購買",
+      "link": "#buy-block",
+      "target": "buy-block"
+    }
+  ],  
+
+  "__Comment_VideoAndYt": "---------------------No translation--------------------",
+  "sectionVideoAndYtTitle": "",
+  "sectionVideoAndYtPoster": "Mag3-video-01",
+  "sectionVideoAndYtUrl": "Mag3-video-01",
+  "sectionVideoAndYtID": "swHCPK4jmvY",
+
+
+  "__Comment_FeatureList": "---------------------No translation--------------------",
+  "sectionFeatureListTitle": "快速磁吸對位, 無線充電,</br>不論是瀏覽訊息或觀賞影片都能提供磁吸帶來的最佳充電體體驗",
+  "sectionFeatureList": [
+    {
+      "url": "Mag3-icon-01",
+      "name": "直橫皆可充"
+    },
+    {
+      "url": "Mag3-icon-02",
+      "name": "鋁製金屬打造"
+    },
+    {
+      "url": "Mag3-icon-03",
+      "name": "摺疊收納不佔空間"
+    },
+    {
+      "url": "Mag3-icon-04",
+      "name": "MagSafe</br>磁吸無線充電"
+    },
+    {
+      "url": "Mag3-icon-05",
+      "name": "支援 AirPods / Pro 無線充電"
+    },
+    {
+      "url": "Mag3-icon-06",
+      "name": "支援 Apple Watch</br>快速充電"
+    }
+  ],
+
+  "__Comment_FeatureCarouse": "---------------------No translation--------------------",
+  "sectionFeatureCarouselList": [
+    {
+      "text": "小巧易攜 出國必備",
+      "url": "Mag3-featureslide-01",
+      "alt": "小巧易攜 出國必備"
+    },
+    {
+      "text": "三合一 無線充電",
+      "url": "Mag3-featureslide-02",
+      "alt": "三合一 無線充電"
+    },
+    {
+      "text": "輕量化設計",
+      "url": "Mag3-featureslide-03",
+      "alt": "輕量化設計"
+    },
+    {
+      "text": "完美貼合 不卡鏡頭",
+      "url": "Mag3-featureslide-04",
+      "alt": "完美貼合 不卡鏡頭"
+    }
+  ],
+
+  "__Comment_ProductInfo": "---------------------No translation--------------------",
+  "sectionProductInfoTitle": "產品特色",
+  "sectionProductInfo1Image": "Mag3-feature-01",
+  "sectionProductInfo1Alt": "鋁金屬質感輕量化設計",
+  "sectionProductInfo1Title": "鋁金屬質感輕量化設計",
+  "sectionProductInfo1Text": "精湛工藝堅固耐用，給你最有質感的生活體驗",
+
+  "sectionProductInfoCard1Url": "Mag3-feature-02",
+  "sectionProductInfoCard1Alt": "直立橫向皆可充",
+  "sectionProductInfoCard1Title": "直立橫向皆可充",
+  "sectionProductInfoCard1Text": "不論是瀏覽訊息或觀賞影片</br>都能提供磁吸帶來的最佳充電體體驗",
+
+  "sectionProductInfoCard2Url": "Mag3-feature-03",
+  "sectionProductInfoCard2Alt": "可折疊收納 不佔空間 出國必備",
+  "sectionProductInfoCard2Title": "可折疊收納 不佔空間 出國必備",
+  "sectionProductInfoCard2Text": "出國旅行、外出洽公，輕鬆好收納不佔空間，</br>同時滿足出門在外所有行動裝置充電需求。",
+
+  "sectionProductInfoCard3Url": "Mag3-feature-03",
+  "sectionProductInfoCard3Alt": "Apple Watch 全系列無線充電座",
+  "sectionProductInfoCard3Title": "Apple Watch 全系列無線充電座",
+  "sectionProductInfoCard3Text": "支援 Apple Watch Ultra / S9 / S8 / S7 等機種快速充電",
+
+
+  "sectionProductInfoBottomCard1Url": "Mag3-feature-05",
+  "sectionProductInfoBottomCard1Alt": "",
+  "sectionProductInfoBottomCard1Title": "lorem",
+  "sectionProductInfoBottomCard1Text": "下方無線充電區支援 AirPods 及 AirPods Pro 無線充電。",
+
+  "sectionProductInfoBottomCard2Url": "Mag3-feature-06",
+  "sectionProductInfoBottomCard2Alt": "",
+  "sectionProductInfoBottomCard2Title": "lorem",
+  "sectionProductInfoBottomCard2Text": "磁吸充電盤可支援具磁吸充電功能之 AirPods 機種進行磁吸充電。",
+
+  "sectionProductInfoBottomCard3Url": "Mag3-feature-07",
+  "sectionProductInfoBottomCard3Alt": "",
+  "sectionProductInfoBottomCard3Title": "lorem",
+  "sectionProductInfoBottomCard3Text": "後方 Apple Watch 充電模組亦可提供具磁吸充電功能 AirPods 機種充電。",
+
+
+
+
+
+  "__Comment_Application": "---------------------No translation--------------------",
+  "sectionApplicationTitle": "鋁金屬質感輕量化設計",
+  "sectionApplicationDescribe": "精湛工藝堅固耐用，給你最有質感的生活體驗",
+  "sectionApplicationList": [
+    {
+      "url": "Mag3-slide-01",
+      "alt": ""
+    },{
+      "url": "Mag3-slide-02",
+      "alt": ""
+    },{
+      "url": "Mag3-slide-03",
+      "alt": ""
+    },{
+      "url": "Mag3-slide-04",
+      "alt": ""
+    },{
+      "url": "Mag3-slide-05",
+      "alt": ""
+    }
+  ],
+  "sectionApplicationImageTL": "Mag3-lifestyle-01",
+  "sectionApplicationImageTLAlt": "",
+  "sectionApplicationImageRT": "Mag3-lifestyle-02",
+  "sectionApplicationImageRTAlt": "",
+  "sectionApplicationImageRB": "Mag3-lifestyle-03",
+  "sectionApplicationImageRBAlt": "",
+  "sectionApplicationImageB": "Mag3-lifestyle-04",
+  "sectionApplicationImageBAlt": "",
+
+
+
+  "__Comment_Spec": "---------------------No translation--------------------",
+  "sectionSpecListTitle" : "產品規格",
+  "sectionSpecList": [
+    {
+      "sectionSpecTitle": "產品型號",
+      "sectionSpecText": "Mag 3"
+    },
+    {
+      "sectionSpecTitle": "輸入介面",
+      "sectionSpecText": "USB-C"
+    },
+    {
+      "sectionSpecTitle": "輸出介面",
+      "sectionSpecText": "磁吸無線充電( 最高 15W )</br>耳機充電區(最高5W )</br>手錶充電支架(最高 3W )"
+    },
+    {
+      "sectionSpecTitle": "產品相容性",
+      "sectionSpecText": "支援iPhone無線充電以及具有MagSafe充電功能的裝置。</br>充電功能可能因裝置而有所不同。"
+    },
+    {
+      "sectionSpecTitle": "相關認証",
+      "sectionSpecText": "CE / FCC / RoHS / BSMI / NCC"
+    },
+    {
+      "sectionSpecTitle": "產品敘述",
+      "sectionSpecText": "折疊式三合一旅行磁吸無線充電座"
+    },
+    {
+      "sectionSpecTitle": "產品尺寸",
+      "sectionSpecText": "68 x 68 x 23 mm"
+    },
+    {
+      "sectionSpecTitle": "產品重量",
+      "sectionSpecText": "185 g"
+    },
+    {
+      "sectionSpecTitle": "保固",
+      "sectionSpecText": "三年"
+    },
+    {
+      "sectionSpecTitle": "充電速度",
+      "sectionSpecText": "輸入:</br>5V⎓3A, 9V⎓2.22A,12V⎓3A</br></br>輸出:</br></br>磁吸充電:</br>5V⎓1A,9V⎓1.66A,最高15W</br>(iPhone 最高 7.5 W)</br></br>耳機無線充電區 :</br>5V-1A,最高5W</br></br>手錶充電座:</br>5V-1A,最高3W"
+    },
+    {
+      "sectionSpecTitle": "產地",
+      "sectionSpecText": "中國"
+    },
+    {
+      "sectionSpecTitle": "檔案下載",
+      "sectionSpecText": "<a href='#'>產品使用說明書</a>"
+    }
+  ],
+
+  "__Comment_BottomKV": "---------------------No translation--------------------",
+  "sectionBottomKVTitle": "包裝內容物",
+  "sectionBottomKVTImage": "Mag3-package-01",
+  "sectionBottomKVList": [
+    {
+      "name": "Mag 3 Magnetic 3-in-1 Foldable Travel Charging Station x 1  (Mag 3 三合一旅行磁吸無線充電座 x 1)"
+    },
+    {
+      "name": "USB-C to USB-C cable x 1 (USB-C快速充電線 100cm )"
+    }
+  ],
+
+  "__Comment_ProductFeature": "---------------------No translation--------------------",
+  "sectionProductFeatureTitle": "品牌特色",
+  "sectionProductFeatureList": [
+    {
+      "url": "Mag3-brand-01",
+      "alt": "",
+      "title": "Lorem 次標文字",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "url": "Mag3-brand-02",
+      "alt": "",
+      "title": "Lorem 次標文字",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "url": "Mag3-brand-03",
+      "alt": "",
+      "title": "Lorem 次標文字",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+    }
+  ],
+
+  "sectionProductFeatureName": "Mag 3",
+  "sectionProductFeatureText": "三合一折疊磁吸無線充電座",
+
+  "sectionProductBottomImage": "Mag3-buy-01",
+  "sectionProductBottomAlt": "三合一折疊磁吸無線充電座",
+  "sectionProductBottomLink1": "#",
+  "sectionProductBottomLink2": "#"
+
+
+
+}

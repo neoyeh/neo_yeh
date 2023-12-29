@@ -41,8 +41,8 @@
             <h1 class="h1 mt-s scroll-fade-in--2"><%= json.sectionKVTitle %></h1>
             <p class="mt-l scroll-fade-in--3"><%= json.sectionKVDescribe %></p>
             <div class="btn-area mt-l scroll-fade-in--3">
-              <a href="<%= json.sectionKVBtn1link %>" class="btn-link btn--outline light"><%= json.experience %></a>
-              <a href="<%= json.sectionKVBtn2link %>" class="btn-link"><%= json.buyNow %></a>
+              <a href="<%= json.sectionKVBtn1link %>" target="_blank" class="btn-link btn--outline light"><%= json.experience %></a>
+              <a href="<%= json.sectionKVBtn2link %>" target="_blank" class="btn-link"><%= json.buyNow %></a>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
             </div>
           </div>
           <div class="btn-area mt-l">
-            <a href="#" class="btn-link"><%= json.buyNow %></a>
+            <a href="#" target="_blank" class="btn-link"><%= json.buyNow %></a>
           </div>
         </div>
       </div>
@@ -181,6 +181,8 @@
 
     <section class="section-feature-carousel">
         <div class="feature-carousel-list">
+
+          <!-- 產品類型 有幾個類型就有幾個 feature-carousel-item -->
           <% for(var i=0; i < json.sectionFeatureCarouselList.length; i++) {%>
           <div class="feature-carousel-item <%= (i === 0) ? 'active' : '' %>" data-index="<%= i %>" role="button" aria-label="<%= json.sectionFeatureCarouselList[i].text %>">
             <%= json.sectionFeatureCarouselList[i].text %>
@@ -455,8 +457,8 @@
             </div>
             <div class="wording-area mt-l">
               <div class="btn-area">
-                <a href="<%= json.sectionProductBottomLink1 %>" class="btn-link btn--outline"><%= json.experience %></a>
-                <a href="<%= json.sectionProductBottomLink2 %>" class="btn-link"><%= json.buyNow %></a>
+                <a href="<%= json.sectionProductBottomLink1 %>" target="_blank" class="btn-link btn--outline"><%= json.experience %></a>
+                <a href="<%= json.sectionProductBottomLink2 %>" target="_blank" class="btn-link"><%= json.buyNow %></a>
               </div>
             </div>
           </div>
