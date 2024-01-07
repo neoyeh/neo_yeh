@@ -1263,7 +1263,6 @@ html, body {
           margin-top: return-tablet-size-by-vw(90);
         }
         .image-block {
-          border: 1px solid #ddd;
           width: 370px;
           height: 370px;
           @media screen and (max-width: ($laptop-max-width)) {
