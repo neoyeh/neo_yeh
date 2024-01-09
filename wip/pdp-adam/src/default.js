@@ -659,4 +659,9 @@ $(() => {
     });
   });
 
+  $('.nav_tri a').on('click', function(e) {
+    $('.adam-header').toggleClass('on');
+    $('.adam-header .list').toggle();
+  });
+
 });
