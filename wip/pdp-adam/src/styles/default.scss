@@ -439,8 +439,7 @@ html, body {
         @media screen and (max-width: ($tablet-max-width)) {
           width: 80px;
         }
-        &.active,
-        &:hover {
+        &.active {
           &:after {
             content: "";
             position: absolute;
