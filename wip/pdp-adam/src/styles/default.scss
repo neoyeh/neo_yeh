@@ -11,6 +11,9 @@
 html, body {
   scroll-behavior: smooth;
 }
+button {
+  touch-action: manipulation;
+}
 
 .replaceBodyClass {
   .btn-link {
